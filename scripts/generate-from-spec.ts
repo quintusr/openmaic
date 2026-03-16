@@ -89,30 +89,37 @@ async function generateTTSForLesson(
   }
   const baseUrl = resolveTTSBaseUrl(ttsProviderId);
 
-  let count = 0;
+  // Collect all speech actions
+  const speechActions: Array<{ text: string; audioId: string }> = [];
   for (const scene of scenes) {
     for (const action of scene.actions || []) {
-      if (action.type !== 'speech' || !action.text || !action.audioId) continue;
-      try {
-        const { audio, format } = await generateTTS(
-          { providerId: ttsProviderId, voice: ttsVoice, speed: 1.0, apiKey, baseUrl },
-          action.text,
-        );
-        const bytes = new Uint8Array(audio);
-        await storage.saveAudio(
-          subjectCode,
-          courseId,
-          lessonId,
-          action.audioId,
-          bytes,
-          `audio/${format}`,
-        );
-        count++;
-      } catch (err) {
-        const msg = err instanceof Error ? err.message : String(err);
-        console.warn(`  ${label} TTS failed for ${action.audioId}: ${msg}`);
+      if (action.type === 'speech' && action.text && action.audioId) {
+        speechActions.push({ text: action.text, audioId: action.audioId });
       }
     }
+  }
+
+  if (speechActions.length === 0) return 0;
+  console.log(`  ${label} TTS: generating ${speechActions.length} audio files (5 parallel)...`);
+
+  // Process in parallel batches of 5
+  let count = 0;
+  const BATCH = 5;
+  for (let i = 0; i < speechActions.length; i += BATCH) {
+    const batch = speechActions.slice(i, i + BATCH);
+    const results = await Promise.allSettled(
+      batch.map(async (sa) => {
+        const { audio, format } = await generateTTS(
+          { providerId: ttsProviderId, voice: ttsVoice, speed: 1.0, apiKey, baseUrl },
+          sa.text,
+        );
+        await storage.saveAudio(
+          subjectCode, courseId, lessonId,
+          sa.audioId, new Uint8Array(audio), `audio/${format}`,
+        );
+      }),
+    );
+    count += results.filter((r) => r.status === 'fulfilled').length;
   }
   return count;
 }
@@ -324,9 +331,10 @@ async function main() {
         }
       }
 
-      console.log(`\n  ${label} Scenes: ${result.scenesCount}`);
+      console.log(`\n  ${label} [1/4] LLM done: ${result.scenesCount} scenes`);
 
-      // Save classroom data (with outlines for image generation from UI)
+      // Save classroom data
+      console.log(`  ${label} [2/4] Uploading JSON to S3...`);
       const classroomData = {
         id: result.id,
         stage: result.stage,
@@ -341,9 +349,11 @@ async function main() {
         lesson.lessonId,
         classroomData as PersistedClassroomData,
       );
+      console.log(`  ${label} [2/4] JSON uploaded`);
 
       // Generate TTS audio
       if (!skipTTS) {
+        console.log(`  ${label} [3/4] Generating TTS audio...`);
         const ttsCount = await generateTTSForLesson(
           result.scenes as Array<{ actions?: Array<{ type: string; id: string; text?: string; audioId?: string }> }>,
           storage,
@@ -352,11 +362,14 @@ async function main() {
           lesson.lessonId,
           label,
         );
-        console.log(`  ${label} TTS: ${ttsCount} audio files`);
+        console.log(`  ${label} [3/4] TTS done: ${ttsCount} audio files`);
+      } else {
+        console.log(`  ${label} [3/4] TTS skipped (--no-tts)`);
       }
 
       // Generate images
       if (!skipImages) {
+        console.log(`  ${label} [4/4] Generating images...`);
         const imgCount = await generateImagesForLesson(
           result.outlines,
           storage,
@@ -366,7 +379,9 @@ async function main() {
           result.id,
           label,
         );
-        console.log(`  ${label} Images: ${imgCount} files`);
+        console.log(`  ${label} [4/4] Images done: ${imgCount} files`);
+      } else {
+        console.log(`  ${label} [4/4] Images skipped (--no-images)`);
       }
 
       updateLessonStatus(index, lesson.lessonId, {
