@@ -692,21 +692,6 @@ export default function BrowsePage() {
                 <RefreshCw className="size-3.5" />
               </Button>
 
-              {/* Seed all specs */}
-              <Button
-                variant="outline"
-                size="sm"
-                className="rounded-full"
-                onClick={handleSeedAll}
-                disabled={seeding}
-              >
-                {seeding ? (
-                  <Loader2 className="size-3.5 animate-spin mr-1" />
-                ) : (
-                  <FolderOpen className="size-3.5 mr-1" />
-                )}
-                {t('browse.loadSpecs')}
-              </Button>
             </div>
           </div>
 
@@ -745,21 +730,9 @@ export default function BrowsePage() {
               <h2 className="text-lg font-semibold text-muted-foreground">
                 {t('browse.noSubjects')}
               </h2>
-              <p className="text-sm text-muted-foreground/60 mt-1 mb-6">
+              <p className="text-sm text-muted-foreground/60 mt-1">
                 {t('browse.noSubjectsDesc')}
               </p>
-              <Button
-                onClick={handleSeedAll}
-                disabled={seeding}
-                className="rounded-full"
-              >
-                {seeding ? (
-                  <Loader2 className="size-4 animate-spin mr-2" />
-                ) : (
-                  <FolderOpen className="size-4 mr-2" />
-                )}
-                {t('browse.loadSpecs')}
-              </Button>
             </div>
           ) : (
             <>

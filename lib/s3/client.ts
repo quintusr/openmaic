@@ -26,20 +26,25 @@ export function createS3Client(
 /**
  * Check if S3 is available by attempting to resolve credentials.
  * Supports all AWS credential sources: env vars, SSO, IAM roles, profiles.
+ * Tries GetObject on subjects.json as a lightweight probe (works even
+ * without ListBucket permission).
  */
 export async function checkS3Available(): Promise<boolean> {
   try {
     const client = createS3Client();
-    // Try a lightweight operation to verify credentials work
+    // Try GetObject on a known key — works with minimal IAM permissions
     await client.send(
-      new ListObjectsV2Command({
+      new GetObjectCommand({
         Bucket: BUCKET,
-        Prefix: PREFIX + '/',
-        MaxKeys: 1,
+        Key: PREFIX + '/subjects.json',
       }),
     );
     return true;
-  } catch {
+  } catch (err: unknown) {
+    const name = err instanceof Error && 'name' in err ? err.name : '';
+    // NoSuchKey means credentials work but file doesn't exist yet — S3 is available
+    if (name === 'NoSuchKey') return true;
+    // AccessDenied or credential errors mean S3 is not available
     return false;
   }
 }

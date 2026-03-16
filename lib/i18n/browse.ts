@@ -31,7 +31,7 @@ export const browseEnUS = {
     subtitle: 'Browse and generate interactive lessons',
     backToHome: 'Back to Home',
     noSubjects: 'No courses loaded',
-    noSubjectsDesc: 'Load course specifications to see available courses and lessons.',
+    noSubjectsDesc: 'Run the generation script locally to create courses, then they will appear here.',
     loading: 'Loading...',
     courses: 'courses',
     lessons: 'lessons',
