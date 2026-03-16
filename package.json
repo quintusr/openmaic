@@ -11,10 +11,10 @@
     "lint": "eslint",
     "check": "prettier . --check",
     "format": "prettier . --write",
-    "generate:spec": "tsx --require tsconfig-paths/register scripts/generate-from-spec.ts",
-    "generate:ai": "tsx --require tsconfig-paths/register scripts/generate-from-spec.ts course-specs/conceptual/ai.json",
-    "generate:biology": "tsx --require tsconfig-paths/register scripts/generate-from-spec.ts course-specs/conceptual/biology.json",
-    "generate:physics": "tsx --require tsconfig-paths/register scripts/generate-from-spec.ts course-specs/conceptual/physics.json",
+    "generate:spec": "tsx --require ./scripts/load-env.cjs --require tsconfig-paths/register scripts/generate-from-spec.ts",
+    "generate:ai": "tsx --require ./scripts/load-env.cjs --require tsconfig-paths/register scripts/generate-from-spec.ts course-specs/conceptual/ai.json",
+    "generate:biology": "tsx --require ./scripts/load-env.cjs --require tsconfig-paths/register scripts/generate-from-spec.ts course-specs/conceptual/biology.json",
+    "generate:physics": "tsx --require ./scripts/load-env.cjs --require tsconfig-paths/register scripts/generate-from-spec.ts course-specs/conceptual/physics.json",
     "generate:all": "pnpm generate:ai --resume && pnpm generate:biology --resume && pnpm generate:physics --resume"
   },
   "dependencies": {

@@ -12,26 +12,8 @@
 //   --no-tts          Skip TTS audio generation
 //   --no-images       Skip image generation
 
-// Load .env.local (Next.js does this automatically, but tsx doesn't)
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
-
-try {
-  const envContent = readFileSync(resolve('.env.local'), 'utf-8');
-  for (const line of envContent.split('\n')) {
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith('#')) continue;
-    const eqIdx = trimmed.indexOf('=');
-    if (eqIdx < 0) continue;
-    const key = trimmed.slice(0, eqIdx).trim();
-    const value = trimmed.slice(eqIdx + 1).trim();
-    if (value && !process.env[key]) {
-      process.env[key] = value;
-    }
-  }
-} catch {
-  // .env.local not found — rely on environment variables
-}
 import { generateClassroom } from '@/lib/server/classroom-generation';
 import { flattenLessons, buildSubjectIndex, buildSubjectsManifest } from '@/lib/course-spec/parser';
 import { buildRequirement } from '@/lib/course-spec/requirement-builder';
@@ -190,27 +172,38 @@ async function generateImagesForLesson(
           { prompt: mg.prompt, width: dims.width, height: dims.height },
         );
 
-        if (result.url) {
-          // Download the image
+        let bytes: Uint8Array;
+
+        if (result.base64) {
+          // Inline base64 image (nano-banana / Gemini)
+          const binary = Buffer.from(result.base64, 'base64');
+          bytes = new Uint8Array(binary);
+        } else if (result.url) {
+          // URL-based image (seedream, qwen)
           const imgRes = await fetch(result.url);
-          if (imgRes.ok) {
-            const buf = await imgRes.arrayBuffer();
-            const bytes = new Uint8Array(buf);
-            const mediaId = `${classroomId}:${mg.elementId}`;
-            await storage.saveMedia(
-              subjectCode,
-              courseId,
-              lessonId,
-              mediaId,
-              bytes,
-              'image/png',
-            );
-            count++;
+          if (!imgRes.ok) {
+            console.error(`  ${label} Image ${mg.elementId}: download failed (${imgRes.status})`);
+            continue;
           }
+          const buf = await imgRes.arrayBuffer();
+          bytes = new Uint8Array(buf);
+        } else {
+          console.error(`  ${label} Image ${mg.elementId}: no image data returned`);
+          continue;
         }
+        const mediaId = `${classroomId}:${mg.elementId}`;
+        await storage.saveMedia(
+          subjectCode,
+          courseId,
+          lessonId,
+          mediaId,
+          bytes,
+          'image/png',
+        );
+        count++;
       } catch (err) {
         const msg = err instanceof Error ? err.message : String(err);
-        console.warn(`  ${label} Image failed for ${mg.elementId}: ${msg}`);
+        console.error(`  ${label} Image FAILED for ${mg.elementId}: ${msg}`);
       }
     }
   }
