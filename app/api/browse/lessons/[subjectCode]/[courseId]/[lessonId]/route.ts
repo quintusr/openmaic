@@ -1,6 +1,5 @@
-// ABOUTME: API route to fetch a generated lesson and make it available
-// to the classroom viewer. Downloads from S3/local, saves to local
-// classrooms directory so /classroom/[id] can load it.
+// ABOUTME: API route to fetch a generated lesson from S3/local storage.
+// Returns full classroom data + outlines for the client to load into IndexedDB.
 
 import type { NextRequest } from 'next/server';
 import { apiSuccess, apiError, API_ERROR_CODES } from '@/lib/server/api-response';
@@ -32,26 +31,27 @@ export async function GET(
       );
     }
 
-    // Persist to local classrooms directory so /classroom/[id] can load it
-    const baseUrl =
-      request.headers.get('x-forwarded-host')
-        ? `${request.headers.get('x-forwarded-proto') || 'http'}://${request.headers.get('x-forwarded-host')}`
-        : request.nextUrl.origin;
+    // Try to persist locally (works on local dev, silently skipped on Vercel)
+    try {
+      const baseUrl =
+        request.headers.get('x-forwarded-host')
+          ? `${request.headers.get('x-forwarded-proto') || 'http'}://${request.headers.get('x-forwarded-host')}`
+          : request.nextUrl.origin;
 
-    await persistClassroom(
-      {
-        id: lesson.id,
-        stage: lesson.stage,
-        scenes: lesson.scenes,
-      },
-      baseUrl,
-    );
+      await persistClassroom(
+        { id: lesson.id, stage: lesson.stage, scenes: lesson.scenes },
+        baseUrl,
+      );
+    } catch {
+      // Read-only filesystem (Vercel) — client will load from the returned data
+    }
 
-    // Return outlines if available (needed for client-side media generation)
     const outlines = (lesson as unknown as Record<string, unknown>).outlines ?? [];
 
     return apiSuccess({
       classroomId: lesson.id,
+      stage: lesson.stage,
+      scenes: lesson.scenes,
       scenesCount: lesson.scenes.length,
       createdAt: lesson.createdAt,
       outlines,

@@ -268,7 +268,7 @@ export default function BrowsePage() {
       setLoadingLesson(lesson.id);
 
       try {
-        // 1. Load lesson into server-side storage, get outlines for media gen
+        // 1. Fetch lesson data from S3 (includes stage, scenes, outlines)
         const res = await fetch(
           `/api/browse/lessons/${subjectCode}/${courseId}/${lesson.id}`,
         );
@@ -278,15 +278,9 @@ export default function BrowsePage() {
           return;
         }
 
-        // 2. Fetch full classroom data and persist to IndexedDB
-        const classroomRes = await fetch(
-          `/api/classroom?id=${encodeURIComponent(json.classroomId)}`,
-        );
-        const classroomJson = await classroomRes.json();
-
-        if (classroomJson.success && classroomJson.classroom) {
-          const { stage, scenes } = classroomJson.classroom;
-          const outlines = json.outlines || [];
+        {
+          const { stage, scenes, outlines: rawOutlines } = json;
+          const outlines = rawOutlines || [];
           const classroomId = json.classroomId;
 
           // Save full stage data to IndexedDB
