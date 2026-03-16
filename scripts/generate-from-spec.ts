@@ -12,8 +12,26 @@
 //   --no-tts          Skip TTS audio generation
 //   --no-images       Skip image generation
 
+// Load .env.local (Next.js does this automatically, but tsx doesn't)
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
+
+try {
+  const envContent = readFileSync(resolve('.env.local'), 'utf-8');
+  for (const line of envContent.split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const eqIdx = trimmed.indexOf('=');
+    if (eqIdx < 0) continue;
+    const key = trimmed.slice(0, eqIdx).trim();
+    const value = trimmed.slice(eqIdx + 1).trim();
+    if (value && !process.env[key]) {
+      process.env[key] = value;
+    }
+  }
+} catch {
+  // .env.local not found — rely on environment variables
+}
 import { generateClassroom } from '@/lib/server/classroom-generation';
 import { flattenLessons, buildSubjectIndex, buildSubjectsManifest } from '@/lib/course-spec/parser';
 import { buildRequirement } from '@/lib/course-spec/requirement-builder';
