@@ -22,7 +22,7 @@ import type { PersistedClassroomData } from '@/lib/server/classroom-storage';
 import { BrowseStorage } from '@/lib/s3/storage';
 import { generateTTS } from '@/lib/audio/tts-providers';
 import { resolveTTSApiKey, resolveTTSBaseUrl, resolveImageApiKey, resolveImageBaseUrl } from '@/lib/server/provider-config';
-import { generateImage, aspectRatioToDimensions } from '@/lib/media/image-providers';
+import { generateImage } from '@/lib/media/image-providers';
 import type { SceneOutline } from '@/lib/types/generation';
 
 // ---------------------------------------------------------------------------
@@ -163,13 +163,15 @@ async function generateImagesForLesson(
     for (const mg of outline.mediaGenerations || []) {
       if (mg.type !== 'image') continue;
       try {
-        const dims = mg.aspectRatio
-          ? aspectRatioToDimensions(mg.aspectRatio)
-          : { width: 1024, height: 576 };
-
+        // Pass aspectRatio as-is — let the provider handle dimensions
+        // (matches the browser-side orchestrator behavior)
         const result = await generateImage(
           { providerId, apiKey, baseUrl },
-          { prompt: mg.prompt, width: dims.width, height: dims.height },
+          {
+            prompt: mg.prompt,
+            aspectRatio: mg.aspectRatio,
+            style: mg.style,
+          },
         );
 
         let bytes: Uint8Array;
