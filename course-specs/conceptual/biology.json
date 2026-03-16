@@ -1,0 +1,1000 @@
+{
+  "updatedAt": "2026-03-05T10:24:00",
+  "curriculum": "Biology for High School Students",
+  "config": {
+    "subjectCode": "BIOLOGY",
+    "levelCefrMapping": {
+      "U1": "A1",
+      "U2": "A1",
+      "U3": "A2",
+      "U4": "A2"
+    },
+    "topics": ["SCHOOL"]
+  },
+  "levels": [
+    {
+      "level": "U1",
+      "name": "Cells & Life Processes",
+      "courses": [
+        {
+          "id": "biology-u1-1-what-makes-something-alive",
+          "course": 1,
+          "code": "U1.1",
+          "title": "What Makes Something Alive?",
+          "lessons": [
+            {
+              "id": "biology-u1-1-what-makes-something-alive-lesson-1",
+              "lesson": 1,
+              "title": "Is That Thing Alive? How to Tell the Difference",
+              "objective": "Students will identify and apply the seven characteristics of life to classify objects as living, once-living, or nonliving — because understanding what qualifies as 'alive' is the foundation of all biology and challenges assumptions we make every day.",
+              "essential_question": "A fire eats fuel, grows, responds to wind, and even 'reproduces' by spreading — so why isn't fire alive?",
+              "scenario": "You're hiking and you spot something on a log: it's orange, spongy, and slowly spreading across the bark. You poke it and it doesn't move. Your friend says it's alive, but you're not so sure — it doesn't breathe, it doesn't have eyes, and it definitely doesn't run away. How would you even begin to decide whether something is living or not?"
+            },
+            {
+              "id": "biology-u1-1-what-makes-something-alive-lesson-2",
+              "lesson": 2,
+              "title": "Why Do Living Things Need Energy? The Cost of Being Alive",
+              "objective": "Students will explain why all living organisms must continuously obtain and use energy to survive — connecting this to the everyday experiences of eating, breathing, and feeling tired, so they understand that life is an ongoing biological process, not a fixed state.",
+              "essential_question": "Your body burns calories even while you sleep — so what exactly is your body spending that energy on?",
+              "scenario": "You stayed up late studying, skipped breakfast, and by third period your stomach is growling and you can barely focus. Meanwhile, the oak tree outside the window hasn't eaten anything obvious in weeks — no lunch bag, no snacks — and it seems perfectly fine. Both of you are alive, so where does each of you get the energy to keep going, and why do you need it in the first place?"
+            },
+            {
+              "id": "biology-u1-1-what-makes-something-alive-lesson-3",
+              "lesson": 3,
+              "title": "Sweating, Shivering, and Panting: How Living Things Stay Balanced",
+              "objective": "Students will understand that living organisms constantly sense and respond to their environment to maintain internal stability — a process called homeostasis — and recognize that when this balance breaks down, illness or death can follow.",
+              "essential_question": "Your body temperature stays almost exactly 98.6°F whether you're in a snowstorm or a sauna — how does it possibly do that, and what happens if it can't?",
+              "scenario": "On a scorching summer afternoon, you and your dog are playing outside. You start sweating through your shirt, your face turns red, and your dog starts panting with its tongue hanging out. Neither of you chose to do those things — your bodies just did them automatically. Two completely different animals, doing completely different things, for exactly the same reason: to keep the inside of your bodies stable when the outside world keeps changing."
+            },
+            {
+              "id": "biology-u1-1-what-makes-something-alive-lesson-4",
+              "lesson": 4,
+              "title": "Where Does Life Come From? Cells as the Starting Point",
+              "objective": "Students will explain the cell theory — that all living things are made of cells, that cells are the basic unit of life, and that all cells come from existing cells — understanding why this discovery changed biology forever and sets the stage for everything else in this course.",
+              "essential_question": "How did scientists finally prove that life only comes from life — and why does that change everything we thought we knew about where your own cells came from?",
+              "scenario": "You leave a strawberry on the kitchen counter and forget about it. A week later it's covered in fuzzy gray mold. No one planted the mold, no one invited it in — it just appeared, seemingly out of nowhere. For thousands of years, people thought living things could spontaneously appear from nonliving matter, like maggots 'appearing' in rotting meat. How did scientists finally figure out that life only comes from life — and what does that have to do with every cell in your own body?"
+            }
+          ]
+        },
+        {
+          "id": "biology-u1-2-cell-structure-function",
+          "course": 2,
+          "code": "U1.2",
+          "title": "Cell Structure & Function",
+          "lessons": [
+            {
+              "id": "biology-u1-2-cell-structure-function-lesson-1",
+              "lesson": 1,
+              "title": "What's Actually Inside a Cell — And Why Should You Care?",
+              "objective": "Students will identify at least five major organelles found in eukaryotic cells and describe the specific function each one performs, demonstrating their understanding by labeling a cell diagram and explaining how each organelle contributes to keeping the cell alive.",
+              "essential_question": "If you could remove just one organelle from a living cell, which removal would be most lethal to the cell — and how could you predict that just by knowing what that organelle does?",
+              "scenario": "You're running late, so you grab your phone, shove it in your bag, and sprint out the door — and somehow, it all works: the screen lights up, the battery holds, the apps run, the signal connects. None of that happens by accident. Think of a factory floor: there's a control room issuing the instructions, assembly lines building the products, a power station keeping everything running, a shipping department sending materials where they need to go, and a cleanup crew clearing out waste. Every station has a specific location and a specific job, and if one shuts down, the whole operation suffers. A single cell in your fingertip is smaller than you can see, but it runs like that factory: specialized structures, each with a role, working together to keep just one tiny unit of life going — and today, we start mapping what those structures actually are."
+            },
+            {
+              "id": "biology-u1-2-cell-structure-function-lesson-2",
+              "lesson": 2,
+              "title": "Plant Cell vs. Animal Cell: Why Don't We Turn Green in the Sun?",
+              "objective": "Students will be able to compare and contrast plant and animal cells, identifying the structures unique to each — including the cell wall, chloroplasts, and large central vacuole — and explain why these differences directly reflect how each organism gets energy and maintains its shape.",
+              "essential_question": "Plants and animals are both made of cells — so why are they so incredibly different in what they can do and how they survive?",
+              "scenario": "Leave a houseplant in a sunny window and it grows toward the light, makes its own food, and stands upright without bones. Leave a person in a sunny window and none of that happens. Both you and the plant are made of cells, yet your cells look and behave very differently. What structural differences explain why a plant can feed itself from sunlight while you have to eat a sandwich?"
+            },
+            {
+              "id": "biology-u1-2-cell-structure-function-lesson-3",
+              "lesson": 3,
+              "title": "The Cell as a City: How Do Organelles Actually Work Together?",
+              "objective": "Students will understand how the major organelles of a eukaryotic cell — including the nucleus, ribosomes, endoplasmic reticulum, Golgi apparatus, mitochondria, and lysosomes — function as an integrated system rather than isolated parts, which explains how a cell manufactures, processes, ships, and recycles materials to survive.",
+              "essential_question": "If every organelle has its own job, what happens to the whole cell when just one part breaks down or stops working?",
+              "scenario": "Picture this: your body needs a specific protein — say, an antibody to fight off an infection. That protein doesn't just appear. First, the nucleus reads the right stretch of DNA and sends out an mRNA transcript with the exact instructions. Ribosomes on the rough endoplasmic reticulum decode those instructions and begin assembling the protein, amino acid by amino acid. The ER then folds and chemically modifies it, packaging it into a vesicle for transport. That vesicle travels to the Golgi apparatus, which inspects the protein, adds finishing touches like a molecular 'address tag,' and ships it out in another vesicle headed exactly where it needs to go. Meanwhile, mitochondria are powering every step of this process, and lysosomes stand ready to break down anything misfolded or no longer needed. Every organelle in that sequence depends on the ones before and after it — and today, we follow one protein through each of those steps to see what happens when even a single handoff breaks down."
+            },
+            {
+              "id": "biology-u1-2-cell-structure-function-lesson-4",
+              "lesson": 4,
+              "title": "Why Don't Cells Just Keep Growing Forever?",
+              "objective": "Students will understand the concept of surface area-to-volume ratio and explain why cells must stay small to function efficiently — connecting this physical constraint to why living things are made of many small cells rather than a few giant ones.",
+              "essential_question": "In nature, animals range from microscopic to enormous — so why are ALL of them, regardless of size, built from cells that stay microscopic? What limits how large a single cell can get?",
+              "scenario": "You're baking dinner rolls and you know that small rolls cook all the way through in 15 minutes, but a massive loaf takes over an hour — and the outside can burn before the inside is done. The same physics applies to cells: a cell that grows too large can't get nutrients to its center fast enough before the outside uses them all up. This one simple idea — surface area versus volume — turns out to explain why your body has tens of trillions of cells instead of just one enormous blob."
+            }
+          ]
+        },
+        {
+          "id": "biology-u1-3-cell-transport-homeostasis",
+          "course": 3,
+          "code": "U1.3",
+          "title": "Cell Transport & Homeostasis",
+          "lessons": [
+            {
+              "id": "biology-u1-3-cell-transport-homeostasis-lesson-1",
+              "lesson": 1,
+              "title": "Why Does a Raisin Plump Back Up in Water?",
+              "objective": "Students will understand osmosis — the movement of water across a cell membrane — and explain why cells shrink or swell depending on their environment. This matters because every cell in your body depends on water balance to survive, and disruptions can cause serious health problems.",
+              "essential_question": "If water is just water, why does it move in one direction and not another — and what does a raisin plumping up in water tell us about how your own cells survive?",
+              "scenario": "Drop a shriveled raisin into a cup of water and check back in an hour — it plumps back up almost like a grape again. The same thing happens in reverse if you salt a cucumber slice and watch it 'sweat' liquid onto the cutting board. Both of these kitchen observations are driven by the same invisible force that controls water movement in every living cell."
+            },
+            {
+              "id": "biology-u1-3-cell-transport-homeostasis-lesson-2",
+              "lesson": 2,
+              "title": "How Does Food Get Inside Your Cells Without Punching a Hole?",
+              "objective": "Students will understand diffusion and active transport — how cells move molecules across their membranes — and distinguish between processes that require energy and those that don't. This matters because without these transport systems, cells couldn't take in nutrients or get rid of waste, and life would be impossible.",
+              "essential_question": "Your cells are constantly importing food and exporting waste through a membrane so thin it's invisible — so how do they decide what gets in, what stays out, and what gets pumped against the current?",
+              "scenario": "Imagine spraying a little perfume at one end of a room — within minutes, people on the other side can smell it, even though no one carried it over. That spreading-out effect is diffusion, and your cells use the same principle to move oxygen and nutrients across their membranes. But sometimes cells need to move molecules against the flow — for example, the cells lining your intestines keep pumping glucose into your bloodstream even when blood glucose levels are already high, forcing molecules uphill the way a pump pushes water up to a rooftop tank. That kind of uphill hauling is active transport, and it costs the cell real energy to pull off."
+            },
+            {
+              "id": "biology-u1-3-cell-transport-homeostasis-lesson-3",
+              "lesson": 3,
+              "title": "From Cells to Systems: How the Body Maintains Homeostasis at Scale",
+              "objective": "Students will understand homeostasis — the process by which living things maintain a stable internal environment — and connect cell-level transport to whole-body regulation. This matters because almost every disease involves a failure of homeostasis somewhere in the body.",
+              "essential_question": "Your body temperature, blood sugar, and water levels are kept almost perfectly constant every minute of every day — what system is doing all that work, and what happens when it breaks down?",
+              "scenario": "You already know what homeostasis is — the body's ability to keep its internal environment stable. Now consider what that looks like at the clinical level. A patient is admitted to the hospital and hooked up to an IV drip. The fluid flowing into their vein has to be precisely balanced: too much salt and water is pulled out of cells, causing them to shrivel; too little salt and water floods in, causing cells to swell dangerously. Nurses monitor the drip constantly, adjusting concentrations based on lab results, because even a small error can cascade into a crisis. Meanwhile, across the hall, a patient with kidney disease is struggling — their kidneys can no longer fine-tune what stays in the blood and what gets excreted, so fluid and waste accumulate in ways the body cannot correct on its own. Both patients depend on the same principle: homeostasis operating not just at the cell level, but as a coordinated system of signals between organs. In this lesson, you'll examine how the body scales up the transport mechanisms you've already studied into a full-body regulatory network — and what happens when that network starts to fail."
+            },
+            {
+              "id": "biology-u1-3-cell-transport-homeostasis-lesson-4",
+              "lesson": 4,
+              "title": "What Happens to Your Cells When You're Dehydrated — or Overhydrated?",
+              "objective": "Students will apply their understanding of osmosis and homeostatic feedback loops to explain how dehydration and hyponatremia disrupt cellular water balance, and why drinking plain water alone cannot correct hyponatremia.",
+              "essential_question": "Athletes have died from drinking too much plain water during a race — how can something as essential as water actually kill you, and what does that tell us about how cells manage balance?",
+              "scenario": "When a marathon runner's blood sodium drops too low, the hypothalamus detects the imbalance and signals the pituitary gland to release ADH (antidiuretic hormone), which in turn instructs the kidneys to retain water — all in an attempt to restore equilibrium. But in hyponatremia, this feedback loop is overwhelmed: the runner has already flooded their system with plain water faster than the kidneys can compensate, and the corrective signals arrive too late. This breakdown reveals something deeper than osmosis alone — it shows how survival depends on a precisely coordinated communication system between the brain, hormones, and organs, all working in real time to keep cells from swelling or shrinking. When that system fails, even something as ordinary as drinking water can become life-threatening."
+            }
+          ]
+        },
+        {
+          "id": "biology-u1-4-photosynthesis",
+          "course": 4,
+          "code": "U1.4",
+          "title": "Photosynthesis",
+          "lessons": [
+            {
+              "id": "biology-u1-4-photosynthesis-lesson-1",
+              "lesson": 1,
+              "title": "Why Do Plants Need Sunlight to Survive?",
+              "objective": "Students will understand that plants make their own food using light energy, water, and carbon dioxide — recognizing that 'food' for a plant is fundamentally different from food for an animal, and that this process is the foundation of nearly all life on Earth.",
+              "essential_question": "How can something as intangible as light be converted into something as physical as food — and how did scientists even figure that out?",
+              "scenario": "In the 1770s, a scientist named Joseph Priestley noticed something strange: a mouse sealed inside a glass jar would eventually suffocate and die, but if he placed a living plant inside the jar alongside the mouse, the mouse survived much longer. Even more puzzling, the plant seemed to need light for this effect to work — a plant kept in the dark offered the mouse no benefit at all. Something about a living plant, activated by sunlight, was quietly changing the air inside the jar. What could a plant possibly be doing with light that would keep an animal alive?"
+            },
+            {
+              "id": "biology-u1-4-photosynthesis-lesson-2",
+              "lesson": 2,
+              "title": "What Goes In, What Comes Out: The Ingredients of Photosynthesis",
+              "objective": "Moving from 'why' to 'what exactly,' students will identify the specific raw materials (water and carbon dioxide) and products (glucose and oxygen) involved in photosynthesis — understanding that the oxygen in every breath they take was produced by this process, and building toward the full chemical equation that Lesson 1 left as an open question.",
+              "essential_question": "The air you breathe out has more carbon dioxide than the air you breathe in — so where does all the oxygen in Earth's atmosphere keep coming from?",
+              "scenario": "On a hot summer afternoon, you notice tiny bubbles forming on the leaves of aquatic plants in a fish tank sitting near a bright window. The bubbles seem to appear more when the tank is in direct sunlight and almost stop when you move it into the shade. Those bubbles are pure oxygen — and tracking them lets scientists actually measure photosynthesis happening in real time."
+            },
+            {
+              "id": "biology-u1-4-photosynthesis-lesson-3",
+              "lesson": 3,
+              "title": "Where Does Photosynthesis Actually Happen Inside a Leaf?",
+              "objective": "Students will describe how the internal structure of chloroplasts and the properties of chlorophyll pigments are specialized for capturing light energy, and explain why leaves appear green, why other pigments are present, and how the layered organization of leaf cells maximizes photosynthesis.",
+              "essential_question": "Why are almost all plants green? And why do leaves turn red, orange, and yellow in the fall — where do those colors come from?",
+              "scenario": "Imagine trying to collect rainwater using the smallest possible cup versus a giant bowl — the size and shape of your collector matters enormously. A single leaf is packed with millions of cells, each containing dozens of chloroplast-sized solar panels, arranged in flat, thin layers specifically to intercept as many photons of light as possible. When you hold a green leaf up to the sun and see it glow, you are literally looking at light being intercepted by billions of tiny solar collectors packed into plant cells."
+            },
+            {
+              "id": "biology-u1-4-photosynthesis-lesson-4",
+              "lesson": 4,
+              "title": "Can You Speed Up or Slow Down Photosynthesis?",
+              "objective": "Students will analyze how light intensity, carbon dioxide concentration, and temperature affect the rate of photosynthesis — understanding why these factors matter for farming, food security, and how ecosystems respond to climate change. Students will also recognize that the glucose plants produce through photosynthesis doesn't just sit idle — it serves as fuel for the plant's own cellular respiration, a complementary process that converts that stored energy into usable form, which will be explored in depth in the next course.",
+              "essential_question": "Farmers who grow crops in greenhouses can harvest food year-round even in winter — what are they actually controlling to make plants grow faster and bigger?",
+              "scenario": "A commercial greenhouse in January is pumping extra carbon dioxide into the air, keeping the temperature at a steady 75°F, and has grow lights blazing even at midnight. The tomato plants inside are producing fruit twice as fast as outdoor plants in summer. Each of these choices — the CO2, the warmth, the light — is deliberately pushing a specific variable in the photosynthesis equation, and understanding why explains how the world might feed billions of people in a changing climate."
+            }
+          ]
+        },
+        {
+          "id": "biology-u1-5-cellular-respiration",
+          "course": 5,
+          "code": "U1.5",
+          "title": "Cellular Respiration",
+          "lessons": [
+            {
+              "id": "biology-u1-5-cellular-respiration-lesson-1",
+              "lesson": 1,
+              "title": "Why Do You Breathe Harder When You Run?",
+              "objective": "Students will understand that cellular respiration is the process cells use to release energy from food, explaining why the body demands more oxygen during physical activity — connecting a familiar physical experience to chemistry happening inside every cell.",
+              "essential_question": "If food gives us energy, why do we also need oxygen — and what does breathing have to do with eating?",
+              "scenario": "In the summer of 1924, a British climber named George Mallory was photographed near the summit of Mount Everest, his chest heaving, his breath forming clouds of vapor in the freezing air. Observers noted that even the fittest climbers slowed dramatically above 26,000 feet — not because their muscles had weakened overnight, but because the air held so little oxygen that their cells simply could not keep up with the demand. Mallory had eaten well at base camp. He had plenty of stored fuel. Yet without sufficient oxygen reaching his muscle cells, that fuel could not be fully converted into usable energy, and his body was forced to send urgent signals — a pounding heart, burning lungs, desperate gasping — to pull in more of the one ingredient his cells were missing. His experience on that frozen ridge is an extreme version of something that happens inside your own muscle cells every time you sprint for a bus: the faster your muscles work, the faster they consume both glucose and oxygen, and the more urgently your body demands a fresh supply. What is actually happening inside those cells that makes oxygen so critically necessary — and what does it have to do with the food Mallory ate hours before?"
+            },
+            {
+              "id": "biology-u1-5-cellular-respiration-lesson-2",
+              "lesson": 2,
+              "title": "Breaking Down Sugar: How Do Cells Actually Get Energy From Food?",
+              "objective": "Students will trace how glucose is first broken down in the cytoplasm during glycolysis, then further processed in the mitochondria through the Krebs cycle and the electron transport chain, understanding how each stage dismantles food molecules step by step to produce ATP — the cell's usable energy currency.",
+              "essential_question": "Your body can't just 'plug in' a candy bar for energy — so how exactly does a molecule of sugar get converted into something your muscles can actually use?",
+              "scenario": "You just peeled a banana at lunch, and within hours, the sugar molecules from that single piece of fruit will be powering the muscles in your legs. But here's what's strange: your cells can't actually use sugar directly — they need to convert it into something else first. So what happens to that glucose molecule once it slips inside a muscle cell, and how does it end up fueling a movement you don't even have to think about?"
+            },
+            {
+              "id": "biology-u1-5-cellular-respiration-lesson-3",
+              "lesson": 3,
+              "title": "No Oxygen? No Problem — What Is Fermentation?",
+              "objective": "Students will explain fermentation as an alternative pathway for generating ATP without oxygen, connecting the biochemical process to everyday phenomena like rising bread, sore muscles after intense exercise, and the production of yogurt and kombucha — demonstrating that life has evolved reliable backup strategies for energy production when oxygen is unavailable.",
+              "essential_question": "If your muscle cells run out of oxygen during a hard workout, do they just stop working — or is there a backup plan, and what does that have to do with how bread rises?",
+              "scenario": "You're doing your hundredth sit-up in gym class and your abs start to burn with a deep, aching pain that isn't there during a casual walk. Meanwhile, in a bakery across town, a lump of bread dough is slowly puffing up as microscopic yeast cells pump out carbon dioxide bubbles. Your aching muscles and that rising dough actually share the same underlying challenge — both are the result of cells that have run low on oxygen and need a backup strategy to keep making ATP. But they don't solve that problem in exactly the same way: your muscle cells switch to lactic acid fermentation, producing lactate as a byproduct; the yeast perform alcoholic fermentation, releasing alcohol and carbon dioxide instead. It's worth noting that the burning sensation in your muscles isn't actually caused by lactate itself — it's primarily linked to the buildup of hydrogen ions that lowers the pH inside the muscle cell, making the environment more acidic. Different end products, but the same core solution — a way to keep energy production going when oxygen runs out."
+            },
+            {
+              "id": "biology-u1-5-cellular-respiration-lesson-4",
+              "lesson": 4,
+              "title": "Photosynthesis vs. Cellular Respiration: Are They Opposites?",
+              "objective": "Students will compare and contrast photosynthesis and cellular respiration, recognizing them as complementary processes that cycle matter and energy through living systems — understanding why both plants AND animals perform cellular respiration, and how these two processes connect the living world.",
+              "essential_question": "If photosynthesis and cellular respiration are essentially reverse reactions of each other, why doesn't life just cancel itself out — and what keeps the cycle going?",
+              "scenario": "Start with a single cell — a leaf cell sitting in the sunlight. Right now, that one cell is doing something remarkable: it is simultaneously running photosynthesis and cellular respiration. In the chloroplasts, it is capturing light energy to build glucose molecules and releasing oxygen as a byproduct. In the mitochondria of that same cell, it is breaking those glucose molecules back down through cellular respiration, releasing carbon dioxide and recapturing the energy as ATP. Two processes, one cell, happening at the same time — and the outputs of each one feed directly into the other. Now zoom out. Imagine a sealed glass ecosphere sitting on a shelf — inside, tiny aquatic plants, algae, and small shrimp have survived for years without anyone opening the lid or adding food. The same exchange happening inside a single cell is now playing out across an entire miniature ecosystem: photosynthesis builds sugars and releases oxygen; cellular respiration breaks those sugars down and releases carbon dioxide right back. Nothing enters, nothing leaves, yet life persists. What makes this possible at every scale — from a single mitochondrion to a sealed glass world — is that photosynthesis and cellular respiration are not opposites so much as partners, each one continuously feeding the other. In this lesson, you will map the inputs and outputs of both processes side by side, starting at the cellular level, to see exactly how they sustain each other — and where that cycle could break."
+            }
+          ]
+        },
+        {
+          "id": "biology-u1-6-cell-division-the-cell-cycle",
+          "course": 6,
+          "code": "U1.6",
+          "title": "Cell Division & the Cell Cycle",
+          "lessons": [
+            {
+              "id": "biology-u1-6-cell-division-the-cell-cycle-lesson-1",
+              "lesson": 1,
+              "title": "Why Does a Cut on Your Skin Disappear in a Few Days?",
+              "objective": "Students will understand that cell division is the process by which living things grow, repair damage, and replace worn-out cells — connecting the visible healing of a wound to the microscopic activity happening beneath the skin.",
+              "essential_question": "Your body replaces millions of cells every single day — so how does each new cell know exactly what to become, and how does your body keep that replacement process organized enough to heal a cut without growing the wrong kind of tissue?",
+              "scenario": "You scrape your knee on the pavement and within a week, the damaged skin is almost completely healed. No scar cream, no stitches — just time. What actually happened under that scab? Your body didn't just patch the hole; it manufactured brand-new cells to replace the ones that were destroyed, using a process that has been running nonstop since before you were born."
+            },
+            {
+              "id": "biology-u1-6-cell-division-the-cell-cycle-lesson-2",
+              "lesson": 2,
+              "title": "How Does One Cell Become Trillions? The Cell Cycle Explained",
+              "objective": "Students will understand the stages of the cell cycle — interphase, mitosis, and cytokinesis — and recognize that cell division is a carefully controlled, step-by-step process rather than a random event, which matters because disruptions to this cycle can lead to disease.",
+              "essential_question": "Cell division is happening millions of times per second inside your body right now — so what stops it from spiraling out of control, and what system decides when a cell should divide and when it should stop?",
+              "scenario": "Right now, as you read this sentence, your body is producing millions of new cells every single second — replacing worn-out skin, rebuilding blood, repairing tiny injuries you never even noticed. To put that in concrete terms, your body manufactures roughly 2 to 3 million red blood cells alone every second, and your body replaces an estimated 3.8 million cells per second across all tissues. That number is so large it's almost impossible to take seriously, yet somehow your body doesn't produce a chaotic jumble of random cells: it makes the right kind, in the right place, at the right time, almost without error. How does any system — biological or human-engineered — coordinate that scale of precise production, billions of times a day, across trillions of existing cells? The answer turns out to be a strict, step-by-step cycle that every dividing cell must follow, and understanding that cycle is the key to understanding both how you were built and what goes wrong when disease strikes."
+            },
+            {
+              "id": "biology-u1-6-cell-division-the-cell-cycle-lesson-3",
+              "lesson": 3,
+              "title": "Copying the Blueprint: How Does a Cell Divide Without Losing Its Instructions?",
+              "objective": "Students will understand how mitosis ensures that each new daughter cell receives an identical, complete copy of the parent cell's DNA — and why this genetic accuracy is essential for an organism to function properly.",
+              "essential_question": "Every cell in your body contains the same DNA — so when a cell divides, what exactly gets copied, and how does each new cell end up with a complete and accurate set of instructions?",
+              "scenario": "Picture this: you've spent a long afternoon at the beach without sunscreen. That night, your skin feels hot and tight. Beneath the surface, ultraviolet radiation has been slamming into the DNA inside your skin cells — and in some of those cells, the copying instructions got damaged. Most of the time, your body catches the mistake and corrects it before the cell divides. But when it doesn't, a cell with flawed DNA copies itself, then copies itself again, passing that same error down the line. Now scale that up: right now, your body is copying nearly two meters of tightly coiled DNA every single time one of its trillions of cells divides — and it does this billions of times each day. The process that keeps all those copies accurate is mitosis, and the stages it follows aren't just biological trivia. They're the reason a simple sunburn usually heals cleanly instead of becoming something far worse. Understanding exactly how a cell duplicates, organizes, and separates its DNA — and what happens when that process is disrupted — is the key to understanding everything from wound healing to why certain skin cancers develop years after that day at the beach."
+            },
+            {
+              "id": "biology-u1-6-cell-division-the-cell-cycle-lesson-4",
+              "lesson": 4,
+              "title": "When Cell Division Goes Wrong: What Is Cancer, Really?",
+              "objective": "Students will explain how cancer results from uncontrolled cell division caused by mutations that either disable genes that normally put the brakes on cell growth or abnormally activate genes that drive cell division forward — connecting their understanding of the cell cycle's checkpoints and controls to one of the most widely discussed diseases in the world.",
+              "essential_question": "If your own cells are what cause cancer, why is it so hard for your body to stop it?",
+              "scenario": "You've probably heard that someone's parent, grandparent, or even a young person got diagnosed with cancer — but most people don't actually know what cancer is beyond the word itself. A tumor isn't an invader from outside your body; it's a mass of your own cells that stopped following the normal rules of the cell cycle and started dividing out of control. Understanding those rules — the checkpoints, the signals, the brakes — explains both how cancer starts and why researchers are working so hard to find ways to stop it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "U2",
+      "name": "Genetics & Heredity",
+      "courses": [
+        {
+          "id": "biology-u2-1-dna-structure-replication",
+          "course": 1,
+          "code": "U2.1",
+          "title": "DNA Structure & Replication",
+          "lessons": [
+            {
+              "id": "biology-u2-1-dna-structure-replication-lesson-1",
+              "lesson": 1,
+              "title": "Why Do You Look Like Your Parents — But Not Exactly?",
+              "objective": "Students will understand that traits are passed from parent to child through a physical molecule called DNA, and that understanding DNA explains both family resemblance and individual uniqueness.",
+              "essential_question": "If you and your sibling have the same parents, why don't you look identical — and what exactly is being passed down when traits are inherited?",
+              "scenario": "You've probably noticed that you share some features with your parents — maybe your mom's nose or your dad's eye color — but you're not a perfect copy of either of them. Your cousin looks nothing like her brother, even though they grew up in the same house with the same parents. Something physical must be carrying these instructions from one generation to the next, and that something is DNA — a molecule so small it fits inside every single cell in your body."
+            },
+            {
+              "id": "biology-u2-1-dna-structure-replication-lesson-2",
+              "lesson": 2,
+              "title": "What Does DNA Actually Look Like — And Why Does Its Shape Matter?",
+              "objective": "Students will understand the double helix structure of DNA, including its sugar-phosphate backbone and complementary base pairs, and explain how this structure makes it possible to store and copy genetic information reliably.",
+              "essential_question": "How can a molecule thin enough to fit inside a cell nucleus contain enough information to build an entire human being — and why does its twisted ladder shape make that possible?",
+              "scenario": "Imagine trying to store an instruction manual long enough to fill a million pages inside something the size of a grain of sand. That's essentially what your cells do with DNA. In the 1950s, scientist Rosalind Franklin used X-ray crystallography to produce Photo 51 — a stunning image that revealed the shape of DNA — but Watson and Crick used her data without her knowledge or full consent to build their famous double helix model, receiving the Nobel Prize while Franklin's contribution went largely uncredited during her lifetime. This story is a reminder that science is a human endeavor, and that the twisted ladder structure at the heart of genetics came at a cost of scientific integrity that still matters today."
+            },
+            {
+              "id": "biology-u2-1-dna-structure-replication-lesson-3",
+              "lesson": 3,
+              "title": "How Does a Cell Copy Six Feet of DNA Without Making a Single Mistake?",
+              "objective": "Students will understand the process of DNA replication — including the roles of key enzymes like helicase and DNA polymerase — and appreciate why accurate copying is critical to passing correct genetic information to new cells.",
+              "essential_question": "Your body makes billions of new cells every day, and each one needs a perfect copy of your DNA — so how does a cell unzip, copy, and recheck 3 billion base pairs fast enough to keep you alive?",
+              "scenario": "Every time you get a cut, your body has to grow new skin cells to heal it — and every one of those new cells needs its own complete copy of your DNA. That means copying roughly 3 billion base pairs of genetic code, in the right order, without errors that could cause problems down the line. Your cells rely on a team of specialized enzymes to make this happen: helicase unzips the DNA ladder by breaking the bonds between base pairs, and DNA polymerase reads each exposed strand like a template, snapping new complementary bases into place one by one. It's like photocopying a 3-billion-letter document with a dedicated machine for splitting the pages and another for reading and reproducing every letter — and getting it almost perfectly right, every single time."
+            },
+            {
+              "id": "biology-u2-1-dna-structure-replication-lesson-4",
+              "lesson": 4,
+              "title": "What Happens When DNA Replication Goes Wrong?",
+              "objective": "Students will understand what mutations are, how they occur when DNA is copied or damaged, and why some mutations are harmless while others can lead to serious consequences — connecting molecular mistakes to real health outcomes like cancer.",
+              "essential_question": "If your cells copy DNA billions of times throughout your life, and even tiny errors can change how your body works, why aren't mutations always dangerous — and when do they become a problem?",
+              "scenario": "You've probably heard that too much sun exposure can cause skin cancer — but do you know exactly why? Ultraviolet radiation from the sun can physically damage the DNA inside your skin cells, causing the wrong bases to pair up when that DNA is copied. Most of the time, your cells catch and fix these errors before they matter. But occasionally a mistake slips through in a gene that controls cell growth, and that single cell starts dividing uncontrollably — which is how a tumor begins. Understanding mutations at the DNA level is what allows doctors to target cancer treatments and what makes sunscreen genuinely life-saving."
+            }
+          ]
+        },
+        {
+          "id": "biology-u2-2-from-dna-to-protein",
+          "course": 2,
+          "code": "U2.2",
+          "title": "From DNA to Protein",
+          "lessons": [
+            {
+              "id": "biology-u2-2-from-dna-to-protein-lesson-1",
+              "lesson": 1,
+              "title": "How Does DNA Actually Tell Your Body What to Do?",
+              "objective": "Students will understand that genes are instructions written in DNA that get 'read' by the cell to build proteins — and that proteins are what actually do the work in your body, from determining eye color to fighting disease.",
+              "essential_question": "If DNA just sits inside the nucleus of every cell, how does it actually control what your body looks like and how it works?",
+              "scenario": "You've probably heard that you inherited your brown eyes from your dad, but have you ever wondered what that actually means at the cellular level? Your DNA doesn't just magically make your eyes brown — it contains a gene that works like a recipe, and your cells follow that recipe to build a specific protein that produces brown pigment. The remarkable part: that same DNA is sitting in your skin cells, your heart cells, and your nerve cells too, but they don't all make eye-color pigment. How does the cell know which recipes to follow? That's a question about gene expression — the process by which cells switch specific genes on or off — and it's something we'll explore in a later unit. For now, this lesson focuses on how any gene gets read in the first place: from DNA instructions to a finished protein that actually does something in your body."
+            },
+            {
+              "id": "biology-u2-2-from-dna-to-protein-lesson-2",
+              "lesson": 2,
+              "title": "Transcription: How Does Your Cell Copy Its Own Instructions?",
+              "objective": "Students will understand the process of transcription — how an enzyme called RNA polymerase unwinds the DNA double helix and copies a segment of it into messenger RNA — and why this step is essential for getting genetic information out of the nucleus and into the rest of the cell where proteins are built.",
+              "essential_question": "If your DNA is so precious that it never leaves the nucleus, how does the rest of the cell ever get access to its instructions?",
+              "scenario": "Imagine your school has one original copy of the master schedule locked in the principal's office — no one is allowed to take it out. So instead, a secretary makes a photocopy that teachers can carry around and use. Your cell does something almost identical: DNA is too important to send out of the nucleus, so the cell makes a temporary working copy called messenger RNA (mRNA). This mRNA travels out of the nucleus carrying the genetic instructions needed to build a specific protein — like a photocopy that can go where the original cannot."
+            },
+            {
+              "id": "biology-u2-2-from-dna-to-protein-lesson-3",
+              "lesson": 3,
+              "title": "Translation: How Does a Cell Turn a Message Into an Actual Protein?",
+              "objective": "Students will understand how ribosomes read the mRNA sequence in three-letter units called codons, how transfer RNA (tRNA) molecules match each codon to its corresponding amino acid, and how this process assembles amino acids into a protein — connecting translation to visible traits like hair texture, skin color, and lactose intolerance, and showing that proteins are the link between genes and physical characteristics.",
+              "essential_question": "If ribosomes are just reading a molecular message, how can that reading process determine something as real and physical as whether you spend the rest of your life avoiding ice cream — and what has to go wrong in translation for a working protein to become a broken one?",
+              "scenario": "Have you ever noticed that some people can drink milk their whole lives while others get a stomachache every time? That difference comes down to a single protein called lactase — people whose genes produce enough of it can digest milk sugar, and people whose genes don't produce it cannot. The gene for lactase is written in DNA, copied into mRNA, and then 'translated' by a ribosome into the actual protein that does the digestive work. This process — called translation — is how every trait-controlling protein in your body gets built, one amino acid at a time."
+            },
+            {
+              "id": "biology-u2-2-from-dna-to-protein-lesson-4",
+              "lesson": 4,
+              "title": "When the Instructions Have a Typo: What Happens When DNA Changes?",
+              "objective": "Students will explain how a mutation in a DNA sequence changes the mRNA codon produced during transcription and, as a result, alters or eliminates the corresponding protein's function — connecting the molecular change directly to visible or physiological traits. The focus of this lesson is on the protein-level consequences of mutations: how a single amino acid substitution can cause a protein to fold incorrectly, lose its function, or gain a new one, as illustrated by conditions like sickle cell disease.",
+              "essential_question": "If a single letter change in a text can completely change its meaning, what happens when a single 'letter' in your DNA is wrong — and does it always matter?",
+              "scenario": "Sickle cell disease affects millions of people worldwide, and it's caused by just one tiny change in the DNA instructions for a protein called hemoglobin — the protein in your red blood cells that carries oxygen. That single 'typo' in the DNA causes the mRNA sequence to code for the wrong amino acid during translation, which causes the hemoglobin protein to fold into the wrong shape. That misfolded protein causes red blood cells to deform into a crescent shape that clogs blood vessels and causes intense pain. Remarkably, that same mutation also offers some protection against malaria, which is why it became common in populations from regions where malaria is widespread. One DNA change — one altered protein — multiple, complex effects on the body."
+            }
+          ]
+        },
+        {
+          "id": "biology-u2-3-mendelian-genetics",
+          "course": 3,
+          "code": "U2.3",
+          "title": "Mendelian Genetics",
+          "lessons": [
+            {
+              "id": "biology-u2-3-mendelian-genetics-lesson-1",
+              "lesson": 1,
+              "title": "Same Genes, Different Faces: What's the Difference Between Genotype and Phenotype?",
+              "objective": "Students will understand the difference between genotype (the genetic instructions you carry) and phenotype (the traits you actually show), and explain why two people can carry the same gene but look completely different — which matters for understanding inheritance, disease risk, and why siblings can look so unlike each other.",
+              "essential_question": "If you inherit half your DNA from each parent, why might you end up looking more like your grandmother than either of your parents?",
+              "scenario": "Mia and her lab partner are growing two tomato plants that look completely identical — same height, same leaf shape, same fruit color. But when they harvest the seeds and plant the next generation, one plant produces all red tomatoes while the other produces a surprising mix of red and yellow. How can two plants that look exactly the same produce such different offspring? The answer lies in understanding that what an organism looks like and what genetic instructions it's actually carrying can be two very different things. This principle doesn't just apply to tomatoes — it's the reason a person can carry a recessive allele for a condition like sickle cell disease without ever showing any symptoms themselves, yet still pass that allele on to their children. Understanding the difference between the instructions an organism carries and the traits it actually displays is essential to understanding inheritance, disease risk, and why siblings can look so unlike each other."
+            },
+            {
+              "id": "biology-u2-3-mendelian-genetics-lesson-2",
+              "lesson": 2,
+              "title": "Gregor Mendel's Peas — The Experiment That Changed How We See Family",
+              "objective": "Students will understand how Mendel's experiments with pea plants revealed that traits are passed down in predictable patterns through dominant and recessive alleles, and why this discovery — made before anyone knew DNA existed — still forms the foundation of modern genetics. Note: This lesson also introduces meiosis as the biological mechanism underlying Mendel's rules — specifically how homologous chromosomes separate during gamete formation, generating the genetic variation that makes inheritance possible. Understanding meiosis here prepares students to apply these concepts mathematically with Punnett squares in L3 and through pedigree analysis in L4.",
+              "essential_question": "How did a monk growing peas in a garden figure out rules about heredity that the scientific community ignored for 35 years — and why do those rules still matter today?",
+              "scenario": "In the 1800s, most people assumed that traits from parents simply 'blended' together like mixing paint — so a red flower crossed with a white flower should make pink flowers forever. Gregor Mendel noticed something strange: when he crossed certain pea plants, a trait could completely disappear in one generation and then reappear unchanged in the next. His careful record-keeping across thousands of plants revealed that heredity follows mathematical rules, and his results were so ahead of their time that the scientific community ignored them for 35 years."
+            },
+            {
+              "id": "biology-u2-3-mendelian-genetics-lesson-3",
+              "lesson": 3,
+              "title": "Can You Predict a Puppy's Coat Color Before It's Born?",
+              "objective": "Students will use Punnett squares to predict the probability of offspring inheriting specific traits from their parents, understanding that genetics is about probability — not certainty — which has real applications in breeding animals, predicting genetic disease risk, and understanding why outcomes vary even within the same family.",
+              "essential_question": "If genetics follows predictable rules, why can't we guarantee exactly what a child — or a puppy — will look like?",
+              "scenario": "Imagine a rabbit breeder who crosses two brown rabbits and is surprised when some of the offspring are white. How is that possible if neither parent was white? To understand this, we'll use a straightforward single-gene example — rabbit coat color — where one allele for brown coat color is dominant over a recessive allele for white. A Punnett square can map out the exact probability that any given offspring inherits a particular coat color — but it can't guarantee which individual rabbit gets which outcome. This same probability-based thinking is used by genetic counselors who help families understand the likelihood their child could inherit a condition like Tay-Sachs disease, making the Punnett square one of the most powerful simple tools in medicine. (You may be wondering about more complex coat color patterns, like why a single Labrador litter can have black, chocolate, and yellow puppies — that puzzle involves more than one gene interacting, a concept we'll tackle in a later unit.)"
+            },
+            {
+              "id": "biology-u2-3-mendelian-genetics-lesson-4",
+              "lesson": 4,
+              "title": "Reading the Family Map: How Pedigree Charts Reveal Hidden Inheritance",
+              "objective": "Students will apply Mendelian inheritance patterns to trace traits through multiple generations using family pedigrees, understanding how geneticists use inheritance patterns to determine whether a trait is dominant or recessive, identify carriers, and connect individuals across generations — skills used in diagnosing inherited diseases and advising families about genetic risk.",
+              "essential_question": "If several family members across multiple generations share a rare condition while others show no symptoms at all, how can a geneticist use that pattern to figure out whether the condition is dominant or recessive — and predict who else might be at risk?",
+              "scenario": "A genetic counselor is working with a family that has a history of a rare inherited condition — several members across different generations have been affected, while others show no symptoms at all. By carefully recording who is affected and who is not, and mapping these individuals onto a pedigree chart spanning three generations, the counselor can determine whether the condition is dominant or recessive, identify which unaffected family members must be carriers, and calculate the probability that younger family members could develop or pass on the condition. This kind of pedigree analysis is used every day by genetic counselors advising families about conditions like sickle cell disease — helping them understand who is at risk before symptoms ever appear, and empowering families to make informed decisions about their health."
+            }
+          ]
+        },
+        {
+          "id": "biology-u2-4-complex-inheritance-patterns",
+          "course": 4,
+          "code": "U2.4",
+          "title": "Complex Inheritance Patterns",
+          "lessons": [
+            {
+              "id": "biology-u2-4-complex-inheritance-patterns-lesson-1",
+              "lesson": 1,
+              "title": "When Neither Gene Wins: Incomplete Dominance and Codominance",
+              "objective": "Students will understand that many traits are controlled by incomplete dominance and codominance, meaning neither allele fully 'wins' — and this explains why offspring can look like a blend of parents or show both traits at once. This matters because it breaks the myth that genes work like simple on/off switches.",
+              "essential_question": "Mendel told us one allele wins and one loses — so why do some offspring look like neither parent, and what does that force us to rethink about how genes work?",
+              "scenario": "You've probably noticed that some kids at school have a hair texture that doesn't quite match either of their parents — not straight, not curly, but somewhere in between. A similar thing happens with certain flowers: cross a red snapdragon with a white one and you don't get red or white offspring — you get pink. This isn't blending in a permanent way, though; the original alleles are still there, just expressing themselves differently than Mendel's peas would suggest."
+            },
+            {
+              "id": "biology-u2-4-complex-inheritance-patterns-lesson-2",
+              "lesson": 2,
+              "title": "Why Does Blood Type Follow Different Rules Than Eye Color?",
+              "objective": "Students will understand that multiple alleles (more than two versions of a gene) exist in a population and can produce a wider range of phenotypes than simple dominant/recessive patterns — using human blood type as the primary example. Notably, the AB blood type is a direct application of codominance introduced in Lesson 1: both the A and B alleles are fully expressed together, producing a distinct phenotype rather than a blend or a single dominant outcome. This matters because blood type compatibility is literally a matter of life and death in transfusions and organ transplants.",
+              "essential_question": "If you can only inherit one allele from each parent, how does the human population end up with four different blood types — and why can a transfusion of the wrong blood type kill you?",
+              "scenario": "Imagine a car accident victim rushed to the emergency room who needs an immediate blood transfusion. The doctor must know the patient's blood type before choosing which blood to use — giving the wrong type could trigger a fatal immune reaction. Blood type is determined by a single gene, yet that one gene has three main alleles (A, B, and O) that combine to produce four distinct blood types. For our purposes, we'll focus on these three main alleles and the four ABO blood types they produce — though in reality, the ABO gene has many more variants in the human population, and blood type compatibility in transfusions also involves other factors like the Rh system. Even so, this simplified model is a perfect real-world example of how one gene can be far more complex than a simple heads-or-tails coin flip."
+            },
+            {
+              "id": "biology-u2-4-complex-inheritance-patterns-lesson-3",
+              "lesson": 3,
+              "title": "Why Is It So Hard to Predict Height or Skin Color from Your Parents' Genes?",
+              "objective": "Students will understand that polygenic traits are controlled by multiple genes working together, producing a continuous range of phenotypes rather than distinct categories — and that the environment also plays a major role in shaping these traits. This matters because it explains why so many of the traits we care most about (height, skin tone, intelligence, athletic ability) don't follow simple Mendelian rules.",
+              "essential_question": "If two parents are both medium height, how can they have a child who is shorter than both of them — or taller than both of them — and what does that reveal about how most human traits are actually inherited?",
+              "scenario": "Look around your classroom and notice that student heights don't fall into neat categories of 'tall' or 'short' — instead, there's a smooth spectrum from the shortest to the tallest person in the room. That gradient is a hallmark of polygenic inheritance, where many genes each contribute a small nudge to the final trait. Identical twins raised apart sometimes end up different heights, reminding us that environment — nutrition, sleep, illness — interacts with those genes to shape the final outcome. Skin color works the same way, controlled by many genes — researchers have identified over 150 genetic variants associated with skin color, with studies continuing to find more, making it an active and rapidly evolving area of research — which is why two parents with medium skin tone can have children ranging from very light to very dark."
+            },
+            {
+              "id": "biology-u2-4-complex-inheritance-patterns-lesson-4",
+              "lesson": 4,
+              "title": "Why Do Boys Get Colorblindness More Than Girls?",
+              "objective": "Students will understand that sex-linked traits are carried on the X or Y chromosome and therefore follow different inheritance patterns in males and females — explaining why certain conditions like colorblindness and hemophilia appear far more often in males. This matters because it reveals how a person's biological sex chromosomes directly influence which genetic conditions they are at risk for.",
+              "essential_question": "If a mother can 'carry' a trait like colorblindness without being colorblind herself, what does that mean about the difference between having a gene and actually showing it — and why are males so much more vulnerable to these conditions?",
+              "scenario": "About 1 in 12 males has some form of red-green colorblindness, but only 1 in 200 females does — a striking difference for a trait passed down through the same families. The reason comes down to chromosomes: males have one X and one Y, while females have two X chromosomes. A female can carry a recessive colorblindness allele on one X and have a normal allele on her other X to compensate, so she sees color just fine — but she can pass the colorblind allele to her sons, who have no second X to save them. This is why colorblindness seems to skip generations and show up more in boys, a pattern that puzzled scientists long before anyone knew what a chromosome was."
+            }
+          ]
+        },
+        {
+          "id": "biology-u2-5-human-genetics-genetic-disorders",
+          "course": 5,
+          "code": "U2.5",
+          "title": "Human Genetics & Genetic Disorders",
+          "lessons": [
+            {
+              "id": "biology-u2-5-human-genetics-genetic-disorders-lesson-1",
+              "lesson": 1,
+              "title": "Why Do Humans Have 46 Chromosomes — and What Happens When the Count Is Off?",
+              "objective": "Students will understand how human chromosomes are organized into pairs and how errors in chromosome number — specifically nondisjunction during meiosis, when chromosomes fail to separate correctly into egg or sperm cells — can lead to conditions like Down syndrome — because understanding both the mechanism of nondisjunction and its consequences helps explain why some genetic disorders arise not from a single faulty gene, but from having too many or too few chromosomes.",
+              "essential_question": "Chromosome number errors like the one that causes Down syndrome happen more often as mothers age — does that mean Down syndrome is preventable, and if so, should we try to prevent it?",
+              "scenario": "A pregnant woman in her late 30s receives a phone call from her doctor: a prenatal screening test came back with unusual results suggesting the baby may have an extra copy of chromosome 21. She has never heard of a chromosome count error before and assumed genetic disorders only came from inheriting 'bad genes' from a parent. Her doctor explains that this type of change — called a chromosomal abnormality — happens during the formation of eggs or sperm and has nothing to do with anything she did wrong."
+            },
+            {
+              "id": "biology-u2-5-human-genetics-genetic-disorders-lesson-2",
+              "lesson": 2,
+              "title": "Can a Single Spelling Mistake in DNA Change Your Entire Life?",
+              "objective": "Students will understand how a mutation in a single gene can disrupt protein function and cause serious genetic disorders like cystic fibrosis — and connect these concepts to other conditions like sickle cell disease, already explored in U2.2 — because recognizing the connection between DNA sequence, protein shape, and body function reveals how profoundly a tiny molecular error can affect an entire organism.",
+              "essential_question": "If your body makes thousands of proteins every second, how can changing just one amino acid in one protein cause a lifelong disease?",
+              "scenario": "Maya is a 16-year-old who has dealt with persistent lung infections and digestive problems her whole life, and after years of treatments her doctors confirm she has cystic fibrosis — caused by a mutation in a single gene that codes for a protein responsible for moving salt and water across cell membranes. Without a properly shaped CFTR protein, thick mucus builds up in her lungs and digestive tract, turning ordinary breathing into a daily struggle. Her parents are both healthy carriers who never showed a single symptom, yet each unknowingly passed on one flawed copy of the gene. A single molecular typo — out of three billion letters of DNA — has shaped every medical decision of Maya's life."
+            },
+            {
+              "id": "biology-u2-5-human-genetics-genetic-disorders-lesson-3",
+              "lesson": 3,
+              "title": "Why Do Some Disorders Skip Generations — and Why Do More Boys Have Them?",
+              "objective": "Building on the basic pedigree-reading skills you developed in U2.3, students will now apply that foundation to more complex, multi-generational pedigrees in clinical contexts — specifically to analyze sex-linked and autosomal recessive inheritance patterns, identify carriers across generations, and explain why certain disorders appear to skip generations or affect males more often than females. This progression from reading simple pedigrees to interpreting inheritance in real genetic disorders allows families and medical professionals to assess genetic risk with greater accuracy and confidence.",
+              "essential_question": "If a grandmother and her grandson both have color blindness but the mother between them does not, where did the trait 'go' for one generation — and why didn't it disappear for good?",
+              "scenario": "Priya notices that her grandfather, her uncle, and now her younger brother have all been diagnosed with hemophilia — a condition where the blood cannot clot properly after an injury — yet no women in her family seem to be affected in the same way. Her biology teacher explains that hemophilia follows an X-linked recessive inheritance pattern, which is why the disorder appears to 'travel through' women without causing symptoms in them. Priya suddenly wonders whether she might silently be carrying the allele herself — and what that could mean if she one day has children who inherit the X chromosome from her. She grabs a pedigree chart and starts mapping out four generations of her family tree, tracing how a single recessive allele on the X chromosome can skip a generation of females before reappearing in a son."
+            },
+            {
+              "id": "biology-u2-5-human-genetics-genetic-disorders-lesson-4",
+              "lesson": 4,
+              "title": "Should You Want to Know Your Genetic Future?",
+              "objective": "Students will understand how modern genetic testing can identify mutations linked to inherited disorders and evaluate the ethical, emotional, and social implications of having access to that information — because as genetic testing becomes faster, cheaper, and more widely available, every person will face real decisions about whether and how to use it.",
+              "essential_question": "Once a genetic test result exists, should it belong only to you — or do insurers, employers, and family members have a legitimate claim to that information too?",
+              "scenario": "Seventeen-year-old Camille just learned that her mother tested positive for the BRCA1 gene mutation, which significantly raises the risk of breast and ovarian cancer. A genetic counselor tells the family that Camille has a 50% chance of having inherited the same mutation and that she could get tested right now if she chooses. Camille feels torn — knowing could help her take preventive action, but it could also mean years of anxiety over something that might never happen. She wonders whether her future employer, her insurance company, or even her future partner might someday find out her results and treat her differently."
+            }
+          ]
+        },
+        {
+          "id": "biology-u2-6-biotechnology-genetic-engineering",
+          "course": 6,
+          "code": "U2.6",
+          "title": "Biotechnology & Genetic Engineering",
+          "lessons": [
+            {
+              "id": "biology-u2-6-biotechnology-genetic-engineering-lesson-1",
+              "lesson": 1,
+              "title": "Can Scientists Rewrite the Code of Life?",
+              "objective": "Students will understand how scientists use tools like restriction enzymes and CRISPR to cut and edit DNA, and why the ability to precisely alter genetic code has transformed medicine, agriculture, and forensic science.",
+              "essential_question": "If you discovered you carried a gene that would likely cause a serious disease later in life, would you want scientists to edit it out — and what could go wrong if they tried?",
+              "scenario": "Imagine being a teenager who gradually loses your vision — not from an accident, but because a single inherited mutation is slowly destroying the light-sensing cells in your retina. That's the reality for people born with Leber congenital amaurosis (LCA), a rare genetic disorder caused by a faulty version of a gene called RPE65. For most of human history, that diagnosis meant inevitable blindness with no remedy. Then, in the 2010s, researchers at the University of Pennsylvania used a virus as a molecular delivery truck to shuttle working copies of the RPE65 gene directly into patients' retinal cells — and many patients began to see improvement almost immediately. More recently, scientists have begun asking whether CRISPR could do the same job even more precisely, by finding the broken gene inside a living cell and correcting the sequence in place rather than just adding a backup copy. That raises a question worth sitting with: how do scientists actually locate and manipulate one specific gene buried somewhere in 3 billion base pairs of DNA? The answer begins with a set of molecular tools that function like a biological find-and-cut system — and understanding them is the key to understanding nearly all of modern genetic medicine."
+            },
+            {
+              "id": "biology-u2-6-biotechnology-genetic-engineering-lesson-2",
+              "lesson": 2,
+              "title": "How Do We Copy DNA — and Why Does It Matter?",
+              "objective": "Students will understand how the Polymerase Chain Reaction (PCR) technique amplifies tiny samples of DNA into millions of copies, and why this process is the backbone of genetic testing, COVID tests, and criminal investigations.",
+              "essential_question": "A single hair left at a crime scene contains almost no DNA — so how can investigators use it to identify a suspect with near-perfect accuracy?",
+              "scenario": "When investigators found a single eyelash at a burglary scene, there wasn't nearly enough DNA to analyze — or so it seemed. Using a technique called PCR, forensic scientists copied that microscopic sample over and over until they had enough DNA to build a complete genetic profile. That profile was then compared against a database of known profiles, and the statistical analysis indicated a match with a suspect — contributing to a conviction alongside other corroborating evidence gathered by investigators. It's worth noting that forensic scientists are careful to express DNA matches as probabilities, not certainties, and courts require additional evidence beyond a database match before reaching a verdict. This caution is an example of good scientific thinking in action. The same PCR technology was used in millions of COVID-19 tests to detect viral genetic material from a simple nasal swab — making it one of the most consequential laboratory techniques ever developed."
+            },
+            {
+              "id": "biology-u2-6-biotechnology-genetic-engineering-lesson-3",
+              "lesson": 3,
+              "title": "Could Your Food Be Genetically Modified — and Is That Bad?",
+              "objective": "Students will understand how genetically modified organisms (GMOs) are created by inserting genes from one species into another, evaluate the real scientific evidence around their safety and environmental impact, and distinguish fact from fear in the ongoing public debate.",
+              "essential_question": "Most of the corn and soybeans in your grocery store have been genetically modified — engineered with genes from other organisms to resist pests or survive herbicides. Does knowing that change how you feel about eating them? And does the scientific evidence actually support the widespread public fear around GMO foods, or is the debate being driven more by emotion than by data?",
+              "scenario": "Walk down any grocery store aisle and you're almost certainly looking at genetically modified food — the vast majority of corn and soybeans grown in the U.S. have been engineered to resist pests or survive herbicides, and current figures from the USDA show just how dominant these crops have become. Scientists achieved this by taking a gene from a soil bacterium that produces a natural insect-killing protein and inserting it directly into the plant's DNA. Critics worry about unknown risks, but supporters argue GMOs could help feed a growing planet while using fewer pesticides — so who's right?"
+            },
+            {
+              "id": "biology-u2-6-biotechnology-genetic-engineering-lesson-4",
+              "lesson": 4,
+              "title": "Should We Design Our Own Babies?",
+              "objective": "Students will draw on the ethical questions raised throughout U2.6 — from CRISPR's power to rewrite genomes, to PCR's role in surveillance and forensics, to public debates over GMO foods — to evaluate where the line should be drawn between therapeutic and enhancement uses of genetic engineering in humans, and to defend a reasoned position on who should have the authority to make those decisions.",
+              "essential_question": "Should parents have the right to edit their child's genome before birth — even if the goal is to prevent a serious disease? As you consider your answer, you might also reflect on two related questions: Should law enforcement agencies be allowed to build DNA databases that include profiles of people never convicted of a crime? And who should have the final say over whether genetically engineered foods reach your plate — scientists, governments, corporations, or the public?",
+              "scenario": "In 2018, a scientist in China shocked the world by announcing he had used CRISPR to edit the genes of twin baby girls before they were born — the first genetically modified humans in history. His goal was to make them resistant to HIV, but scientists worldwide condemned the experiment as reckless and unethical. Meanwhile, gene therapy trials are legally helping patients with inherited blindness regain their sight by delivering working copies of damaged genes directly into their eyes. Both cases use the same basic technology — so what makes one acceptable and the other a scandal?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "U3",
+      "name": "Evolution & Diversity",
+      "courses": [
+        {
+          "id": "biology-u3-1-evidence-for-evolution",
+          "course": 1,
+          "code": "U3.1",
+          "title": "Evidence for Evolution",
+          "lessons": [
+            {
+              "id": "biology-u3-1-evidence-for-evolution-lesson-1",
+              "lesson": 1,
+              "title": "Why Do Whales Have Hip Bones? The Clues Hidden Inside Living Bodies",
+              "objective": "Students will be able to identify at least three examples of homologous structures across different species, explain what structural similarity between species indicates about common ancestry, and distinguish homologous structures from analogous structures that arise through convergent evolution.",
+              "essential_question": "Why would a whale — an animal that has never had legs and never will — be carrying tiny hip bones hidden deep in its muscle, and what does it mean that your arm bones match a bat's wing and a dolphin's flipper almost perfectly?",
+              "scenario": "A whale stranded on a beach seems like a fish, but when scientists X-ray its body, they find something shocking: two small, floating bones buried deep in its muscle — remnants of a pelvis and hind limbs. The whale has no legs and never will, yet those bones are there. At the same time, if you hold a human arm bone next to a bat wing skeleton, a cat's front leg, and a dolphin flipper, you'll find the same bones arranged in nearly the same order — just reshaped for flying, running, or swimming."
+            },
+            {
+              "id": "biology-u3-1-evidence-for-evolution-lesson-2",
+              "lesson": 2,
+              "title": "Reading the Rock Record: What Do Fossils Actually Tell Us?",
+              "objective": "Students will learn how the fossil record — including transitional fossils — documents the history of life changing over millions of years, and why gaps in the record don't disprove evolution but actually reflect how fossilization works.",
+              "essential_question": "If evolution happened gradually over millions of years, why don't we have a fossil of every single species that ever lived — and does that silence in the rocks actually undermine the evidence, or does it make perfect sense?",
+              "scenario": "Imagine trying to reconstruct your entire family history, but the only clues you have are a handful of old photographs discovered by accident in attics across the country. Most moments were never photographed, most photos were never saved, and yet the ones that survived tell a clear and consistent story. Fossils work the same way — forming only under rare conditions, surviving only if buried quickly and undisturbed for millions of years. Yet fossils like Tiktaalik — a fish with proto-wrist bones that could prop itself up — were predicted to exist in specific rock layers before they were ever found, and they showed up exactly where scientists expected."
+            },
+            {
+              "id": "biology-u3-1-evidence-for-evolution-lesson-3",
+              "lesson": 3,
+              "title": "Darwin's Finches and the Peppered Moth: Can We Actually Watch Evolution Happen?",
+              "objective": "Students will analyze two landmark case studies — Darwin's Galápagos finches and the peppered moths of Industrial England — to understand that evolution is not just ancient history but an observable, measurable process happening in real time. This matters because it reframes evolution from a belief into a body of testable, repeatable evidence.",
+              "essential_question": "People often say 'I'll believe it when I see it' — so what would it take to actually watch evolution happening, and have scientists ever managed to catch it in the act?",
+              "scenario": "In the 1970s, biologists Peter and Rosemary Grant traveled to a tiny Galápagos island called Daphne Major and measured the beaks of every finch they could catch — for over 40 years. When a severe drought hit in 1977 and wiped out small soft seeds, finches with slightly larger beaks survived because they could crack the only seeds left. In just one generation, the average beak size in the population measurably shifted. Meanwhile, in 19th-century England, pale peppered moths nearly vanished from tree trunks blackened by industrial soot — replaced by a darker variety — then bounced back decades later when clean-air laws passed. Both stories were written in data, not speculation."
+            },
+            {
+              "id": "biology-u3-1-evidence-for-evolution-lesson-4",
+              "lesson": 4,
+              "title": "What Does Our DNA Say About Our Relatives? The Molecular Evidence for Evolution",
+              "objective": "Students will analyze how DNA sequence comparisons across species — from humans to chimpanzees to mice — reveal the molecular fingerprints of common descent, explaining why closely related organisms share more genetic code and what that pattern tells us about the history of life on Earth.",
+              "essential_question": "When scientists discovered that humans and mice share 85% of their DNA, it raised a stunning question: if our genes tell the story of our evolutionary history, what exactly does the pattern of shared DNA across species reveal about how all life on Earth is connected?",
+              "scenario": "In 2001, when scientists published the first draft of the human genome, one of the most startling findings wasn't about human genes at all — it was about how many we share with other species. Humans and chimpanzees share somewhere between 96–99% of their DNA depending on exactly what is being compared, while humans and mice share roughly 85% similarity across protein-coding genes. These aren't rough estimates or symbolic figures; they are the direct output of sequencing technologies that read billions of base pairs and align them letter by letter across species. That pattern of shared genetic code — more similarity between closely related species, less between distantly related ones — only makes sense if all life is connected by common descent, with each organism carrying an evolutionary record written into its genome."
+            }
+          ]
+        },
+        {
+          "id": "biology-u3-2-natural-selection",
+          "course": 2,
+          "code": "U3.2",
+          "title": "Natural Selection",
+          "lessons": [
+            {
+              "id": "biology-u3-2-natural-selection-lesson-1",
+              "lesson": 1,
+              "title": "Why Do Some Bacteria Survive No Matter What We Throw at Them?",
+              "objective": "Students will be able to identify and explain the four conditions required for natural selection to occur — variation, heritability, overproduction, and differential survival — and apply all four conditions to a specific real-world case of rapid evolution, identifying which piece of evidence satisfies each condition and explaining how the conditions interact to produce a population-level change over time.",
+              "essential_question": "If bacteria don't have a brain, a plan, or any idea that antibiotics exist, how do they keep managing to survive them — and what specific conditions have to be in place for that process to work?",
+              "scenario": "A patient enrolled in an HIV treatment program has been on antiretroviral therapy for several months, and the drugs that once suppressed the virus to undetectable levels are beginning to fail. The virus is still replicating — and the strains now circulating in the patient's bloodstream are no longer the same as the ones present at the start of treatment. HIV mutates at an extraordinarily high rate because its replication machinery makes frequent errors, generating enormous variation within a single host. When a drug clears out the virus strains it can target, any variant that happened to carry a mutation conferring even slight resistance is now the one that survives and reproduces — passing that resistance to its copies. The 'decision' happened at no point; no individual virus chose anything. Yet the population shifted, rapidly and predictably, in response to a selection pressure. Understanding exactly which conditions had to be in place — variation among individuals, heritability of that variation, overproduction of offspring, and differential survival — is the key to explaining not just why HIV evolves resistance, but why this pattern shows up wherever life reproduces under pressure."
+            },
+            {
+              "id": "biology-u3-2-natural-selection-lesson-2",
+              "lesson": 2,
+              "title": "Did We Build Dogs, or Did Natural Selection?",
+              "objective": "Students will distinguish between artificial selection and natural selection by examining dog breeding as a model, understanding that both processes rely on the same underlying mechanism — heritable variation — but differ in who or what does the 'selecting.'",
+              "essential_question": "If humans can produce a Chihuahua and a Great Dane from the same ancestor in just a few thousand years, what could millions of years of natural selection accomplish?",
+              "scenario": "A Dachshund, a Greyhound, and a Saint Bernard walk into a room — they are all the same species, yet they look almost nothing alike. Humans bred these dogs by choosing which individuals got to reproduce based on desired traits: short legs, speed, massive size. This process, called artificial selection, has reshaped wolves into over 340 recognized breeds in a blink of evolutionary time. Comparing this to what nature does on its own reveals exactly how powerful — and blind — natural selection really is."
+            },
+            {
+              "id": "biology-u3-2-natural-selection-lesson-3",
+              "lesson": 3,
+              "title": "Did the Guppies Choose to Change Their Colors?",
+              "objective": "Students will analyze the Trinidad guppy transplant experiments as direct, observable evidence of natural selection in action, and confront the misconception that organisms consciously adapt or that 'survival of the fittest' means the strongest individual always wins.",
+              "essential_question": "Does 'survival of the fittest' really mean what most people think it means — and who actually gets to decide what 'fit' looks like?",
+              "scenario": "In the streams of Trinidad, guppies living below waterfalls — where predatory pike cichlids lurk — are drab and hard to spot, while guppies in safer upstream pools tend to be brightly colored. When scientists transplanted drab guppies into low-predation pools, within just a few generations the population shifted toward brighter coloration — not because any individual guppy chose to change, but because brighter males survived longer and reproduced more successfully in the safer environment. The reverse happened too: move bright guppies into dangerous waters, and the population shifts back toward camouflage. This back-and-forth, observed in real time by researchers, raises a sharp question about what \"fitness\" really means — because the same trait that gets you killed in one environment is exactly what helps you thrive in another."
+            },
+            {
+              "id": "biology-u3-2-natural-selection-lesson-4",
+              "lesson": 4,
+              "title": "Why Did Darwin's Finches Have So Many Different Beaks?",
+              "objective": "Students will extend their understanding of natural selection by analyzing how environmental pressures — specifically competition for food resources — can drive rapid, measurable trait change within a population, using the Grants' long-term study of Darwin's finches to explain how variation, selection, and differential reproduction work together to shift a population's traits over time.",
+              "essential_question": "If all of Darwin's finches share a common ancestor, why don't they all look the same — and what does that tell us about how natural selection shapes populations differently in different places?",
+              "scenario": "In the deserts of the American Southwest, rock pocket mice live on both dark volcanic lava rock and pale sandy rock — and their fur color matches their background almost perfectly. Populations on dark lava tend to have dark fur; populations on pale sand tend to have light fur. When scientists examined the genetics behind this pattern, they found that dark coloration on lava rock was linked to mutations in the Mc1r gene, and that owls and other predators were picking off mice whose fur color didn't match their surroundings at a dramatically higher rate. The match between fur color and background isn't a coincidence — it's the outcome of generations of differential survival. What makes this case especially powerful is that the same trait (dark fur) evolved independently in multiple separate lava populations, suggesting that natural selection — not random chance — was driving the same solution to the same problem in different places. This raises a precise question: if selection pressure shapes populations so consistently, what specific conditions have to be in place for that to happen — and how do variation, heritability, and differential reproduction combine to shift a whole population's traits over time?"
+            }
+          ]
+        },
+        {
+          "id": "biology-u3-3-speciation-adaptation",
+          "course": 3,
+          "code": "U3.3",
+          "title": "Speciation & Adaptation",
+          "lessons": [
+            {
+              "id": "biology-u3-3-speciation-adaptation-lesson-1",
+              "lesson": 1,
+              "title": "How Did One Bird Become 15? The Story of Darwin's Finches",
+              "objective": "Students will understand how geographic isolation can cause a single species to split into multiple distinct species over time, and why this process — called speciation — explains the enormous diversity of life on Earth.",
+              "essential_question": "If two populations of the same animal are separated long enough, at what point do they stop being the same animal — and who decides?",
+              "scenario": "Lake Victoria in East Africa is home to one of the most explosive bursts of speciation ever documented: more than 500 species of cichlid fish, all descended from a small number of ancestral species that colonized the lake roughly 15,000 years ago — a geological eyeblink. Each species has evolved distinct jaw shapes, coloration, feeding behaviors, and habitat preferences, from algae-scrapers to snail-crushers to open-water predators. Scientists were initially stunned that so many distinct species could arise so quickly from so few ancestors — until they realized the lake's complex mosaic of environments was doing the same thing remote island chains do: breaking populations apart, letting them adapt independently, and locking in the differences over time. How does one fish stranded in a new habitat eventually become hundreds of distinct ones, each fitted to a different ecological niche? That question is the heart of speciation — and the cichlids of Lake Victoria are one of its most spectacular answers. (Darwin's finches, which you may recall from earlier units, tell the same story on a smaller scale, and we'll use them as a reference point throughout.)"
+            },
+            {
+              "id": "biology-u3-3-speciation-adaptation-lesson-2",
+              "lesson": 2,
+              "title": "Why Don't Chihuahuas and Great Danes Ever Meet in the Wild?",
+              "objective": "Students will understand what reproductive isolation means, how it acts as the key barrier that locks in a new species, and why two populations can look completely different yet still technically be the same species — or look similar yet be totally separate ones.",
+              "essential_question": "If a Chihuahua and a Great Dane are both 'dogs,' but could never realistically reproduce in the wild, does the scientific definition of 'species' actually make sense?",
+              "scenario": "A mule is the offspring of a male donkey and a female horse — two clearly different species. Mules are healthy, strong, and long-lived, yet almost always sterile. They exist, but they cannot produce the next generation. Meanwhile, Eastern and Western meadowlarks are two bird species that look almost identical — same yellow breast, same streaked back, same size — yet they never interbreed in the wild, because their songs are completely different and neither recognizes the other as a potential mate. One case involves animals that can produce offspring but can't continue the lineage; the other involves animals that could theoretically mate but never do. Both cases reveal that the real engine keeping species separate isn't always appearance or even genetics — it's the barriers, behavioral, mechanical, and biological, that prevent gene flow between populations. Today we'll dig into what those barriers actually are, and why they are the true locks that keep species distinct."
+            },
+            {
+              "id": "biology-u3-3-speciation-adaptation-lesson-3",
+              "lesson": 3,
+              "title": "If Bacteria Can Evolve in a Week, Why Does It Take Wolves Thousands of Years?",
+              "objective": "Students will understand the difference between microevolution and macroevolution, recognize how generation time and environmental pressure affect the speed of evolutionary change, and connect antibiotic resistance to the same mechanisms that produced entirely new species over millions of years.",
+              "essential_question": "Bacteria can evolve resistance to antibiotics in days — so why, after thousands of years of flu pandemics, haven't humans genetically evolved to be immune to influenza?",
+              "scenario": "In 2016, the Kishony Lab at Harvard Medical School filmed a striking experiment — now known as the MEGA-plate experiment — where E. coli bacteria evolved resistance to concentrations of antibiotic 1,000 times the minimum dose needed to kill the original strain, in just 11 days (the paper and video are freely available online and make excellent classroom resources). Meanwhile, the fossil record shows it took millions of years for small, shrew-like mammals to eventually give rise to whales. Both are evolution by natural selection, using the exact same mechanism. The difference isn't the process — it's the speed, and understanding why that speed varies is the key to understanding everything from drug-resistant superbugs to how the blue whale got its flippers."
+            },
+            {
+              "id": "biology-u3-3-speciation-adaptation-lesson-4",
+              "lesson": 4,
+              "title": "Why Do Dolphins, Sharks, and Ichthyosaurs All Look the Same If They're Not Related?",
+              "objective": "Students will understand how adaptation shapes organisms to fit their environments, recognize convergent and divergent evolution as two different outcomes of natural selection, and explain why similar environments can produce eerily similar-looking creatures that are not closely related at all.",
+              "essential_question": "If a dolphin, a shark, and an extinct ichthyosaur all have the same torpedo-shaped body, does that mean they're related — or does it mean something more interesting?",
+              "scenario": "A dolphin is a mammal. A shark is a fish. An ichthyosaur was a reptile that vanished roughly 90 million years ago — approximately 25 million years before the asteroid impact that ended the non-avian dinosaurs. Yet photographs of the three lined up side by side look almost like the same animal — same streamlined body, same dorsal fin, same basic flipper shape — because the cold logic of natural selection independently arrived at the same design three separate times, and today we'll explore what that tells us about the predictability and creativity of evolution."
+            }
+          ]
+        },
+        {
+          "id": "biology-u3-4-classification-taxonomy",
+          "course": 4,
+          "code": "U3.4",
+          "title": "Classification & Taxonomy",
+          "lessons": [
+            {
+              "id": "biology-u3-4-classification-taxonomy-lesson-1",
+              "lesson": 1,
+              "title": "Why Do Scientists Give Everything a Two-Part Name?",
+              "objective": "Students will correctly interpret and write binomial names for at least three organisms, explaining the meaning and function of each part of the two-part structure, and describe at least one real historical consequence of naming inconsistency — such as how conflicting regional names for *Aedes aegypti* delayed coordinated disease tracking efforts across countries.",
+              "essential_question": "If a 'mountain lion,' 'puma,' 'cougar,' and 'panther' are all the same animal, how does anyone actually communicate clearly about living things?",
+              "scenario": "Before scientists standardized naming conventions, the mosquito now known as *Aedes aegypti* was recorded under dozens of different regional names across Africa, the Americas, and Asia — making it nearly impossible for researchers in different countries to recognize they were all tracking the same deadly insect. This single species is responsible for spreading yellow fever, dengue, and Zika virus, and the confusion caused by inconsistent local names genuinely slowed early efforts to understand and contain these diseases. Once *Aedes aegypti* became the universally accepted scientific name, a researcher in Brazil and a virologist in Thailand could instantly know they were studying the same mosquito — no translation needed. This is exactly why scientists use binomial nomenclature: two Latin words that mean the same thing in every language, in every country, in every lab on Earth."
+            },
+            {
+              "id": "biology-u3-4-classification-taxonomy-lesson-2",
+              "lesson": 2,
+              "title": "Are Dolphins Really More Like Fish Than Like Dogs?",
+              "objective": "Students will correctly identify at least two real examples of organisms that are superficially similar but distantly related (such as the marsupial mole and golden mole), explain at least two specific classification levels that distinguish those organisms, and describe at least one concrete reason why appearance alone is insufficient as a basis for biological classification.",
+              "essential_question": "If a sugar glider and a flying squirrel both glide through forest canopies, both have the same stretched skin between their limbs, and both look nearly identical — why do scientists say they are more distantly related to each other than either one is to a kangaroo or a mouse?",
+              "scenario": "At first glance, the marsupial mole of Australia and the golden mole of southern Africa appear nearly identical — both are small, velvety, nearly blind burrowing animals with powerful forelimbs built for digging through soil. Yet despite sharing the same lifestyle, the same habitat, and a strikingly similar body plan, these two animals are about as distantly related as mammals can be, separated by tens of millions of years of independent evolution on different continents. For early naturalists who grouped animals by what they looked like and where they lived, pairs like these were a constant source of confusion — and they reveal exactly why modern taxonomy demands we look past surface appearances to understand where a species truly belongs in the history of life."
+            },
+            {
+              "id": "biology-u3-4-classification-taxonomy-lesson-3",
+              "lesson": 3,
+              "title": "How Do We Know Which Animals Are Truly Related?",
+              "objective": "Students will understand how scientists use homologous structures, DNA comparisons, and fossil evidence to build phylogenetic trees — learning that evolutionary relationships, not just physical similarity, determine how life is classified.",
+              "essential_question": "Could two animals that look almost nothing alike actually be close cousins, while two animals that look nearly identical are only distant relatives?",
+              "scenario": "For most of the 19th century, whales were classified with fish and other marine animals simply because they lived in the ocean — a classic case of appearance overriding deeper evidence. It wasn't until scientists began comparing molecular data and examining a surprisingly small ankle bone called the astragalus that the true picture emerged: whales are artiodactyls, the group that includes pigs, deer, and camels. More startling still, the closest living relative of whales isn't any ocean creature — it's the hippopotamus. This conclusion came not from looking at what these animals look like today, but from building a phylogenetic tree: a branching diagram that maps evolutionary relationships using DNA sequences, shared derived traits, and fossil evidence together. The whale reclassification is now a landmark example of how modern taxonomy works — scientists don't just observe and sort, they gather multiple independent lines of evidence, map them onto a tree of relationships, and let the data reveal connections that no amount of casual observation would ever uncover."
+            },
+            {
+              "id": "biology-u3-4-classification-taxonomy-lesson-4",
+              "lesson": 4,
+              "title": "Does Everything Alive Fit Neatly Into a Box?",
+              "objective": "Students will understand the three-domain system (Bacteria, Archaea, Eukarya) and explore how the discovery of entirely new types of life — including extremophiles and organisms that blur boundaries — has forced scientists to rethink and revise classification systems over time.",
+              "essential_question": "If scientists keep discovering organisms that don't fit the existing categories, does that mean our classification system is broken — or does it mean life is just more surprising than we expected?",
+              "scenario": "In the 1970s, scientists drilling into a Yellowstone hot spring pulled up microbes thriving in near-boiling, highly acidic water — conditions thought to be completely hostile to life. These organisms, called Archaea, looked like bacteria under a microscope but turned out to be so genetically different that biologists had to add an entirely new domain to their classification system, rewriting textbooks worldwide. Today, researchers continue to discover organisms — like giant viruses with near-cellular complexity, slime molds that shift between unicellular and multicellular states, and myxozoa so reduced by parasitism that scientists debated whether they were animals at all — that force biologists to ask where the boundaries of life's categories actually lie."
+            }
+          ]
+        },
+        {
+          "id": "biology-u3-5-bacteria-viruses-microorganisms",
+          "course": 5,
+          "code": "U3.5",
+          "title": "Bacteria, Viruses & Microorganisms",
+          "lessons": [
+            {
+              "id": "biology-u3-5-bacteria-viruses-microorganisms-lesson-1",
+              "lesson": 1,
+              "title": "Are Bacteria Really Alive? Meet the World's Most Successful Organisms",
+              "objective": "Students will understand what defines bacteria as living organisms, how their structure differs fundamentally from our own cells, and why these microscopic creatures — not humans — are the true dominators of life on Earth.",
+              "essential_question": "If bacteria have no brain, no heart, and no visible body parts, what does it actually mean to be 'alive' — and does life have to look anything like us?",
+              "scenario": "Right now, your body contains roughly 30 trillion human cells and, in a typical adult, an estimated 38 trillion bacterial cells — a ratio close to 1:1. (Keep in mind that this figure comes from studies of an average adult and varies significantly depending on a person's age, body size, and health status.) The bacteria living in your gut help you digest food, produce vitamins, and even influence your mood. Yet most people think of bacteria only as germs that make us sick, never considering that without them, you couldn't survive a single day."
+            },
+            {
+              "id": "biology-u3-5-bacteria-viruses-microorganisms-lesson-2",
+              "lesson": 2,
+              "title": "Why Can't Antibiotics Stop These Bacteria? The Evolution Happening Inside You",
+              "objective": "Students will understand how antibiotic resistance develops through natural selection, connecting the mechanisms of evolution studied earlier in the unit to a real, urgent health crisis that kills over one million people per year globally. Human behavioral drivers — such as overprescribing antibiotics and agricultural overuse — will be examined as context for how everyday decisions can accelerate bacterial evolution in real time.",
+              "essential_question": "If we have powerful antibiotics that can kill bacteria, why are doctors warning that we may soon face infections that no medicine can treat — and is it our fault?",
+              "scenario": "In 2017, a woman in Nevada died from a bacterial infection that was resistant to every single antibiotic available in the United States — all 26 of them. Doctors could only watch as the bacteria multiplied unchecked. This wasn't science fiction; it was the result of decades of antibiotic overuse in medicine and agriculture gradually selecting for bacteria that could survive any drug we threw at them."
+            },
+            {
+              "id": "biology-u3-5-bacteria-viruses-microorganisms-lesson-3",
+              "lesson": 3,
+              "title": "Are Viruses Even Alive? The Strange Entities That Hijack Your Cells",
+              "objective": "Students will understand what viruses are, how they differ from bacteria and living cells, and how viruses replicate by hijacking host machinery — explaining why antibiotics don't work on viral infections and why new vaccines must be constantly developed.",
+              "essential_question": "Viruses can evolve, reproduce, and devastate entire populations — but they can't eat, breathe, or survive on their own. Does something have to be alive to be dangerous, and where do viruses fit in the story of life on Earth?",
+              "scenario": "Every flu season, public health officials scramble to predict which strain of influenza virus will spread that year so they can update the vaccine — and they're often partially wrong. That's because the influenza virus mutates so rapidly that last year's vaccine may not fully protect you this year. The same virus that caused a mild illness in your friend in October might look slightly different by December, slipping past your immune system's memory like a criminal with a new disguise."
+            },
+            {
+              "id": "biology-u3-5-bacteria-viruses-microorganisms-lesson-4",
+              "lesson": 4,
+              "title": "Could a Tiny Microbe Save the Planet? The Hidden Powers of Microscopic Life",
+              "objective": "Students will investigate how bacteria, cyanobacteria, and archaea drive the essential ecological processes — decomposition, nutrient cycling, and oxygen production — that make all other life on Earth possible, recognizing these microorganisms not as simple background organisms but as the invisible infrastructure on which every ecosystem depends.",
+              "essential_question": "If every microorganism on Earth disappeared tomorrow, which would collapse first: human civilization, animal life, or the entire biosphere — and what does that tell us about who is really in charge of life on this planet?",
+              "scenario": "Marine photosynthesizers — including cyanobacteria and phytoplankton such as diatoms, dinoflagellates, and green algae — produce roughly half of all the oxygen on Earth, more than all the world's rainforests combined. Meanwhile, deep-sea archaea thrive in volcanic vents at temperatures hot enough to cook food, suggesting that life may be far more widespread in extreme environments — even on other planets — than we ever imagined. The microorganisms we once dismissed as simple or primitive may turn out to be both the foundation of all life and the key to our future survival."
+            }
+          ]
+        },
+        {
+          "id": "biology-u3-6-biodiversity-conservation",
+          "course": 6,
+          "code": "U3.6",
+          "title": "Biodiversity & Conservation",
+          "lessons": [
+            {
+              "id": "biology-u3-6-biodiversity-conservation-lesson-1",
+              "lesson": 1,
+              "title": "Why Should We Care If a Species Goes Extinct?",
+              "objective": "Students will understand what biodiversity means — across genes, species, and ecosystems — and why losing it has real consequences for human health, food security, and the stability of life on Earth.",
+              "essential_question": "If millions of species have gone extinct naturally throughout Earth's history, why does it matter when species disappear today?",
+              "scenario": "In 2006, beekeepers across the United States started finding their hives mysteriously empty — billions of honeybees had vanished in what scientists called Colony Collapse Disorder. Within a year, grocery store produce sections began shrinking, because about one-third of the variety of foods humans eat — including most fruits, nuts, and vegetables — depends on pollinators like bees, even though staple grains like wheat and rice are wind-pollinated. No bees, no almonds, no apples, no strawberries. This crisis revealed something startling: the disappearance of a single species can send shockwaves through our entire food supply."
+            },
+            {
+              "id": "biology-u3-6-biodiversity-conservation-lesson-2",
+              "lesson": 2,
+              "title": "What's Killing Off So Many Species — And How Fast?",
+              "objective": "Students will identify the major human-driven threats to biodiversity — habitat destruction, invasive species, pollution, climate change, and overexploitation — and understand how today's extinction rate compares to the natural background rate, so they can evaluate the urgency of the crisis.",
+              "essential_question": "Scientists say we are living through Earth's sixth mass extinction — but the last one killed the dinosaurs. How is what humans are doing comparable to an asteroid impact?",
+              "scenario": "When the brown tree snake was accidentally introduced to the island of Guam in the 1950s, the island's birds had never seen a predator like it and had no instinct to flee. Within decades, 10 of Guam's 12 native forest bird species were completely wiped out. Without birds to spread seeds and eat insects, the island's forests began to collapse — and today Guam is overrun by spiders because the birds that kept insect populations in check are gone. One invasive species triggered a cascade of destruction that reshaped an entire island ecosystem."
+            },
+            {
+              "id": "biology-u3-6-biodiversity-conservation-lesson-3",
+              "lesson": 3,
+              "title": "Can We Actually Save a Species from Extinction?",
+              "objective": "Students will explore real conservation strategies — from protected areas and wildlife corridors to captive breeding and seed banks — and evaluate their effectiveness and trade-offs, understanding that conservation requires both science and difficult societal choices.",
+              "essential_question": "What does the California condor recovery reveal about what it actually takes — scientifically, financially, and politically — to pull a species back from the brink?",
+              "scenario": "In 1987, there were only 27 California condors left alive on Earth — down from thousands — due to lead poisoning, habitat loss, and hunting. Scientists made the controversial decision to capture every single wild condor and begin a captive breeding program, which many people at the time called a desperate, last-ditch effort that would never work. Today, over 500 condors exist, with more than 300 flying free in the wild. The condor's comeback is one of conservation biology's greatest success stories, but it cost tens of millions of dollars and required decades of intense human intervention."
+            },
+            {
+              "id": "biology-u3-6-biodiversity-conservation-lesson-4",
+              "lesson": 4,
+              "title": "Is It Already Too Late — Or Can Biodiversity Actually Recover?",
+              "objective": "Students will investigate how ecosystems can be restored after damage, examine the concept of tipping points beyond which recovery becomes nearly impossible, and connect individual and collective human actions to real outcomes for biodiversity — leaving them with an evidence-based sense of both urgency and possibility.",
+              "essential_question": "Once an ecosystem crosses a tipping point of damage, is human intervention likely to help or could it make things worse — and how would we know the difference?",
+              "scenario": "When wolves were reintroduced to Yellowstone National Park in 1995 after a 70-year absence, the effects rippled through the entire ecosystem in ways scientists are still working to fully understand. Elk, which had overgrazed riverbanks without predators to fear, began avoiding open areas — and over the following years, riverside vegetation recovered, riverbank stability improved, beaver populations rebounded, and songbirds and fish returned in greater numbers. Scientists call this a \"trophic cascade,\" and while ongoing research continues to refine exactly how far-reaching the effects were, the broader pattern is clear: given the right conditions, ecosystems have a remarkable capacity to heal. The Yellowstone story is itself a lesson in how scientific understanding evolves — and in why protecting and restoring key species can have consequences far beyond what anyone initially predicts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "U4",
+      "name": "Human Body & Ecology",
+      "courses": [
+        {
+          "id": "biology-u4-1-body-systems-structure-support",
+          "course": 1,
+          "code": "U4.1",
+          "title": "Body Systems: Structure & Support",
+          "lessons": [
+            {
+              "id": "biology-u4-1-body-systems-structure-support-lesson-1",
+              "lesson": 1,
+              "title": "Why Does Your Body Have a Shape at All?",
+              "objective": "Students will understand how the skeletal and muscular systems work together to give the body structure, support, and movement — and why this matters for everything from playing sports to sitting at a desk for hours.",
+              "essential_question": "If your skeleton disappeared right now, what would happen to your body — and what does that tell us about why structure matters in living things?",
+              "scenario": "Imagine trying to build a tent without the poles. The fabric just collapses into a heap on the ground. Your body faces the same challenge: without a rigid internal framework, your muscles, organs, and tissues would have nothing to anchor to or push against. Every time you kick a soccer ball, pick up a backpack, or even stand up from a chair, your skeleton and muscles are working together in ways most of us never think about."
+            },
+            {
+              "id": "biology-u4-1-body-systems-structure-support-lesson-2",
+              "lesson": 2,
+              "title": "What Is Your Skin Actually Doing for You?",
+              "objective": "Students will understand the structure and functions of the integumentary system — skin, hair, and nails — and recognize it as the body's largest organ and first line of defense against the outside world.",
+              "essential_question": "We think of skin as just a covering, but what if it's actually one of the most complex and hardworking organs in the entire body?",
+              "scenario": "You step outside on a scorching summer day, and within minutes you start sweating. Meanwhile, if you get a small cut, your skin begins repairing itself almost immediately. Skin doesn't just wrap your body like plastic packaging — it regulates your temperature, blocks pathogens, senses the world around you, and even produces vitamin D from sunlight. Most people don't think of skin as an organ at all, but it's working constantly to keep everything inside you in balance."
+            },
+            {
+              "id": "biology-u4-1-body-systems-structure-support-lesson-3",
+              "lesson": 3,
+              "title": "How Does a Cheese Sandwich Become Part of Your Body?",
+              "objective": "Students will understand how the digestive system breaks down food into nutrients the body can use, and why the process of digestion is essential for fueling every other organ system they will study in this unit.",
+              "essential_question": "When you eat a sandwich, you're eating wheat, dairy, and protein — but your cells need something completely different. How does your body make that translation, and where does everything go?",
+              "scenario": "You bite into a cheese sandwich at lunch, chew it up, and swallow — and within seconds, your body takes over a process so complex it would take a chemistry lab hours to replicate. By the time your meal has traveled through roughly 30 feet of digestive tract, the bread, cheese, and protein have been broken apart into individual sugars, amino acids, and fatty acids small enough to pass through a cell membrane. What your body can't use gets compacted and eliminated. The sandwich you ate at noon is literally rebuilding your muscles, fueling your brain, and repairing your cells by tonight."
+            },
+            {
+              "id": "biology-u4-1-body-systems-structure-support-lesson-4",
+              "lesson": 4,
+              "title": "Why Do Body Systems Break Down — and Can They Fix Themselves?",
+              "objective": "Students will understand how the body's structural systems — skeletal, muscular, integumentary, and digestive — interact and maintain homeostasis, and what happens when those systems are disrupted by injury, disease, or poor habits.",
+              "essential_question": "Your body is constantly repairing, replacing, and rebalancing itself — so why do people still get sick, injured, or worn down over time?",
+              "scenario": "A 16-year-old breaks her wrist during a fall at a skate park. Within days, her body has already begun knitting the bone back together using cells that were dormant until the injury triggered them. At the same time, a classmate who rarely sleeps and survives on energy drinks starts getting frequent stomach aches and muscle cramps. Both situations point to the same underlying idea: the body has powerful systems for maintaining balance, but those systems have limits. Understanding where those limits are — and what strains them — is one of the most practical things you can learn about your own health."
+            }
+          ]
+        },
+        {
+          "id": "biology-u4-2-body-systems-circulation-respiration",
+          "course": 2,
+          "code": "U4.2",
+          "title": "Body Systems: Circulation & Respiration",
+          "lessons": [
+            {
+              "id": "biology-u4-2-body-systems-circulation-respiration-lesson-1",
+              "lesson": 1,
+              "title": "Why Does Your Heart Beat Faster When You're Scared?",
+              "objective": "Students will understand how the heart works as a pump and how it adjusts its output based on the body's needs — because understanding this helps explain everything from athletic performance to heart disease, the leading cause of death in the U.S.",
+              "essential_question": "If your heart beats about 100,000 times a day without you thinking about it, what is actually controlling it — and can you ever override that control?",
+              "scenario": "You're sitting in class, totally calm, when your teacher announces a surprise presentation — you have to go first, right now. Within seconds, your heart is pounding so hard you can feel it in your chest and throat. You haven't moved a muscle, so why is your heart suddenly racing? Something invisible just changed your body's entire circulatory rhythm in an instant."
+            },
+            {
+              "id": "biology-u4-2-body-systems-circulation-respiration-lesson-2",
+              "lesson": 2,
+              "title": "What Does Blood Actually Do — And Why Is It Red?",
+              "objective": "Students will understand the composition of blood and how its different components work together to transport oxygen, nutrients, and waste — because this knowledge directly explains conditions like anemia, blood type compatibility, and why athletes train at high altitude.",
+              "essential_question": "Blood carries oxygen, fights infection, delivers food, removes waste, and seals wounds — so is blood more like a highway, a delivery truck, or an army? Can it really be all of those at once?",
+              "scenario": "A student on the cross-country team has been feeling exhausted and dizzy during practice, even though she's been sleeping and eating well. Her doctor runs a blood test and tells her she has iron-deficiency anemia — her red blood cells aren't carrying enough oxygen to her muscles. But wait: if blood is just a liquid, how does iron have anything to do with breathing? The answer is hidden inside every single red blood cell."
+            },
+            {
+              "id": "biology-u4-2-body-systems-circulation-respiration-lesson-3",
+              "lesson": 3,
+              "title": "When You Take a Breath, Where Does the Air Actually Go?",
+              "objective": "Students will trace the path of air through the respiratory system and understand how oxygen enters the bloodstream while carbon dioxide exits — because this explains how exercise, asthma, altitude, and air pollution all directly affect your ability to function.",
+              "essential_question": "You breathe about 20,000 times a day without thinking about it, but you can also choose to hold your breath — so who is really in charge of your breathing, you or your body?",
+              "scenario": "A student with asthma is playing basketball when suddenly his chest tightens and he starts wheezing — he can inhale but can barely exhale. His inhaler relaxes the muscles around his airways and within minutes he's breathing normally again. His teammate, who has never had asthma, can't understand why a little exercise would cause that kind of crisis. The answer has everything to do with what's happening in the tiny tubes deep inside the lungs."
+            },
+            {
+              "id": "biology-u4-2-body-systems-circulation-respiration-lesson-4",
+              "lesson": 4,
+              "title": "How Do Your Heart and Lungs Actually Work as a Team?",
+              "objective": "Students will understand how the circulatory and respiratory systems are functionally linked through gas exchange, and how disruptions in one system immediately affect the other — because seeing these systems as a partnership (not separate units) is the key to understanding how the body maintains life during exercise, illness, and stress.",
+              "essential_question": "If you can damage your lungs by smoking but end up dying of heart failure, does that mean your heart and lungs share the same fate — and what does that say about how your body really works?",
+              "scenario": "During the COVID-19 pandemic, doctors noticed that patients with severe cases weren't just struggling to breathe — their hearts were also under extreme stress, and some developed blood clots throughout their bodies. A virus that attacked the lungs was somehow threatening the entire cardiovascular system at the same time. This wasn't a coincidence: it revealed just how inseparable the respiratory and circulatory systems really are, working as one integrated life-support loop."
+            }
+          ]
+        },
+        {
+          "id": "biology-u4-3-body-systems-nervous-endocrine",
+          "course": 3,
+          "code": "U4.3",
+          "title": "Body Systems: Nervous & Endocrine",
+          "lessons": [
+            {
+              "id": "biology-u4-3-body-systems-nervous-endocrine-lesson-1",
+              "lesson": 1,
+              "title": "Why Can You Pull Your Hand Away Before You Even Feel Pain?",
+              "objective": "Students will understand how the nervous system is organized into the brain, spinal cord, and nerves, and how signals travel at lightning speed to coordinate the body's responses — helping them appreciate why reaction time literally saves lives.",
+              "essential_question": "If your brain is in charge of your body, why do some reactions happen before your brain even gets the message?",
+              "scenario": "You're cooking ramen and accidentally grab the edge of a hot pot. Your hand jerks away instantly — before you even shout 'ouch.' It feels like one smooth motion, but two separate events just happened inside your body: a reflex that bypassed your brain entirely, and then a conscious experience of pain that arrived a split second later. Your nervous system pulled off something faster than you could think."
+            },
+            {
+              "id": "biology-u4-3-body-systems-nervous-endocrine-lesson-2",
+              "lesson": 2,
+              "title": "How Does Your Brain Actually Send a Message?",
+              "objective": "Students will understand how neurons communicate through electrical signals and chemical messengers called neurotransmitters, and why this matters for understanding everything from caffeine's effects to depression and ADHD medications.",
+              "essential_question": "If your thoughts and feelings are really just chemicals jumping between cells, does that change how you think about your own emotions and behavior?",
+              "scenario": "You crack open an energy drink before a big test and within 20 minutes you feel sharper, more alert, and slightly jittery. What actually changed inside your brain? Caffeine works by blocking a chemical signal that usually tells your neurons to slow down — essentially jamming the brakes on your nervous system. Understanding how neurons talk to each other explains not just caffeine, but why antidepressants, ADHD medications, and even social media can all change the way your brain feels."
+            },
+            {
+              "id": "biology-u4-3-body-systems-nervous-endocrine-lesson-3",
+              "lesson": 3,
+              "title": "Why Does Your Heart Race Before a Test — Even When You're Just Sitting Still?",
+              "objective": "Students will understand how the endocrine system uses hormones to send slow, body-wide chemical messages, and why the stress response — designed for physical danger — can be triggered by a math exam, with real consequences for long-term health.",
+              "essential_question": "If stress hormones evolved to help us survive physical threats, why do they seem to make modern life harder instead of easier?",
+              "scenario": "It's five minutes before a big presentation and your palms are sweating, your heart is pounding, and your stomach feels like it's doing flips — even though you're just standing in the hallway. Your body thinks you're about to sprint from a predator. A hormone called adrenaline (epinephrine) just flooded your bloodstream and flipped dozens of body systems into high gear simultaneously. This ancient survival response is incredibly useful for escaping danger, but it can't tell the difference between a lion and a letter grade."
+            },
+            {
+              "id": "biology-u4-3-body-systems-nervous-endocrine-lesson-4",
+              "lesson": 4,
+              "title": "Who's Really in Charge — Your Brain or Your Hormones?",
+              "objective": "Students will understand how the nervous and endocrine systems work together as a communication team — especially through the hypothalamus and pituitary gland — and why this partnership controls everything from sleep cycles to growth to mood, helping students connect biology to their own daily experiences as teenagers.",
+              "essential_question": "Teenagers are often told they 'just need more sleep' or that their emotions are 'just hormones' — but is that actually fair, and what does biology say about why adolescence feels so intense?",
+              "scenario": "Your parents tell you to go to sleep at 10 p.m., but your body genuinely doesn't feel tired until midnight — and then your alarm drags you up at 6 a.m. feeling like you got hit by a truck. This isn't laziness: during adolescence, a hormone called melatonin shifts to release later at night, biologically pushing your sleep window back by hours. Meanwhile, surging hormones from your pituitary gland are driving growth, mood swings, and changes throughout your body — all coordinated by the same tiny brain region that also manages your stress response and hunger."
+            }
+          ]
+        },
+        {
+          "id": "biology-u4-4-immune-system-disease",
+          "course": 4,
+          "code": "U4.4",
+          "title": "Immune System & Disease",
+          "lessons": [
+            {
+              "id": "biology-u4-4-immune-system-disease-lesson-1",
+              "lesson": 1,
+              "title": "Why Does Your Body Feel Like a Battlefield When You Get Sick?",
+              "objective": "Students will understand how the body's first and second lines of defense (physical barriers and the innate immune response) work to stop pathogens before they cause serious illness — because understanding this helps students make sense of common symptoms like fever, swelling, and fatigue instead of fearing them.",
+              "essential_question": "If your immune system is supposed to protect you, why do you feel so terrible when it kicks into action?",
+              "scenario": "It's Monday morning and you wake up with a sore throat, a pounding headache, and a fever of 101°F. You feel miserable — but here's the strange part: most of what you're feeling isn't caused by the virus itself. Your own body is creating those symptoms on purpose. The heat, the achiness, the exhaustion — they're all weapons your immune system is deploying in a war happening right now inside your tissues."
+            },
+            {
+              "id": "biology-u4-4-immune-system-disease-lesson-2",
+              "lesson": 2,
+              "title": "How Does Your Body Remember a Virus It Fought Years Ago?",
+              "objective": "Students will understand how the adaptive immune system uses B cells, T cells, and antibodies to target specific pathogens — and how immunological memory is the biological basis for why vaccines work, which is directly relevant to every student's health decisions.",
+              "essential_question": "If you can only get chickenpox once but the flu can make you sick every year, what does that tell us about how the immune system actually learns?",
+              "scenario": "When you were little, you got a chickenpox vaccine — or maybe you actually had chickenpox. Either way, decades from now, your body will still 'remember' that virus and fight it off before you even feel a single symptom. But every fall, the flu seems to find a way around your defenses and knock you flat all over again. How can your immune system hold a grudge against one virus for a lifetime but completely forget another one in just a few months?"
+            },
+            {
+              "id": "biology-u4-4-immune-system-disease-lesson-3",
+              "lesson": 3,
+              "title": "What Happens When Your Immune System Attacks the Wrong Target?",
+              "objective": "Students will understand how immune system malfunctions — including allergies, autoimmune diseases, and immunodeficiency — reveal the fine line between protection and destruction, which matters because millions of students personally live with these conditions or know someone who does.",
+              "essential_question": "If the immune system is designed to protect you, how can it also be responsible for life-threatening reactions, chronic illness, and even death?",
+              "scenario": "Your friend carries an EpiPen everywhere because eating a single peanut could send her into life-threatening anaphylaxis — her immune system treats a harmless protein like a deadly invader. Meanwhile, a classmate with Type 1 diabetes has an immune system that destroyed his own insulin-producing cells. In both cases, the immune system isn't failing to fight — it's fighting the wrong thing. These aren't rare edge cases; about 1 in 5 Americans has an allergy, and over 24 million have an autoimmune disease."
+            },
+            {
+              "id": "biology-u4-4-immune-system-disease-lesson-4",
+              "lesson": 4,
+              "title": "How Do Infectious Diseases Spread — and Can We Actually Stop Them?",
+              "objective": "Students will understand how pathogens spread through populations, what factors make outbreaks grow or shrink, and how public health tools like vaccination rates and herd immunity determine whether a disease becomes an epidemic — because students are active participants in these decisions every time they get vaccinated or stay home when sick.",
+              "essential_question": "If a vaccine exists for a disease, why do outbreaks still happen — and does your personal choice about vaccination actually affect people you've never met?",
+              "scenario": "In 2019, measles — a disease the U.S. had officially eliminated in 2000 — suddenly broke out in communities across New York, infecting nearly 1,300 people. The virus hadn't changed. The vaccine hadn't stopped working. What had changed was the vaccination rate in certain neighborhoods, which dropped just enough to allow the virus to find new hosts and spread. This outbreak offers a window into how individual health decisions ripple outward and reshape the health of entire communities."
+            }
+          ]
+        },
+        {
+          "id": "biology-u4-5-ecosystems-energy-flow",
+          "course": 5,
+          "code": "U4.5",
+          "title": "Ecosystems & Energy Flow",
+          "lessons": [
+            {
+              "id": "biology-u4-5-ecosystems-energy-flow-lesson-1",
+              "lesson": 1,
+              "title": "Who Eats Whom? Mapping the Hidden Food Web Around You",
+              "objective": "Students will understand how energy moves through ecosystems via food chains and food webs, and why the collapse of one link can affect every organism in the system — including the food humans eat.",
+              "essential_question": "If a single species disappeared from your local ecosystem tomorrow, how many other species would feel the effects — and would you be one of them?",
+              "scenario": "A local creek runs behind your school, and every spring it fills with tadpoles, dragonfly larvae, herons, and bass. Then one year, the tadpoles are nearly gone — and within months, the bass population crashes, the herons abandon the area, and the creek looks eerily quiet. Nothing 'big' seemed to change, but the whole community unraveled. What invisible threads were holding it all together?"
+            },
+            {
+              "id": "biology-u4-5-ecosystems-energy-flow-lesson-2",
+              "lesson": 2,
+              "title": "Why Does It Take 10 Pounds of Corn to Make 1 Pound of Beef?",
+              "objective": "Students will understand the 10% energy rule and why energy is lost between trophic levels, helping them see how food choices connect to land use, resource consumption, and environmental sustainability.",
+              "essential_question": "If eating higher on the food chain costs so much more energy, why do humans do it — and what does that mean for the planet?",
+              "scenario": "You're at a cookout eating a burger, and someone mentions it took roughly 1,800 gallons of water and 6–7 pounds of grain to produce just that one quarter-pound patty. It sounds impossible — the cow just ate grass and corn, so where did all that energy go? The answer lies in a rule that governs every living thing on Earth, from tiny shrews to blue whales."
+            },
+            {
+              "id": "biology-u4-5-ecosystems-energy-flow-lesson-3",
+              "lesson": 3,
+              "title": "Nothing Dies for Nothing: How Do Ecosystems Recycle Everything?",
+              "objective": "Students will understand how decomposers and nutrient cycles (carbon and nitrogen) return matter to the ecosystem, and recognize that without these invisible recyclers, life on Earth would grind to a halt.",
+              "essential_question": "If energy is always flowing out of ecosystems, what keeps ecosystems from running out of the materials life needs to survive?",
+              "scenario": "After a wildfire tears through a forest, the landscape looks totally destroyed — charred tree trunks, ash-covered ground, silence. But within weeks, tiny green shoots push through the blackened soil, and within a few years the forest is recovering. The same carbon atoms that were locked in those burned trees are now inside new leaves, insects, and birds. How does that happen so fast, and who does the work?"
+            },
+            {
+              "id": "biology-u4-5-ecosystems-energy-flow-lesson-4",
+              "lesson": 4,
+              "title": "Producers Wanted: Why Does All Energy Start With Sunlight?",
+              "objective": "Students will understand how photosynthesis by producers powers entire ecosystems, and connect this process to the food they eat, the oxygen they breathe, and the stability of life on Earth — tying body systems back to the ecosystems that sustain them.",
+              "essential_question": "Every bite of food you have ever eaten came from sunlight — so what happens to life on Earth if the producers that capture that sunlight start to disappear?",
+              "scenario": "Scientists have documented that phytoplankton — microscopic algae floating in the ocean — produce about half of the oxygen you breathe every single day, more than all the world's rainforests combined. These creatures are invisible to the naked eye and live nowhere near you, yet your next breath depends on them. When ocean temperatures rise and phytoplankton populations drop, the ripple effects reach every living thing — including you."
+            }
+          ]
+        },
+        {
+          "id": "biology-u4-6-populations-communities-human-impact",
+          "course": 6,
+          "code": "U4.6",
+          "title": "Populations, Communities & Human Impact",
+          "lessons": [
+            {
+              "id": "biology-u4-6-populations-communities-human-impact-lesson-1",
+              "lesson": 1,
+              "title": "Why Do Some Animal Populations Explode — and Then Crash?",
+              "objective": "Students will understand how birth rates, death rates, and limiting factors shape population size over time — and why this matters for predicting everything from deer overpopulation in suburbs to disease outbreaks in humans.",
+              "essential_question": "If conditions are perfect, could a single population of rabbits take over the world — and what actually stops that from happening?",
+              "scenario": "In 2020, a town in Colorado made headlines when hundreds of deer began wandering into neighborhoods, eating gardens, and causing car accidents. Hunters had been banned from the area for years, and no natural predators remained. What had once been a healthy deer population had ballooned out of control — and now the town had to decide what to do. Understanding why populations grow, slow down, and sometimes collapse is the first step to solving problems like this one."
+            },
+            {
+              "id": "biology-u4-6-populations-communities-human-impact-lesson-2",
+              "lesson": 2,
+              "title": "Who's Living With Whom? How Species Depend on Each Other to Survive",
+              "objective": "Students will understand how species within a community interact — through predation, competition, mutualism, and parasitism — and why removing or adding even one species can transform an entire ecosystem.",
+              "essential_question": "If you removed every bee from your local ecosystem tomorrow, what would actually happen — and how far would the effects spread?",
+              "scenario": "In 1995, wildlife managers reintroduced wolves into Yellowstone National Park after a 70-year absence. Within just a few years, elk behavior changed, riverbanks stabilized, and songbird populations rebounded — all because one predator came back. Scientists called it a 'trophic cascade,' where a single species triggers a chain reaction across an entire community. This is the power of species interactions, and it plays out in ecosystems from Yellowstone to your own backyard."
+            },
+            {
+              "id": "biology-u4-6-populations-communities-human-impact-lesson-3",
+              "lesson": 3,
+              "title": "Invasive Species: What Happens When a Stranger Shows Up Uninvited?",
+              "objective": "Students will understand how invasive species disrupt community relationships and native biodiversity — and why human activity is the number one driver of biological invasions worldwide.",
+              "essential_question": "Is it ever possible to 'un-invade' an ecosystem, or is some damage permanent — and who decides which species belong?",
+              "scenario": "Lionfish are beautiful, spiky reef fish native to the Pacific Ocean — but since the 1980s, they've spread explosively through the Atlantic and Caribbean, likely released by aquarium owners who didn't want them anymore. With no natural predators in their new environment, lionfish eat juvenile fish of nearly every species and have devastated reef communities across Florida and the Bahamas. Divers now host 'lionfish derbies,' hunting as many as possible in a single day — but experts wonder if it's already too late to turn the tide."
+            },
+            {
+              "id": "biology-u4-6-populations-communities-human-impact-lesson-4",
+              "lesson": 4,
+              "title": "Are We the Problem — or the Solution? Human Impact on Ecosystems",
+              "objective": "Students will evaluate how human activities — including land use, pollution, climate change, and conservation efforts — shape ecosystems at local and global scales, and explore what meaningful action actually looks like.",
+              "essential_question": "Humans have caused more species extinctions than any asteroid in the last 66 million years — so do we have a responsibility to fix it, and can we?",
+              "scenario": "The Great Barrier Reef — the largest living structure on Earth — has lost more than half its coral cover since 1995 due to warming ocean temperatures, pollution, and coastal development. Bleaching events that used to happen every 25 to 30 years now hit almost every year, leaving corals no time to recover. At the same time, marine scientists are experimenting with coral nurseries, heat-resistant coral strains, and pollution reduction programs to slow the damage. Whether the Reef survives this century may depend on decisions being made right now — by governments, industries, and individuals like you."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

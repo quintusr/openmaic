@@ -91,16 +91,16 @@ const MessageBubble = memo(function MessageBubble({
           className={cn(
             'w-1.5 h-1.5 rounded-full animate-pulse',
             isTeacher
-              ? 'bg-purple-400/70 dark:bg-purple-500/70'
-              : 'bg-indigo-400/70 dark:bg-indigo-500/70',
+              ? 'bg-brand-400/70 dark:bg-brand-500/70'
+              : 'bg-brand-400/70 dark:bg-brand-500/70',
           )}
         />
         <span
           className={cn(
             'w-1.5 h-1.5 rounded-full animate-pulse',
             isTeacher
-              ? 'bg-purple-400/70 dark:bg-purple-500/70'
-              : 'bg-indigo-400/70 dark:bg-indigo-500/70',
+              ? 'bg-brand-400/70 dark:bg-brand-500/70'
+              : 'bg-brand-400/70 dark:bg-brand-500/70',
           )}
           style={{ animationDelay: '200ms' }}
         />
@@ -108,8 +108,8 @@ const MessageBubble = memo(function MessageBubble({
           className={cn(
             'w-1.5 h-1.5 rounded-full animate-pulse',
             isTeacher
-              ? 'bg-purple-400/70 dark:bg-purple-500/70'
-              : 'bg-indigo-400/70 dark:bg-indigo-500/70',
+              ? 'bg-brand-400/70 dark:bg-brand-500/70'
+              : 'bg-brand-400/70 dark:bg-brand-500/70',
           )}
           style={{ animationDelay: '400ms' }}
         />
@@ -129,10 +129,10 @@ const MessageBubble = memo(function MessageBubble({
       className={cn(
         'inline-block px-2.5 py-1.5 rounded-xl text-[12px] leading-relaxed max-w-full text-left transition-shadow duration-300',
         isUser
-          ? 'bg-gradient-to-br from-purple-600 to-purple-700 dark:from-purple-500 dark:to-purple-600 text-white rounded-tr-sm shadow-sm shadow-purple-300/30 dark:shadow-purple-900/50 ring-1 ring-purple-500/20'
+          ? 'bg-gradient-to-br from-brand-600 to-brand-700 dark:from-brand-500 dark:to-brand-600 text-white rounded-tr-sm shadow-sm shadow-brand-300/30 dark:shadow-brand-900/50 ring-1 ring-brand-500/20'
           : isTeacher
             ? 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border border-gray-100 dark:border-gray-700 rounded-tl-sm shadow-sm'
-            : 'bg-indigo-50 dark:bg-indigo-900/20 text-indigo-900 dark:text-indigo-200 border border-indigo-100/50 dark:border-indigo-800/50 rounded-tl-sm',
+            : 'bg-brand-50 dark:bg-brand-900/20 text-brand-900 dark:text-brand-200 border border-brand-100/50 dark:border-brand-800/50 rounded-tl-sm',
       )}
     >
       <span className="break-words">
@@ -296,7 +296,7 @@ export function ChatSessionComponent({
                 'flex gap-2 px-1.5 py-1 rounded-lg border-l-[3px] border-l-transparent transition-[background-color,border-color] duration-300',
                 isUser && 'flex-row-reverse',
                 isActiveBubble &&
-                  'border-l-violet-500 dark:border-l-violet-400 bg-violet-50/50 dark:bg-violet-900/20',
+                  'border-l-brand-500 dark:border-l-brand-400 bg-brand-50/50 dark:bg-brand-900/20',
               )}
             >
               {/* Mini Avatar */}
@@ -310,10 +310,10 @@ export function ChatSessionComponent({
                   className={cn(
                     'text-[9px] font-bold uppercase tracking-wider block mb-0.5',
                     isUser
-                      ? 'text-purple-500 dark:text-purple-400'
+                      ? 'text-brand-500 dark:text-brand-400'
                       : isTeacher
-                        ? 'text-purple-400 dark:text-purple-300'
-                        : 'text-indigo-400 dark:text-indigo-300',
+                        ? 'text-brand-400 dark:text-brand-300'
+                        : 'text-brand-400 dark:text-brand-300',
                   )}
                 >
                   {(() => {

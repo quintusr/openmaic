@@ -144,6 +144,38 @@ export default function ClassroomDetailPage() {
     }
   }, [loading, error, generateRemaining]);
 
+  // Auto-upload homepage-generated classrooms to S3 (classify + upload)
+  const s3UploadedRef = useRef(false);
+  useEffect(() => {
+    if (loading || error || s3UploadedRef.current) return;
+
+    const state = useStageStore.getState();
+    if (!state.stage || state.scenes.length === 0) return;
+
+    // Check if this was a homepage generation (requirement saved by generation-preview)
+    const requirement = sessionStorage.getItem('browseUploadRequirement');
+    if (!requirement) return;
+
+    s3UploadedRef.current = true;
+    sessionStorage.removeItem('browseUploadRequirement');
+
+    // Fire-and-forget: classify and upload to S3
+    fetch('/api/browse/classify-and-upload', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ classroomId, requirement }),
+    })
+      .then((res) => res.json())
+      .then((json) => {
+        if (json.success) {
+          log.info(`Uploaded to Course Library: ${json.subjectCode}/${json.courseId}`);
+        }
+      })
+      .catch((err) => {
+        log.warn('Failed to upload to Course Library:', err);
+      });
+  }, [loading, error, classroomId]);
+
   return (
     <ThemeProvider>
       <MediaStageProvider value={classroomId}>

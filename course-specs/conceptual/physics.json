@@ -1,0 +1,1004 @@
+{
+  "updatedAt": "2026-03-05T10:24:00",
+  "curriculum": "AP Physics 1 for High School Students",
+  "config": {
+    "subjectCode": "PHYSICS",
+    "levelCefrMapping": {
+      "U1": "A1",
+      "U2": "A1",
+      "U3": "A2",
+      "U4": "A2",
+      "U5": "B1",
+      "U6": "B1",
+      "U7": "B2",
+      "U8": "B2"
+    },
+    "topics": ["SCHOOL"]
+  },
+  "levels": [
+    {
+      "level": "U1",
+      "name": "Motion & Forces",
+      "courses": [
+        {
+          "id": "physics-u1-1-describing-motion",
+          "course": 1,
+          "code": "U1.1",
+          "title": "Describing Motion",
+          "lessons": [
+            {
+              "id": "physics-u1-1-describing-motion-lesson-1",
+              "lesson": 1,
+              "title": "Are You Ever Truly Still? Position, Reference Frames & What 'At Rest' Really Means",
+              "objective": "Students will understand that motion is always described relative to a chosen reference point, and that the same object can be simultaneously moving and 'at rest' depending on who is watching — a foundational idea that reframes how we think about everything from car trips to space travel.",
+              "essential_question": "If you're sitting still on a moving train, are you actually moving or not — and who gets to decide?",
+              "scenario": "You're on an Amtrak train cruising at 80 mph, eating a bag of chips. To you, the chips travel only a few inches from your hand to your mouth. To someone watching from a highway overpass, those chips just traveled half a mile. Neither of you is wrong — you're simply measuring motion from different reference points. The question of whether something is 'moving' turns out to be far more slippery than it first appears."
+            },
+            {
+              "id": "physics-u1-1-describing-motion-lesson-2",
+              "lesson": 2,
+              "title": "Speed vs. Velocity: Why Does the Direction You Drive Home Actually Matter?",
+              "objective": "Students will distinguish between scalar quantities (like speed and distance) and vector quantities (like velocity and displacement), understanding that ignoring direction can lead to completely misleading descriptions of motion — with real consequences in navigation, sports analysis, and collision physics.",
+              "essential_question": "If a runner completes a full lap around a 400-meter track in 60 seconds, what is their velocity at the finish line — and why might the answer surprise you?",
+              "scenario": "A wide receiver in football sprints 20 yards downfield, cuts left 10 yards, then doubles back 5 yards toward the quarterback to catch a screen pass. The TV broadcast says he 'covered a lot of ground,' but his GPS tracker tells a more nuanced story. Coaches analyzing the play care deeply about not just how far he ran, but exactly which direction he ended up from where he started — because that difference changes everything about how they design the next play."
+            },
+            {
+              "id": "physics-u1-1-describing-motion-lesson-3",
+              "lesson": 3,
+              "title": "Can You 'Feel' Speed? Why Your Body Responds to Changes, Not to Motion Itself",
+              "objective": "Students will understand the difference between constant velocity and changing velocity, and begin developing the key intuition that our bodies (and physics) respond to *changes* in motion — not motion itself. This sets up the crucial conceptual bridge to Newton's First Law in a later course.",
+              "essential_question": "You're on a smooth, windowless airplane flying at 600 mph — why does it feel exactly the same as sitting still in your living room?",
+              "scenario": "On a long highway drive, you barely notice the speedometer reading 75 mph — the ride feels completely smooth and uneventful. But the moment the driver slams the brakes, you lurch forward and your coffee spills. Nothing 'pushed' you forward — the car simply stopped changing your motion. Your body isn't reacting to the speed; it's reacting to the *change* in speed, a distinction that turns out to be one of the most important ideas in all of physics."
+            },
+            {
+              "id": "physics-u1-1-describing-motion-lesson-4",
+              "lesson": 4,
+              "title": "How Do We Capture Motion? Reading & Building Position-Time Graphs",
+              "objective": "Students will learn to interpret and construct position-time graphs as a visual language for describing motion, recognizing that the shape of a graph — its slope, flatness, and direction — tells a complete story about how an object moves without needing a single equation.",
+              "essential_question": "If two cars have different position-time graphs that both start and end at the same points, did they take the same trip?",
+              "scenario": "Imagine dropping a GPS tracker into a friend's backpack on their walk home from school. An hour later, you pull up the position-time graph on your laptop: there's a steep upward slope, then a flat section, then a slower rise, then a sudden return toward zero. You weren't there — but the graph tells you exactly when your friend walked fast, when they stopped to talk to someone, when they meandered, and when they turned around. Learning to read this graph is like learning to read a completely new kind of story."
+            }
+          ]
+        },
+        {
+          "id": "physics-u1-2-acceleration-free-fall",
+          "course": 2,
+          "code": "U1.2",
+          "title": "Acceleration & Free Fall",
+          "lessons": [
+            {
+              "id": "physics-u1-2-acceleration-free-fall-lesson-1",
+              "lesson": 1,
+              "title": "Why Does Speeding Up Feel Different From Moving Fast?",
+              "objective": "Students will understand that acceleration describes the *rate of change* of velocity — not speed itself — and recognize that you can be moving fast with zero acceleration or standing still with huge acceleration. This distinction is foundational to understanding why forces matter in physics.",
+              "essential_question": "If a car is traveling at 60 mph on a perfectly straight highway, is it accelerating? What would you actually *feel* if you were inside?",
+              "scenario": "You're on a long, empty highway at a steady 70 mph — cruise control locked in, coffee in hand. Everything feels calm and almost motionless inside the car. Then the light ahead turns yellow, the driver brakes hard, and suddenly you're thrown forward against your seatbelt. Both situations involved high speed, but only one felt violent. What made the difference?"
+            },
+            {
+              "id": "physics-u1-2-acceleration-free-fall-lesson-2",
+              "lesson": 2,
+              "title": "Can You Have Negative Acceleration While Speeding Up?",
+              "objective": "Students will master the relationship between the direction of velocity and the direction of acceleration, understanding that 'negative acceleration' doesn't always mean slowing down — it depends on the direction of motion. This challenges the common misconception that deceleration and negative acceleration are the same thing.",
+              "essential_question": "A skateboarder rolls backward down a ramp, going faster and faster. Is her acceleration positive or negative — and does it even matter which we call which?",
+              "scenario": "A skateboarder at the top of a half-pipe lets go and rolls backward down the slope, picking up speed with every second. Meanwhile, a car on the other side of the street brakes hard while driving forward, slowing down rapidly. Both objects are changing speed at the same rate — but are they doing the same thing physically? Untangling speed, velocity, and direction is the key to making sense of both situations."
+            },
+            {
+              "id": "physics-u1-2-acceleration-free-fall-lesson-3",
+              "lesson": 3,
+              "title": "Do Heavier Objects Really Fall Faster?",
+              "objective": "Students will discover that in the absence of air resistance, all objects fall with the same constant acceleration (g ≈ 9.8 m/s²) regardless of mass — directly challenging one of the most persistent misconceptions in all of physics. Understanding free fall is critical for analyzing any situation involving gravity and vertical motion.",
+              "essential_question": "If you dropped a bowling ball and a tennis ball from the same height at the same moment, which would hit the ground first — and how confident are you in your answer?",
+              "scenario": "Legend has it that Galileo dropped two cannonballs of different masses from the Leaning Tower of Pisa to settle a debate that had lasted nearly 2,000 years. Almost everyone watching expected the heavier one to win. They hit the ground at the same time. Today, NASA replicated the experiment on the Moon using a hammer and a feather — same result, even more dramatic. Why does mass have nothing to do with how fast things fall?"
+            },
+            {
+              "id": "physics-u1-2-acceleration-free-fall-lesson-4",
+              "lesson": 4,
+              "title": "What Happens to Your Speed Every Second You're in Free Fall?",
+              "objective": "Students will apply the constant acceleration of gravity (g ≈ 9.8 m/s²) to calculate velocity and distance during free fall using kinematic equations, and interpret the meaning of constant acceleration graphically and numerically. This lesson bridges conceptual understanding of free fall with quantitative problem-solving needed for all future dynamics work.",
+              "essential_question": "If you stepped off a cliff (safely hypothetically!), how fast would you be falling after 1 second? After 3 seconds? Is there a pattern — and could you have predicted it without doing any math?",
+              "scenario": "A cliff diver in Acapulco steps off a 35-meter platform and plunges toward the water below. In the first second of the dive, she falls about 5 meters. In the next second, she covers almost 15 meters. By the time she hits the water, she's moving at nearly 60 mph — all from just the steady, relentless pull of gravity adding 9.8 m/s to her speed every single second. The pattern hidden in those numbers is one of the most elegant relationships in all of physics."
+            }
+          ]
+        },
+        {
+          "id": "physics-u1-3-vectors-projectile-motion",
+          "course": 3,
+          "code": "U1.3",
+          "title": "Vectors & Projectile Motion",
+          "lessons": [
+            {
+              "id": "physics-u1-3-vectors-projectile-motion-lesson-1",
+              "lesson": 1,
+              "title": "Which Way Is That? Breaking Motion Into Pieces",
+              "objective": "Students will understand that vectors carry both magnitude and direction, and learn to decompose them into horizontal and vertical components — because almost nothing in the real world moves in a perfectly straight line, and analyzing motion requires separating it into manageable pieces.",
+              "essential_question": "If you walk three blocks north and four blocks east, have you really traveled seven blocks from your starting point?",
+              "scenario": "A wide receiver sprints 10 yards downfield and then cuts 7 yards toward the sideline to catch a touchdown pass. The quarterback needed to throw the ball to exactly where the receiver would be — not where he started, and not along either leg of that path. To make that throw, someone has to figure out the true straight-line distance and direction between passer and target, which means combining two motions that point in completely different directions."
+            },
+            {
+              "id": "physics-u1-3-vectors-projectile-motion-lesson-2",
+              "lesson": 2,
+              "title": "Can Two Velocities Happen at Once?",
+              "objective": "Students will understand how to add velocity vectors and find resultant velocity, recognizing that an object can have two independent motions simultaneously — a concept critical for understanding everything from river crossings to airplane navigation.",
+              "essential_question": "If you walk toward the back of a moving bus at the same speed the bus is moving forward, are you actually standing still?",
+              "scenario": "A kayaker wants to paddle straight across a 60-meter-wide river to reach a dock directly opposite her. The river current, however, is pushing her downstream the entire time she paddles. If she aims her kayak straight at the dock, she'll actually land well downstream — the river doesn't care about her plans. Understanding how her paddling velocity and the river's velocity combine into a single resultant is the only way she can figure out where she'll actually end up, or how to aim so she lands exactly where she wants."
+            },
+            {
+              "id": "physics-u1-3-vectors-projectile-motion-lesson-3",
+              "lesson": 3,
+              "title": "Why Does a Thrown Ball Curve Through the Air?",
+              "objective": "Students will understand that projectile motion is simply free fall happening at the same time as constant horizontal motion — two independent motions governed by different rules simultaneously — which explains the curved paths of everything from soccer balls to water from a hose.",
+              "essential_question": "If you fire a bullet perfectly horizontally and drop an identical bullet from the same height at the same instant, which one hits the ground first?",
+              "scenario": "A soccer player blasts a penalty kick low and hard toward the corner of the goal. The ball leaves her foot moving forward fast, but gravity is pulling it downward every single millisecond of its flight. Neither motion cancels the other — the ball moves forward at a steady pace while simultaneously accelerating downward, tracing that familiar arcing path. Understanding these two motions as separate but simultaneous is the key to predicting exactly where the ball will land — and whether it clears the goalkeeper's dive."
+            },
+            {
+              "id": "physics-u1-3-vectors-projectile-motion-lesson-4",
+              "lesson": 4,
+              "title": "Does Launch Angle Actually Matter?",
+              "objective": "Students will analyze how launch angle affects the range, height, and hang time of a projectile, and understand why 45° maximizes range — connecting vector decomposition and free-fall concepts to make quantitative predictions about real launched objects.",
+              "essential_question": "A long jumper and a high jumper both leave the ground with the same speed — why do they launch at completely different angles to achieve their goals?",
+              "scenario": "During a football punt, the kicker has to make a split-second decision: kick the ball high to give his coverage team time to run downfield, or kick it low and far to maximize distance. A high, steep kick gives the ball tremendous hang time but sacrifices range, while a flat kick races downfield but lands before defenders arrive. The kicker is intuitively solving a physics problem every time — trading vertical and horizontal components of the same launch speed to get the outcome his team needs."
+            }
+          ]
+        },
+        {
+          "id": "physics-u1-4-newtons-first-second-laws",
+          "course": 4,
+          "code": "U1.4",
+          "title": "Newton's First & Second Laws",
+          "lessons": [
+            {
+              "id": "physics-u1-4-newtons-first-second-laws-lesson-1",
+              "lesson": 1,
+              "title": "Why Does a Hockey Puck Keep Sliding Forever (On Ice)?",
+              "objective": "Students will understand Newton's First Law — that objects maintain their state of motion unless acted on by a net external force — and recognize that forces are NOT required to keep things moving, only to change their motion. This challenges the deeply held belief that motion requires a continuous push.",
+              "essential_question": "If you stop pushing a shopping cart, it slows down — so doesn't moving always require a force? What's actually stopping it, and what would happen if nothing could?",
+              "scenario": "A hockey puck glides across a freshly Zamboni'd rink and seems to coast almost forever compared to a ball rolling across a gym floor. Most people assume the puck 'runs out of force,' but it never had force stored inside it to begin with. Something else is responsible for why it eventually stops — and understanding what that is completely flips how you think about motion."
+            },
+            {
+              "id": "physics-u1-4-newtons-first-second-laws-lesson-2",
+              "lesson": 2,
+              "title": "Why Do You Lurch Forward When a Bus Suddenly Brakes?",
+              "objective": "Students will apply Newton's First Law to real situations involving inertia — the tendency of objects to resist changes in their motion — and connect inertia to mass. Understanding inertia explains seatbelt design, car safety, and why being hit by a more massive object is more dangerous.",
+              "essential_question": "When a bus stops, the bus stops — but why does your body keep moving forward? And if a truck and a bicycle both brake as hard as possible, why is it so much harder to stop the truck?",
+              "scenario": "You're standing on a city bus holding a paper coffee cup when the driver slams the brakes at a red light. Your body pitches forward, coffee sloshes toward the lid, and you have to catch yourself with the handrail. The bus stopped — so why didn't you? Your body wasn't being pushed forward; it was simply refusing to stop, and that refusal has a name and a measurable quantity."
+            },
+            {
+              "id": "physics-u1-4-newtons-first-second-laws-lesson-3",
+              "lesson": 3,
+              "title": "What Actually Happens When You Push Harder — or Use a Heavier Cart?",
+              "objective": "Students will understand Newton's Second Law (a = F_net / m) and use it to predict how acceleration changes when force or mass changes independently. This gives students a precise, testable tool for connecting the cause (net force) to the effect (acceleration), replacing vague intuitions with proportional reasoning.",
+              "essential_question": "If you double the force on an object, does it go twice as fast — or something else entirely? And if you double the mass, what happens to the acceleration for the same push?",
+              "scenario": "Imagine pushing a loaded grocery cart through a parking lot — it's sluggish and hard to get moving. Now imagine the same push on an empty cart: it practically flies out of your hands. You just experienced Newton's Second Law firsthand. The force was the same, the mass was different, and the result — acceleration — changed in a way that's perfectly predictable with a single equation."
+            },
+            {
+              "id": "physics-u1-4-newtons-first-second-laws-lesson-4",
+              "lesson": 4,
+              "title": "How Do You Find the Net Force When Multiple Forces Are Pulling at Once?",
+              "objective": "Students will learn to identify all forces acting on an object, draw free-body diagrams, calculate net force, and apply Newton's Second Law to predict acceleration in real one-dimensional scenarios. This lesson bridges conceptual understanding to quantitative problem-solving — the core skill needed for the rest of the dynamics unit.",
+              "essential_question": "If someone is pushing a couch forward and friction is pushing it backward at the same time, how do you figure out what the couch actually does — and what does it mean if the net force is zero but the couch is still moving?",
+              "scenario": "Two movers are pushing a heavy sofa across a living room floor: one pushes forward with 200 N, while friction pushes back with 80 N. Meanwhile, gravity pulls it down and the floor pushes up — four forces all at once. To predict whether the sofa speeds up, slows down, or moves at constant speed, you need a way to account for every force and find what's left over — that remainder is what Newton's Second Law actually acts on."
+            }
+          ]
+        },
+        {
+          "id": "physics-u1-5-newtons-third-law-force-pairs",
+          "course": 5,
+          "code": "U1.5",
+          "title": "Newton's Third Law & Force Pairs",
+          "lessons": [
+            {
+              "id": "physics-u1-5-newtons-third-law-force-pairs-lesson-1",
+              "lesson": 1,
+              "title": "If You Push the Wall, Does the Wall Push Back?",
+              "objective": "Students will understand that every force exists as part of a mutual interaction — when one object exerts a force on another, the second object always exerts an equal and opposite force back. This matters because it reframes force as a two-way relationship, not a one-way action, which is essential for understanding how anything actually moves.",
+              "essential_question": "If a wall pushes back on you with the same force you push on it, why can you move away from the wall but the wall stays still?",
+              "scenario": "You're at a pool party and you place your feet flat against the pool wall, then push off as hard as you can. You rocket backward through the water — but the wall doesn't move at all. Both you and the wall experienced forces in this moment, yet only one of you went flying. Understanding why requires rethinking everything you assume about how pushes and pulls actually work."
+            },
+            {
+              "id": "physics-u1-5-newtons-third-law-force-pairs-lesson-2",
+              "lesson": 2,
+              "title": "Action-Reaction or Just Confusion? Identifying True Force Pairs",
+              "objective": "Students will learn to correctly identify Newton's Third Law force pairs by recognizing that paired forces always act on DIFFERENT objects, are always the same type of interaction, and always occur simultaneously. This matters because students frequently misidentify force pairs, which leads to errors in every future force analysis problem.",
+              "essential_question": "A book sits on a table — the table pushes up on the book and gravity pulls down on the book. Are those two forces a Newton's Third Law pair? Why does it matter if we get this wrong?",
+              "scenario": "A 10-pound textbook is resting perfectly still on your desk. Your instinct might say the 'action' is gravity pulling it down and the 'reaction' is the table pushing it up — after all, they're equal and opposite, right? But this reasoning contains a hidden trap that has fooled physics students for generations, and getting it wrong will silently corrupt your force diagrams for the rest of the year."
+            },
+            {
+              "id": "physics-u1-5-newtons-third-law-force-pairs-lesson-3",
+              "lesson": 3,
+              "title": "Why Doesn't the Earth Come Flying Up When You Jump?",
+              "objective": "Students will apply Newton's Third Law to situations involving dramatically different masses, using Newton's Second Law to explain why equal forces produce wildly unequal accelerations. This matters because it resolves one of the most persistent puzzles in introductory physics and deepens understanding of how F = ma and the Third Law work together.",
+              "essential_question": "When you jump, you push Earth downward with the same force Earth pulls you upward — so why does only YOU accelerate noticeably, while Earth seems to do nothing?",
+              "scenario": "Every time you jump off a diving board, you push down on the board and Earth with hundreds of newtons of force — and according to Newton's Third Law, Earth pushes back on you with exactly the same force. If the forces are truly equal, it seems like you and the Earth should both go flying in opposite directions. Yet you soar upward while the planet beneath you sits completely still, utterly unbothered. Something about mass must be doing serious work here."
+            },
+            {
+              "id": "physics-u1-5-newtons-third-law-force-pairs-lesson-4",
+              "lesson": 4,
+              "title": "How Does a Rocket Move in Empty Space Where There's Nothing to Push Against?",
+              "objective": "Students will synthesize Newton's Third Law, force pairs, and net force to analyze propulsion in real-world systems including rockets, swimmers, and cars, explaining how objects accelerate by pushing on something else. This matters because it reveals that Newton's Third Law is not just a theoretical symmetry — it is the fundamental engine behind all locomotion in the universe.",
+              "essential_question": "A rocket in deep space has no ground to push off and no air to push against — so what exactly is it pushing on, and how does Newton's Third Law explain why it still accelerates?",
+              "scenario": "In 1920, the New York Times published a mocking editorial claiming that rocket pioneer Robert Goddard was embarrassingly ignorant of basic physics — because, they argued, a rocket has nothing to push against in the vacuum of space, so it simply cannot work. The Times was spectacularly wrong, and NASA sent a rocket to the Moon 49 years later. Understanding Newton's Third Law in terms of force pairs — not 'pushing against things' — is exactly what the newspaper editors were missing."
+            }
+          ]
+        },
+        {
+          "id": "physics-u1-6-friction-drag-forces-in-context",
+          "course": 6,
+          "code": "U1.6",
+          "title": "Friction, Drag & Forces in Context",
+          "lessons": [
+            {
+              "id": "physics-u1-6-friction-drag-forces-in-context-lesson-1",
+              "lesson": 1,
+              "title": "Why Can't You Stop on Ice? The Science of Friction",
+              "objective": "Students will understand that friction is a contact force that opposes relative motion between surfaces, and that its strength depends on the types of surfaces and the normal force pressing them together — not on the size or speed of the object. This matters because friction governs nearly every interaction we have with the physical world, from walking to driving to sports.",
+              "essential_question": "If friction is what slows things down, why doesn't a heavier car always take longer to stop than a lighter one?",
+              "scenario": "It's a freezing January morning and a school bus attempts to stop at a red light, but the icy road offers almost no grip. The bus slides helplessly through the intersection even though the driver slammed the brakes. Meanwhile, a much lighter bicycle stops almost instantly on the dry pavement nearby. What is friction actually doing in each case, and why does the road surface seem to matter more than the vehicle's weight?"
+            },
+            {
+              "id": "physics-u1-6-friction-drag-forces-in-context-lesson-2",
+              "lesson": 2,
+              "title": "Sliding vs. Staying Put: Static and Kinetic Friction in Action",
+              "objective": "Students will distinguish between static friction (which prevents motion) and kinetic friction (which acts during sliding), and understand why it takes more force to START moving an object than to KEEP it moving. This distinction explains countless real-world phenomena, from pushing furniture to the physics of car tires gripping the road.",
+              "essential_question": "Why does a heavy couch suddenly lurch forward when you push hard enough — why doesn't it just smoothly start moving the moment you apply any force at all?",
+              "scenario": "You're helping a friend rearrange furniture and you push a heavy sofa with gradually increasing force. For several seconds, nothing happens — the couch stubbornly refuses to budge no matter how hard you push. Then, at a certain moment, it suddenly breaks free and slides across the floor with less effort than you expected. You nearly fall forward because the resistance dropped so dramatically. Two different types of friction are at work here, and understanding them explains exactly what you felt."
+            },
+            {
+              "id": "physics-u1-6-friction-drag-forces-in-context-lesson-3",
+              "lesson": 3,
+              "title": "Why Does a Feather Float Down? Understanding Drag and Air Resistance",
+              "objective": "Students will understand that drag is a velocity-dependent resistive force exerted by fluids (like air or water) on moving objects, and that terminal velocity occurs when drag exactly balances gravity. This concept corrects the common misconception that heavier objects always fall faster and explains everything from skydiving to why raindrops don't kill you.",
+              "essential_question": "If gravity pulls every object downward with a force proportional to its mass, why does a skydiver eventually stop accelerating — and why does a crumpled piece of paper fall faster than a flat one of the exact same mass?",
+              "scenario": "A skydiver leaps from a plane at 10,000 feet and initially accelerates rapidly toward the earth. But after about 12 seconds of freefall, she stops speeding up entirely and falls at a steady 120 mph — her terminal velocity. Later, she opens her parachute and reaches a new, much slower terminal velocity. The only thing that changed was the size and shape of the object moving through the air, yet it completely transformed her motion."
+            },
+            {
+              "id": "physics-u1-6-friction-drag-forces-in-context-lesson-4",
+              "lesson": 4,
+              "title": "Forces Working Together: Can You Draw Every Force Acting on You Right Now?",
+              "objective": "Students will synthesize Newton's laws, friction, normal forces, drag, and gravity by constructing complete free-body diagrams for objects in complex, real-world scenarios — including situations where forces are unbalanced and motion is changing. This capstone skill ties the entire unit together and is the foundation for every future dynamics problem in physics.",
+              "essential_question": "When a car travels at a constant speed on a highway, everyone says the engine is 'overcoming friction' — but if the forces balance out, what is the engine's force actually doing, and where does Newton's second law fit in?",
+              "scenario": "A delivery truck is driving at a steady 60 mph down a flat highway, then slows as it climbs a steep hill, and finally brakes hard to stop at a traffic light. In each of these three phases, the truck's motion is completely different — constant, changing, and stopping — yet gravity, friction, drag, and the engine force are all present throughout. By carefully drawing and analyzing the forces in each phase, you can predict exactly how the truck will move and why — using nothing but Newton's laws and the forces you've studied all unit long."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "U2",
+      "name": "Energy & Momentum",
+      "courses": [
+        {
+          "id": "physics-u2-1-work-energy",
+          "course": 1,
+          "code": "U2.1",
+          "title": "Work & Energy",
+          "lessons": [
+            {
+              "id": "physics-u2-1-work-energy-lesson-1",
+              "lesson": 1,
+              "title": "Does Trying Hard Count? Why Physicists Have a Weird Definition of 'Work'",
+              "objective": "Students will understand that in physics, 'work' requires both a force AND motion in the direction of that force — and why this precise definition is the foundation for understanding how energy moves and transforms in the universe.",
+              "essential_question": "If you push against a wall until your arms give out, you've done zero work according to physics — so where did all your energy go?",
+              "scenario": "A exhausted mover presses his shoulder against a massive refrigerator for a full minute, straining with every muscle, but the fridge doesn't budge an inch. Meanwhile, a child carries her backpack horizontally across the hallway at constant height. According to physics, neither of them has done any work — but the mover will definitely need a snack afterward. How can that possibly be right?"
+            },
+            {
+              "id": "physics-u2-1-work-energy-lesson-2",
+              "lesson": 2,
+              "title": "Force at an Angle: Does It Matter Which Way You Push?",
+              "objective": "Students will learn to calculate work done by a force applied at an angle using W = Fd·cosθ, understanding why only the component of force along the direction of motion actually transfers energy — a critical skill for analyzing ramps, sleds, and real machines.",
+              "essential_question": "A sled dog pulls its sled with a harness angled upward, and a worker drags a crate with a rope tilted downward — which technique transfers more energy into forward motion, and is there an optimal angle?",
+              "scenario": "At the Iditarod sled race in Alaska, a dog team pulls a loaded sled across the snow. The harness lines angle upward from the dogs' backs at about 30 degrees above horizontal. A sports engineer watching the race wonders: if the team could somehow pull with the ropes perfectly horizontal, would they move the sled faster? The answer involves a surprisingly elegant piece of geometry hidden inside every force."
+            },
+            {
+              "id": "physics-u2-1-work-energy-lesson-3",
+              "lesson": 3,
+              "title": "What Is Energy, Really? Unmasking Physics' Most Powerful Bookkeeping Tool",
+              "objective": "Students will develop a conceptual understanding of energy as the capacity to do work and as a conserved quantity that changes form — laying the mental framework for all of Unit 2 and revealing why energy accounting is one of the most powerful problem-solving tools in all of physics.",
+              "essential_question": "Energy can't be created or destroyed — so when your phone battery 'dies,' where exactly did all that energy go, and could you ever get it back?",
+              "scenario": "You plug your phone in at 0% battery, eat a granola bar, and climb four flights of stairs to class — and somehow all three of those actions involve the same fundamental currency: energy. The granola bar's chemical energy, the phone's electrical energy, and the work your legs do against gravity are all just different disguises for the same thing. Physics treats energy like a perfect accountant who never loses track of a single joule, no matter how many times it changes form."
+            },
+            {
+              "id": "physics-u2-1-work-energy-lesson-4",
+              "lesson": 4,
+              "title": "Positive, Negative, Zero: Can Work Actually Slow Things Down?",
+              "objective": "Students will understand the sign and net work done on an object — including how friction and opposing forces do negative work that removes energy from a system — building the critical conceptual bridge to the Work-Energy Theorem introduced in the next course.",
+              "essential_question": "A skydiver falling at constant speed has gravity doing positive work and air resistance doing negative work — if those cancel out perfectly, what is actually happening to the skydiver's energy?",
+              "scenario": "A bobsled team pushes their sled down the starting track, doing positive work to speed it up. But the moment they jump in, the icy walls of every curve push sideways on the sled, and the small amount of friction in the runners steadily steals energy from their run. By the time they cross the finish line, the total work done ON the sled by all forces combined tells the whole story of whether they sped up, slowed down, or held steady — and that story is told entirely in the math of positive and negative work."
+            }
+          ]
+        },
+        {
+          "id": "physics-u2-2-kinetic-potential-energy",
+          "course": 2,
+          "code": "U2.2",
+          "title": "Kinetic & Potential Energy",
+          "lessons": [
+            {
+              "id": "physics-u2-2-kinetic-potential-energy-lesson-1",
+              "lesson": 1,
+              "title": "What Does It Mean to Be 'In Motion'? — Unlocking Kinetic Energy",
+              "objective": "Students will understand that kinetic energy depends on both mass and velocity, and that velocity matters more than mass — a relationship that explains why speed limits save lives and why a baseball can shatter a car window.",
+              "essential_question": "If a semi-truck and a sports car are both moving at 60 mph and both brake to a stop, why does the truck need so much more road to stop — and what does that tell us about the energy packed into motion?",
+              "scenario": "A Major League pitcher hurls a 0.145 kg baseball at 100 mph. Meanwhile, a 2,000 kg SUV rolls through a parking lot at just 5 mph. The baseball feels almost weightless in your hand, yet at that speed it can crack a helmet. The SUV barely seems to be moving, yet it can total a parked car. Which one carries more kinetic energy — and why does the answer surprise almost everyone?"
+            },
+            {
+              "id": "physics-u2-2-kinetic-potential-energy-lesson-2",
+              "lesson": 2,
+              "title": "Is Energy Hiding in Plain Sight? — Gravitational Potential Energy",
+              "objective": "Students will understand that gravitational potential energy is stored energy that depends on an object's mass, height, and the strength of gravity — and that recognizing 'hidden' stored energy is essential for predicting what objects will do next.",
+              "essential_question": "A wrecking ball hanging motionless from a crane looks like it's doing nothing — so where is all the energy that will demolish a concrete wall the moment it's released?",
+              "scenario": "At the top of a roller coaster's first hill, a fully loaded train of cars sits nearly still for just a moment before plunging downward. No engine is running. No fuel is burning. Yet in seconds, riders are screaming through loops at 60 mph. The energy for that entire thrilling ride was loaded in silently while the chain slowly hauled the cars to the top — stored invisibly in height, waiting to be unleashed."
+            },
+            {
+              "id": "physics-u2-2-kinetic-potential-energy-lesson-3",
+              "lesson": 3,
+              "title": "What Happens When Stored Energy Gets Released? — Trading Height for Speed",
+              "objective": "Students will understand how gravitational potential energy converts into kinetic energy as objects fall or descend, using proportional reasoning to predict speeds at different heights — a skill that connects roller coasters, cliff diving, and avalanche science.",
+              "essential_question": "If a skier starts from twice as high on a mountain, do they hit the bottom going twice as fast — or is the relationship between height and speed more surprising than that?",
+              "scenario": "A cliff diver in Acapulco, Mexico leaps from a platform 35 meters above the ocean. As she falls, she folds her body into a tight position to slice cleanly into the water below. Every meter she drops, she trades a little stored height-energy for raw speed. By the time she hits the surface, she's traveling fast enough that hitting the water wrong would feel like hitting concrete — the physics of falling doesn't care how fearless you are."
+            },
+            {
+              "id": "physics-u2-2-kinetic-potential-energy-lesson-4",
+              "lesson": 4,
+              "title": "Can Energy Change Form Without Disappearing? — The Full Energy Picture",
+              "objective": "Students will understand that kinetic and potential energy continuously interchange within a system, and that tracking both forms together reveals why the total mechanical energy stays constant — building the foundation for Conservation of Energy in the next course.",
+              "essential_question": "A pendulum swings back and forth forever in a physics textbook but slows down in real life — if energy is never destroyed, where exactly does it go, and how do we account for every joule?",
+              "scenario": "At a skate park, a skateboarder rolls down one side of a half-pipe and rockets up the other side, reaching almost — but not quite — the same height she started from. Each pass, she loses a little altitude. She can feel the concrete vibrating under her board and sense the slight warmth of friction on her wheels. The energy isn't gone; it's just been transformed into something she can't skate with anymore — and understanding that difference is the key to mastering energy in any system."
+            }
+          ]
+        },
+        {
+          "id": "physics-u2-3-conservation-of-energy",
+          "course": 3,
+          "code": "U2.3",
+          "title": "Conservation of Energy",
+          "lessons": [
+            {
+              "id": "physics-u2-3-conservation-of-energy-lesson-1",
+              "lesson": 1,
+              "title": "Where Does the Energy Go? The Universe's Greatest Accounting Rule",
+              "objective": "Students will understand that energy is never created or destroyed — only transformed between forms — and will use this principle to explain everyday energy transfers. This matters because conservation of energy is the single most powerful law in all of physics, used by engineers, doctors, and scientists to design everything from roller coasters to MRI machines.",
+              "essential_question": "If energy can never be destroyed, why do we keep hearing that we're 'running out' of it?",
+              "scenario": "You drop a basketball from shoulder height and it bounces back — but never quite as high as where you started. Where did the 'missing' height go? It didn't disappear; it quietly transformed into a tiny burst of heat and sound the moment the ball smashed into the floor. Every joule is accounted for, every time, without exception."
+            },
+            {
+              "id": "physics-u2-3-conservation-of-energy-lesson-2",
+              "lesson": 2,
+              "title": "The Ultimate Energy Trade-Off: Roller Coasters and the Height-Speed Swap",
+              "objective": "Students will use the conservation of energy equation to predict the speed of an object at any point in a frictionless system by tracking the trade-off between gravitational potential energy and kinetic energy. This matters because this exact calculation is used by roller coaster engineers to guarantee riders reach every loop and hill without stalling.",
+              "essential_question": "If you know only how high a roller coaster starts, can you predict exactly how fast it's moving at the bottom — without knowing its mass or the time it took?",
+              "scenario": "The 'Steel Vengeance' coaster at Cedar Point launches riders from a 61-meter drop — one of the tallest in the world. At the very bottom of that plunge, riders are screaming at nearly 35 meters per second. The coaster's designers never needed a stopwatch to predict that speed; they only needed a ruler to measure the height and the law of conservation of energy."
+            },
+            {
+              "id": "physics-u2-3-conservation-of-energy-lesson-3",
+              "lesson": 3,
+              "title": "Why Doesn't the Pendulum Swing Forever? Introducing Energy 'Losses'",
+              "objective": "Students will distinguish between ideal (frictionless) energy conservation and real-world systems where mechanical energy is converted to thermal energy by friction and air resistance, and will calculate how much energy is 'lost' to non-mechanical forms. This matters because understanding energy dissipation is critical for designing efficient engines, brakes, and buildings.",
+              "essential_question": "A pendulum in a vacuum swings forever, but yours in the classroom stops — so did energy actually get destroyed this time?",
+              "scenario": "Galileo reportedly watched a chandelier swinging in a cathedral and noticed it always returned to the same height — but only for the first few swings. Over time, the arc grew smaller and smaller until the chandelier hung perfectly still. The energy didn't vanish; it was stolen swing by swing, invisibly warming the air and the pivot point, until none was left to keep it moving."
+            },
+            {
+              "id": "physics-u2-3-conservation-of-energy-lesson-4",
+              "lesson": 4,
+              "title": "Could You Power Your Phone by Climbing Stairs? Energy Conservation Across Systems",
+              "objective": "Students will apply conservation of energy across connected systems — including food, human bodies, mechanical motion, and electrical devices — using proportional reasoning to evaluate energy chains from input to useful output. This matters because this kind of whole-system energy thinking is essential for understanding nutrition, exercise science, and sustainable technology.",
+              "essential_question": "Your body converts a candy bar into the energy you use to climb stairs — so why can't you just hook yourself to a generator and charge your phone while you work out?",
+              "scenario": "A single chocolate chip cookie contains about 50 Calories of chemical energy — enough, in theory, to lift a 60 kg student nearly 36 meters straight up. But your muscles are only about 25% efficient, so most of that cookie becomes body heat before your legs ever move. Engineers designing human-powered generators face the same brutal reality: the energy is always there, but getting it to do exactly what you want is a whole different challenge."
+            }
+          ]
+        },
+        {
+          "id": "physics-u2-4-impulse-momentum",
+          "course": 4,
+          "code": "U2.4",
+          "title": "Impulse & Momentum",
+          "lessons": [
+            {
+              "id": "physics-u2-4-impulse-momentum-lesson-1",
+              "lesson": 1,
+              "title": "Why Does a Pillow Save Your Face But a Brick Wall Doesn't?",
+              "objective": "Students will understand momentum as mass in motion (p = mv) and recognize why momentum is a useful quantity for describing moving objects. This matters because momentum captures something energy alone misses — the combined effect of how much stuff is moving and how fast, which is critical for predicting the outcome of any collision.",
+              "essential_question": "A tennis ball and a bowling ball roll toward you at the same speed — why does stopping the bowling ball feel so dramatically different, and what does that tell us about what 'motion' really means?",
+              "scenario": "A 5,000-pound SUV and a bicycle are both cruising at 30 mph down the same street. If both drivers slam their brakes at the same time, the SUV takes nearly four times the distance to stop. The numbers are the same speed, but something about the SUV makes it far harder to bring to rest — and that something has a name: momentum."
+            },
+            {
+              "id": "physics-u2-4-impulse-momentum-lesson-2",
+              "lesson": 2,
+              "title": "Is a Short, Hard Hit the Same as a Long, Gentle Push?",
+              "objective": "Students will understand impulse (J = FΔt) as the product of force and contact time, and discover that impulse equals the change in momentum (the Impulse-Momentum Theorem). This matters because it reveals the hidden trade-off in every hit, push, or collision — you can achieve the same momentum change with a huge force over a short time or a smaller force over a longer time.",
+              "essential_question": "A karate expert breaks a board with a lightning-fast strike, while a physical therapist slowly pushes a patient's leg during rehab — both change the momentum of an object by the same amount. How can something so violent and something so gentle be mathematically equivalent?",
+              "scenario": "In a crash test, a car hits a rigid concrete barrier and crumples to a stop in 0.1 seconds. The same car hits a specially designed foam barrier and stops in 0.4 seconds. The car's momentum change is identical in both tests, but the force on the passengers is four times greater in the first crash. Engineers designing airbags live by this trade-off every single day."
+            },
+            {
+              "id": "physics-u2-4-impulse-momentum-lesson-3",
+              "lesson": 3,
+              "title": "Why Do Airbags Inflate — and Why Must They Also Deflate?",
+              "objective": "Students will apply the Impulse-Momentum Theorem to analyze real safety systems, using proportional reasoning to compare forces when contact time changes. This matters because understanding F = Δp/Δt explains the engineering logic behind helmets, crumple zones, padding, and landing techniques used in sports and survival situations.",
+              "essential_question": "If an airbag that stays fully inflated would actually hurt you more than one that deflates on contact, what does that reveal about the real goal of every safety device ever invented?",
+              "scenario": "A stuntwoman jumping from a building onto a crash mat and a glass vase falling from a table onto carpet both survive impacts that would otherwise be deadly or destructive. A vase dropped onto hardwood shatters instantly, but the same vase lands safely on a thick rug. The rug didn't remove any of the momentum — it just took longer to do the job, spreading the force out over time."
+            },
+            {
+              "id": "physics-u2-4-impulse-momentum-lesson-4",
+              "lesson": 4,
+              "title": "Can a Rocket Move in Empty Space With Nothing to Push Against?",
+              "objective": "Students will connect impulse and momentum to systems where force is applied over time, including propulsion scenarios like rockets and recoil, and begin building the foundation for conservation of momentum. This matters because it challenges the misconception that you need something solid to push against, showing that momentum change — not contact with ground — is what drives motion.",
+              "essential_question": "Astronauts use jet packs in the vacuum of space where there is no air, no ground, and nothing to push against — so how does the thrust actually work, and what does that imply about what momentum is really doing inside a system?",
+              "scenario": "A firefighter standing on a frictionless ice rink holds a running fire hose blasting water forward. Even though no one is pushing the firefighter backward, she starts sliding away from the direction the water is going. The water carries momentum in one direction, and the firefighter's body acquires momentum in the opposite direction — no solid wall required, just Newton's laws and a changing momentum in two directions at once."
+            }
+          ]
+        },
+        {
+          "id": "physics-u2-5-conservation-of-momentum-collisions",
+          "course": 5,
+          "code": "U2.5",
+          "title": "Conservation of Momentum & Collisions",
+          "lessons": [
+            {
+              "id": "physics-u2-5-conservation-of-momentum-collisions-lesson-1",
+              "lesson": 1,
+              "title": "Why Don't Billiard Balls Disappear After They Collide?",
+              "objective": "Students will understand that the total momentum of a system is conserved when no outside forces act on it — a principle so powerful it applies to everything from subatomic particles to galaxy collisions. This matters because conservation of momentum lets us predict the outcome of any collision without knowing the complicated forces happening in between.",
+              "essential_question": "If forces during a collision are so complicated and brief, how can physicists perfectly predict what happens afterward using just one simple rule?",
+              "scenario": "A billiards player lines up a perfect shot, sending the cue ball straight into the eight ball. The cue ball nearly stops dead while the eight ball rockets forward at almost the same speed the cue ball had. No energy meter, no force sensor — just a clean transfer. How did the eight ball 'know' exactly how fast to move?"
+            },
+            {
+              "id": "physics-u2-5-conservation-of-momentum-collisions-lesson-2",
+              "lesson": 2,
+              "title": "Crash Test: What Really Happens When Cars Collide?",
+              "objective": "Students will apply conservation of momentum to perfectly inelastic collisions — where objects stick together after impact — and discover why these collisions result in a predictable final velocity. Understanding this helps explain why car crash engineers can reconstruct accident speeds from skid marks and vehicle deformation alone.",
+              "essential_question": "If two cars crumple together in a crash and neither driver can remember the collision, how can investigators figure out exactly how fast each car was going before impact?",
+              "scenario": "A 1,500 kg sedan runs a red light and slams into a stationary 2,000 kg SUV. The vehicles lock together and skid across the intersection as one tangled wreck. Crash investigators arrive and measure the skid marks — and somehow, using only those marks and the masses of the vehicles, they calculate the sedan's exact speed before the crash. The math that makes this possible is conservation of momentum."
+            },
+            {
+              "id": "physics-u2-5-conservation-of-momentum-collisions-lesson-3",
+              "lesson": 3,
+              "title": "Elastic vs. Inelastic: Does a Superball Lie About Energy?",
+              "objective": "Students will distinguish between elastic collisions — where kinetic energy is conserved — and inelastic collisions — where it is not — and learn to use both momentum conservation and energy analysis together to fully describe a collision. This matters because understanding energy loss in collisions is fundamental to designing safer cars, better sports equipment, and more efficient machines.",
+              "essential_question": "Momentum is always conserved in a collision, but kinetic energy sometimes disappears — so where does the 'missing' energy actually go, and does that mean energy conservation is wrong?",
+              "scenario": "Drop a superball and a lump of clay from the same height. The superball rockets back up almost to where it started; the clay hits the floor with a thud and stays put. Both objects hit the floor with the same speed, and both transfer the same momentum to the Earth — yet something is wildly different. The superball seems to 'keep' its energy while the clay loses it. But physics says energy is never lost — so what's really going on?"
+            },
+            {
+              "id": "physics-u2-5-conservation-of-momentum-collisions-lesson-4",
+              "lesson": 4,
+              "title": "How Does a Rocket Move Through Empty Space With Nothing to Push Against?",
+              "objective": "Students will apply conservation of momentum to explosion-type events — where a system at rest separates into parts moving in opposite directions — and recognize that momentum is conserved even when objects push each other apart. This concept explains not only rocket propulsion but also recoil, the physics of a gun firing, and how astronauts maneuver in space.",
+              "essential_question": "If there's nothing in space to push against, how does a rocket — or an astronaut who throws a wrench — actually start moving?",
+              "scenario": "An astronaut on a spacewalk floats motionless outside the International Space Station when her tether snaps. She has no thruster pack, but she's holding a heavy wrench. In a moment of quick thinking, she hurls the wrench as hard as she can away from the station — and her body glides slowly but steadily back toward safety. No engine, no air, no ground. Just physics."
+            }
+          ]
+        },
+        {
+          "id": "physics-u2-6-power-efficiency-energy-in-systems",
+          "course": 6,
+          "code": "U2.6",
+          "title": "Power, Efficiency & Energy in Systems",
+          "lessons": [
+            {
+              "id": "physics-u2-6-power-efficiency-energy-in-systems-lesson-1",
+              "lesson": 1,
+              "title": "Why Does a Faster Charger Actually Matter? — Understanding Power",
+              "objective": "Students will understand power as the rate of doing work or transferring energy, and explain why the same task can require very different amounts of power depending on how quickly it is done. This matters because power determines whether a machine — or a person — can meet real-world demands in real time.",
+              "essential_question": "If two people carry identical backpacks up the same staircase, but one runs and one walks, who does more work — and does it even matter how fast they go?",
+              "scenario": "You and your friend both haul the same 20 kg box up four flights of stairs to your apartment. You take your time and stroll up in 60 seconds; your friend sprints it in 15 seconds. At the top, you both moved the same box the same height — so who worked harder? Your burning legs might already be telling you the answer isn't as simple as it sounds."
+            },
+            {
+              "id": "physics-u2-6-power-efficiency-energy-in-systems-lesson-2",
+              "lesson": 2,
+              "title": "Where Does the Energy Go? — Efficiency and Real Machines",
+              "objective": "Students will calculate efficiency as the ratio of useful output energy to total input energy, and explain why no real machine is 100% efficient. This matters because understanding energy losses is the key to designing better technology — from car engines to solar panels to the human body.",
+              "essential_question": "If energy is always conserved, why do we say machines 'waste' energy — where exactly does it go, and can we ever get it back?",
+              "scenario": "A gas-powered car burns a full tank of fuel containing roughly 1,300 megajoules of chemical energy — enough to power your house for two weeks. Yet only about 20% of that energy actually moves the car forward. The rest quietly disappears as heat in the engine, exhaust, and friction in the tires. If energy is never destroyed, why does it feel like so much of it just vanishes?"
+            },
+            {
+              "id": "physics-u2-6-power-efficiency-energy-in-systems-lesson-3",
+              "lesson": 3,
+              "title": "Can You Outsmart Physics? — Power, Efficiency & the Human Body",
+              "objective": "Students will apply power and efficiency concepts to biological systems, analyzing how the human body converts food energy into mechanical work and heat. This matters because the same physics that governs engines governs us — understanding body efficiency connects nutrition, exercise science, and everyday energy choices.",
+              "essential_question": "You eat a candy bar worth about 250 Calories before gym class — how far could that energy actually carry you, and why does most of it end up as sweat instead of motion?",
+              "scenario": "A competitive cyclist racing in the Tour de France burns roughly 8,000 food Calories in a single day — the equivalent of eating about 16 Big Macs. Elite athletes push their bodies to output around 400 watts of mechanical power for hours at a time. Yet even a world-class cyclist's body operates at only about 25% mechanical efficiency, meaning three-quarters of that massive caloric intake becomes pure body heat."
+            },
+            {
+              "id": "physics-u2-6-power-efficiency-energy-in-systems-lesson-4",
+              "lesson": 4,
+              "title": "Energy Audit: What Happens to Energy in a Complete System?",
+              "objective": "Students will trace energy through a complete system — from input to useful output to losses — using conservation of energy, work, power, and efficiency together to analyze real-world scenarios. This matters because real engineering problems are never about one concept in isolation; they require seeing energy as a full accounting system across every transformation.",
+              "essential_question": "If you could follow a single joule of energy from a power plant all the way to a lit light bulb in your home, how many times would it change form — and how much would survive the journey?",
+              "scenario": "A hydroelectric dam converts the gravitational potential energy of water into electrical energy, which travels through power lines to your home, runs through your phone charger, and finally fills your phone battery with chemical energy. At every single step of that chain — the turbines, the wires, the charger brick, the battery — some energy leaks away as heat. By the time that energy actually lights your screen, it has survived a gauntlet of inefficiencies that would make any accountant nervous."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "U3",
+      "name": "Rotation & Gravitation",
+      "courses": [
+        {
+          "id": "physics-u3-1-circular-motion",
+          "course": 1,
+          "code": "U3.1",
+          "title": "Circular Motion",
+          "lessons": [
+            {
+              "id": "physics-u3-1-circular-motion-lesson-1",
+              "lesson": 1,
+              "title": "Why Don't You Fly Off a Merry-Go-Round?",
+              "objective": "Students will understand that objects moving in a circle are constantly changing direction — meaning they are always accelerating even at constant speed — and that this requires a real, inward force. This matters because it dismantles the common myth of 'centrifugal force' and reveals how circular motion connects to Newton's laws.",
+              "essential_question": "If you're moving at a constant speed on a circular track, are you accelerating? And if so, what's actually pushing or pulling you toward the center?",
+              "scenario": "You're riding a merry-go-round at full speed, gripping the metal bar as tight as you can. The moment you let go, you don't fly outward like a rocket — you slide off in a straight line, like a ball rolling off a table. That feeling of being 'thrown out' isn't a real force pushing you away; something else is going on, and it starts with understanding what it actually means to change direction."
+            },
+            {
+              "id": "physics-u3-1-circular-motion-lesson-2",
+              "lesson": 2,
+              "title": "What's the 'Speed Limit' for a Car Rounding a Curve?",
+              "objective": "Students will be able to calculate centripetal acceleration and the net centripetal force required to keep an object moving in a circle, using the relationships a = v²/r and F = mv²/r. This matters because these relationships govern everything from highway curve design to roller coaster safety.",
+              "essential_question": "Why does doubling your speed on a curved road make it four times harder to stay on the road — and what does the radius of the curve have to do with it?",
+              "scenario": "A driver takes a sharp highway on-ramp at 30 mph without a problem, then tries the same ramp at 60 mph and skids off. The speed only doubled, but something about the physics changed dramatically more than that. Engineers who design roads have to calculate exactly how much friction is needed to keep cars on curves of different sizes — and the math reveals a surprising relationship between speed, curve radius, and the force required."
+            },
+            {
+              "id": "physics-u3-1-circular-motion-lesson-3",
+              "lesson": 3,
+              "title": "What Does a Roller Coaster Loop Feel Like at the Top — and Why Don't You Fall?",
+              "objective": "Students will analyze the forces on an object at different points in a vertical circular path, identifying how gravity and normal force combine to provide centripetal force. This matters because it connects circular motion math to real sensations of weightlessness and crushing g-forces that riders and astronauts experience.",
+              "essential_question": "At the top of a loop-the-loop, you're upside down moving fast — what's actually keeping you in your seat, and is there a minimum speed below which the physics literally won't work?",
+              "scenario": "A roller coaster rockets through a vertical loop at Six Flags. At the very top, you're completely upside down, yet you stay pinned to your seat — no seatbelt required at high enough speeds. Riders on slower carnival loops sometimes feel like they're about to fall, while faster coasters press them into their seats even at the top. The difference isn't magic; it's the balance of forces at different points around the circle, and the math can tell you exactly where the danger zone begins."
+            },
+            {
+              "id": "physics-u3-1-circular-motion-lesson-4",
+              "lesson": 4,
+              "title": "Why Does a Spinning Bike Wheel Stay Upright — and How Does a Satellite 'Fall' Around Earth?",
+              "objective": "Students will connect the concept of centripetal acceleration to real-world systems including banked curves, spinning objects, and orbital motion — previewing how the same circular motion physics that governs a spinning wheel also keeps satellites and planets in orbit. This matters because it bridges Course 1 directly into the upcoming study of Universal Gravitation.",
+              "essential_question": "A satellite is always falling toward Earth, yet it never gets closer — how is that possible, and what does it have in common with a bicycle wheel or a ball on a string?",
+              "scenario": "The International Space Station orbits Earth at about 17,500 mph, and the astronauts inside feel weightless — not because there's no gravity, but because they and the station are falling together in a perfectly curved path. Meanwhile, a bicycle stays upright partly because of the gyroscopic effect of its spinning wheels resisting changes in direction. Both situations — the orbiting station and the spinning wheel — are controlled by the same fundamental principle you've been building all course long: something is always pulling toward the center."
+            }
+          ]
+        },
+        {
+          "id": "physics-u3-2-universal-gravitation",
+          "course": 2,
+          "code": "U3.2",
+          "title": "Universal Gravitation",
+          "lessons": [
+            {
+              "id": "physics-u3-2-universal-gravitation-lesson-1",
+              "lesson": 1,
+              "title": "Why Does the Moon Fall But Never Hit the Earth?",
+              "objective": "Students will understand that gravity is a universal force acting between all masses, not just between Earth and objects on its surface — recognizing this changes how we think about what keeps satellites and planets in orbit.",
+              "essential_question": "If gravity is always pulling the Moon toward Earth, why hasn't it crashed into us in 4.5 billion years?",
+              "scenario": "Imagine throwing a baseball horizontally off a cliff. It curves downward and hits the ground. Now imagine throwing it faster — it still curves, but lands farther away. Newton asked: what if you threw it so fast that the curve of its fall matched the curve of Earth's surface? The ball would fall forever without ever landing. That's exactly what the Moon is doing right now."
+            },
+            {
+              "id": "physics-u3-2-universal-gravitation-lesson-2",
+              "lesson": 2,
+              "title": "Does Gravity Get Weaker the Higher You Go?",
+              "objective": "Students will apply Newton's Law of Universal Gravitation to calculate how gravitational force changes with distance, understanding why astronauts on the ISS are not truly weightless — and why distance matters enormously in space travel.",
+              "essential_question": "If you doubled your distance from Earth's center, would you feel half the gravity — or something very different?",
+              "scenario": "An astronaut aboard the International Space Station, orbiting just 400 km above Earth's surface, floats effortlessly around the cabin. Many people assume gravity has disappeared up there — but Earth's radius is about 6,400 km, so the ISS is only about 6% farther from Earth's center than we are. The astronaut isn't escaping gravity; she's in a constant free fall, and gravity is still pulling her with about 90% of the force she'd feel on the ground."
+            },
+            {
+              "id": "physics-u3-2-universal-gravitation-lesson-3",
+              "lesson": 3,
+              "title": "How Did We 'Weigh' the Earth?",
+              "objective": "Students will use Newton's Law of Universal Gravitation alongside the concept of gravitational field strength (g) to solve for planetary masses and surface gravities, seeing how the same equation that governs a falling apple also lets us determine the mass of entire planets.",
+              "essential_question": "Nobody has ever put Earth on a scale — so how do scientists know it has a mass of 6 × 10²⁴ kg?",
+              "scenario": "In 1798, Henry Cavendish set up two small lead balls near two large lead balls in his laboratory and measured the tiny gravitational tug between them using a delicate twisted wire. He wasn't just satisfying curiosity — by pinning down the value of G, the universal gravitational constant, he handed scientists the tool they needed to calculate the mass of every planet, star, and moon in the solar system from the comfort of Earth."
+            },
+            {
+              "id": "physics-u3-2-universal-gravitation-lesson-4",
+              "lesson": 4,
+              "title": "Why Do All Planets Obey the Same Orbital Speed Rule?",
+              "objective": "Students will connect Newton's Law of Universal Gravitation with circular motion to derive the relationship between orbital radius and orbital speed, understanding why GPS satellites orbit faster than the Moon and how engineers choose the right altitude for any satellite's mission.",
+              "essential_question": "If you wanted to park a satellite so it always stayed directly above the same city on Earth, how would you figure out exactly how high to launch it?",
+              "scenario": "Your phone's GPS knows your location within a few meters — thanks to a constellation of satellites orbiting at precisely 20,200 km above Earth's surface. Meanwhile, the Moon orbits at 384,000 km and takes a full month to go around once, while the ISS at 400 km screams around Earth every 90 minutes. There's a hidden mathematical pattern connecting altitude and orbital speed, and it comes directly from balancing gravity against the needs of circular motion."
+            }
+          ]
+        },
+        {
+          "id": "physics-u3-3-torque-rotational-equilibrium",
+          "course": 3,
+          "code": "U3.3",
+          "title": "Torque & Rotational Equilibrium",
+          "lessons": [
+            {
+              "id": "physics-u3-3-torque-rotational-equilibrium-lesson-1",
+              "lesson": 1,
+              "title": "Why Is It So Much Easier to Open a Door by Pushing Near the Handle?",
+              "objective": "Students will understand that torque depends on both the size of the force and where it is applied (the moment arm), and why this matters for designing everything from door handles to wrenches to wheelchair ramps.",
+              "essential_question": "If force is what moves things, why does it matter WHERE on an object you push — shouldn't the same force always do the same job?",
+              "scenario": "You're running late and you push a heavy school door, but you accidentally shove it right next to the hinge instead of at the handle. The door barely budges. You move your hand to the edge and it swings open effortlessly with the exact same push. The force didn't change — so what did?"
+            },
+            {
+              "id": "physics-u3-3-torque-rotational-equilibrium-lesson-2",
+              "lesson": 2,
+              "title": "What Does 'Rotational Equilibrium' Even Mean — and How Do Seesaws Nail It?",
+              "objective": "Students will understand that an object in rotational equilibrium has balanced torques (net torque = 0), and will use this principle to solve real problems involving levers, seesaws, and balanced structures — connecting the rotational analog to Newton's First Law for linear motion.",
+              "essential_question": "A big kid and a little kid can balance on a seesaw — but how? If force had to be equal for balance, that would be impossible, so what is actually being balanced?",
+              "scenario": "At a playground, a 120-pound teenager and a 60-pound child want to balance on a seesaw. If they sit equal distances from the center, the teenager crashes down immediately. But scoot the teenager closer to the middle and suddenly — perfect balance. No one is pushing or pulling, yet the seesaw refuses to rotate. Something invisible is in equilibrium."
+            },
+            {
+              "id": "physics-u3-3-torque-rotational-equilibrium-lesson-3",
+              "lesson": 3,
+              "title": "How Do Cranes Hold Tons of Steel Without Tipping Over?",
+              "objective": "Students will apply the conditions for both translational and rotational equilibrium simultaneously to analyze real structures, understanding that engineers must balance forces AND torques to keep buildings, cranes, and bridges stable — and that ignoring either condition can be catastrophic.",
+              "essential_question": "A construction crane holds a massive steel beam far out from its base — why doesn't the whole crane topple over, and what would happen if the math was just slightly off?",
+              "scenario": "A tower crane on a city construction site stretches its arm 60 meters out from the tower and lifts a steel beam weighing thousands of pounds. On the opposite side, a concrete counterweight sits much closer to the tower. The entire structure stands perfectly still, neither falling forward nor backward. Engineers calculated every torque precisely — a mistake in either direction would send the whole crane crashing down."
+            },
+            {
+              "id": "physics-u3-3-torque-rotational-equilibrium-lesson-4",
+              "lesson": 4,
+              "title": "Where Is the 'Tipping Point' — Can You Predict When Something Falls Over?",
+              "objective": "Students will understand how center of mass and the base of support determine stability and the tipping point of objects, and will apply torque analysis to predict when an object transitions from equilibrium to rotation — connecting physics to everyday safety, sports balance, and structural engineering.",
+              "essential_question": "A tall bookshelf, a leaning tower, a racing car taking a sharp turn — what do they all have in common, and is there a precise moment you can calculate when each one will tip over?",
+              "scenario": "The famous Leaning Tower of Pisa has been tilting for centuries, yet it hasn't fallen — engineers say it's still in equilibrium, barely. Meanwhile, a moving truck taking a highway curve too fast suddenly rolls over. Both situations involve a critical tipping point where torques shift from balanced to dangerously unbalanced. Physics can tell you exactly when that moment arrives."
+            }
+          ]
+        },
+        {
+          "id": "physics-u3-4-rotational-dynamics",
+          "course": 4,
+          "code": "U3.4",
+          "title": "Rotational Dynamics",
+          "lessons": [
+            {
+              "id": "physics-u3-4-rotational-dynamics-lesson-1",
+              "lesson": 1,
+              "title": "Why Is It Harder to Spin a Merry-Go-Round Full of Kids Than an Empty One?",
+              "objective": "Students will understand moment of inertia as the rotational analog of mass — a measure of how strongly an object resists changes in its rotation. This matters because it explains why two objects with the same mass can be extremely different to spin depending on how that mass is distributed.",
+              "essential_question": "If mass is what makes things hard to push in a straight line, what makes things hard to spin — and is it just about how much mass there is?",
+              "scenario": "Imagine pushing an empty merry-go-round at a playground — it spins up easily. Now pack ten kids on the outer edge and try again. You're pushing just as hard, but the thing barely moves. The mass went up, sure, but something about WHERE those kids are sitting seems to matter just as much as how many there are."
+            },
+            {
+              "id": "physics-u3-4-rotational-dynamics-lesson-2",
+              "lesson": 2,
+              "title": "Newton's Second Law Has a Spin-Off — What's the Rotational Version?",
+              "objective": "Students will apply the rotational analog of Newton's Second Law (net torque = moment of inertia × angular acceleration) to predict how objects speed up or slow down their rotation. This is the master equation of rotational dynamics, connecting the previous lessons on torque and inertia into a single powerful tool.",
+              "essential_question": "If F = ma tells us everything about how objects accelerate in a straight line, what equation plays the same role for spinning objects — and how do torque and inertia fit in?",
+              "scenario": "A mechanic uses a long-handled wrench to loosen a stubborn bolt on a car wheel, and it spins free almost instantly. A student using a tiny screwdriver on the same bolt barely makes it budge. Both are applying a force, but the resulting spin-up is completely different. There's a rotational version of Newton's Second Law hiding in this moment — and it explains exactly why the mechanic wins every time."
+            },
+            {
+              "id": "physics-u3-4-rotational-dynamics-lesson-3",
+              "lesson": 3,
+              "title": "Does a Hollow Pipe Beat a Solid Rod in a Rolling Race Down a Ramp?",
+              "objective": "Students will analyze how the distribution of mass — captured by moment of inertia — determines which rolling objects accelerate faster down an incline. This reveals a surprising truth: two objects with identical mass and radius can roll at dramatically different speeds based purely on their shape.",
+              "essential_question": "If you race a solid cylinder and a hollow pipe of the same mass and size down a ramp, which wins — and does the answer depend on how heavy they are?",
+              "scenario": "Set a full can of soup and an empty aluminum can of the same diameter at the top of a ramp and let them go. Against all instincts, the heavier full can beats the hollow one to the bottom every time. This isn't a trick — it's rotational dynamics at work. The way mass is spread out from the center changes how quickly each can can get itself spinning, and that difference in spin resistance decides the winner."
+            },
+            {
+              "id": "physics-u3-4-rotational-dynamics-lesson-4",
+              "lesson": 4,
+              "title": "Why Does a Spinning Top Stay Upright — and What Finally Makes It Fall?",
+              "objective": "Students will synthesize their understanding of torque, moment of inertia, and angular acceleration to explain real-world rotational motion scenarios including the interplay between gravitational torque and rotational inertia. This sets the stage for the next course on angular momentum by identifying the limits of the torque-inertia framework.",
+              "essential_question": "Gravity is clearly pulling a tilted spinning top downward — so why doesn't it just fall over immediately like a non-spinning object would?",
+              "scenario": "A toy gyroscope tilted at an angle seems to defy gravity, slowly circling around its base instead of crashing to the table. Meanwhile, a top that started spinning fast gradually wobbles more and more before finally tipping over. Something about the spin itself is fighting the torque that gravity is applying — but as the spin slows down, gravity eventually wins. Understanding this clash between gravitational torque and rotational inertia is the final puzzle of rotational dynamics."
+            }
+          ]
+        },
+        {
+          "id": "physics-u3-5-angular-momentum",
+          "course": 5,
+          "code": "U3.5",
+          "title": "Angular Momentum",
+          "lessons": [
+            {
+              "id": "physics-u3-5-angular-momentum-lesson-1",
+              "lesson": 1,
+              "title": "What Does a Spinning Figure Skater Have to Do With Physics?",
+              "objective": "Students will understand angular momentum as the rotational analog of linear momentum — combining an object's mass distribution (moment of inertia) and how fast it spins (angular velocity) — and recognize why this quantity matters for predicting and explaining real spinning systems.",
+              "essential_question": "If a skater spins faster by pulling her arms in, where did the extra speed come from — did she create energy out of nothing?",
+              "scenario": "At the Winter Olympics, a figure skater launches into a spin with her arms stretched wide, rotating at a leisurely pace. The moment she pulls her arms tightly against her body, she becomes a blur — spinning nearly three times faster without anyone pushing her. No extra force was applied, yet something clearly changed. The answer lies in a hidden conserved quantity: angular momentum."
+            },
+            {
+              "id": "physics-u3-5-angular-momentum-lesson-2",
+              "lesson": 2,
+              "title": "Can You Change How Fast Something Spins Without Touching It?",
+              "objective": "Students will understand the Law of Conservation of Angular Momentum — that angular momentum remains constant when no net external torque acts on a system — and apply it quantitatively using the relationship L = Iω to predict changes in spin rate when a system's mass distribution shifts.",
+              "essential_question": "If angular momentum is conserved, why does a spinning top eventually slow down and fall over?",
+              "scenario": "Imagine sitting on a frictionless spinning stool, holding two heavy dumbbells with your arms extended. A classmate gives you a gentle spin, then steps away. When you pull the dumbbells close to your chest, you suddenly whip around faster — no one touched you, no new force was applied. This isn't magic; it's conservation of angular momentum in action, the same principle that governs how planets speed up as they swing close to the Sun."
+            },
+            {
+              "id": "physics-u3-5-angular-momentum-lesson-3",
+              "lesson": 3,
+              "title": "What Happens to Angular Momentum When a Torque Gets Involved?",
+              "objective": "Students will understand that angular momentum changes only when a net external torque acts on a system, establishing a direct rotational parallel to Newton's Second Law (τ_net = ΔL/Δt), and explain how this principle clarifies why isolated spinning systems hold their orientation in space.",
+              "essential_question": "Why does a gyroscope resist being tilted over — is it somehow 'fighting back' against gravity?",
+              "scenario": "A spinning bicycle wheel mounted on a rope seems to defy gravity — instead of flopping downward, it slowly sweeps in a wide horizontal circle, its axle tracing a graceful arc through the air. This eerie behavior, called precession, baffled scientists for centuries and now guides the navigation systems inside spacecraft and smartphones. The secret is that gravity applies a torque to the wheel's angular momentum, changing its direction rather than its magnitude — a concept that rewrites how we think about force and spin."
+            },
+            {
+              "id": "physics-u3-5-angular-momentum-lesson-4",
+              "lesson": 4,
+              "title": "How Does Angular Momentum Connect Spinning Objects to Orbiting Planets?",
+              "objective": "Students will apply conservation of angular momentum to orbital motion, explaining why planets and satellites speed up at closest approach and slow down at farthest distance — connecting Kepler's Second Law to a physical principle — and synthesize all rotational analogs learned across Unit 3 into a unified framework.",
+              "essential_question": "If the same physics that explains a figure skater spinning also explains how planets orbit the Sun, what does that tell us about the universe?",
+              "scenario": "When the Voyager 1 probe swings close to Jupiter, it accelerates dramatically — not because its engines fired, but because angular momentum is conserved as its orbital path tightens. The same effect makes comets streak blazingly fast at closest approach to the Sun, then crawl slowly through the outer solar system for thousands of years. Johannes Kepler noticed this pattern in 1609 without knowing why; today, we recognize it as angular momentum conservation written across the sky."
+            }
+          ]
+        },
+        {
+          "id": "physics-u3-6-simple-harmonic-motion",
+          "course": 6,
+          "code": "U3.6",
+          "title": "Simple Harmonic Motion",
+          "lessons": [
+            {
+              "id": "physics-u3-6-simple-harmonic-motion-lesson-1",
+              "lesson": 1,
+              "title": "Why Does a Swing Always Take the Same Amount of Time — No Matter How Hard You Push?",
+              "objective": "Students will understand what makes a motion 'simple harmonic' — that it repeats in equal time intervals and is driven by a restoring force — and why this property makes SHM one of the most useful patterns in all of physics, from clocks to earthquakes.",
+              "essential_question": "If you push a playground swing gently versus really hard, why does it still return to you in roughly the same amount of time? What does that tell us about the nature of the force acting on it?",
+              "scenario": "You're pushing your little sibling on a playground swing. Whether you give a small nudge or a big shove, you notice something strange: the swing always comes back to you in about the same time. A kid on a nearby swing, with longer chains, takes noticeably longer to return. Something about the swing's setup — not how hard you push — seems to control the rhythm."
+            },
+            {
+              "id": "physics-u3-6-simple-harmonic-motion-lesson-2",
+              "lesson": 2,
+              "title": "Stretchy Physics: How Does a Spring 'Know' How Hard to Push Back?",
+              "objective": "Students will understand Hooke's Law — that a spring's restoring force is proportional to its displacement — and use it to predict the period of a mass-spring system, recognizing that stiffer springs and lighter masses produce faster oscillations.",
+              "essential_question": "A spring scale always returns to zero after you let go — but what if you stretch it twice as far? Does it 'try twice as hard' to return, and what does that mean for how fast it oscillates?",
+              "scenario": "In a physical therapy clinic, patients use resistance bands to rebuild strength after injury. A therapist notices that a stiffer band snaps back faster than a looser one, and that a heavier weight on the same band bobs more slowly than a lighter one. These aren't coincidences — the same math that governs therapy bands governs car suspensions, atomic bonds, and the strings inside a piano."
+            },
+            {
+              "id": "physics-u3-6-simple-harmonic-motion-lesson-3",
+              "lesson": 3,
+              "title": "Pendulums vs. Springs: What Really Controls How Fast Something Oscillates?",
+              "objective": "Students will compare the period formulas for a pendulum and a mass-spring system, identify which variables matter (and which surprisingly don't), and use proportional reasoning to predict how changing length, mass, or spring constant affects oscillation period.",
+              "essential_question": "A heavier person on a swing doesn't swing slower — but a heavier mass on a spring does oscillate slower. Why does mass matter in one system but not the other?",
+              "scenario": "Galileo famously timed a chandelier swinging in a cathedral using his own pulse — and was shocked to find that the swing period didn't change as the chandelier slowed down. Centuries later, clockmakers used the same insight: a pendulum clock keeps perfect time not because of the weight of the pendulum bob, but because of the length of its arm. Changing the bob's weight does nothing — but raising the pendulum just a few millimeters makes the clock run fast."
+            },
+            {
+              "id": "physics-u3-6-simple-harmonic-motion-lesson-4",
+              "lesson": 4,
+              "title": "Where Does the Energy Go? The Hidden Dance Between Kinetic and Potential Energy in SHM",
+              "objective": "Students will trace how energy continuously transforms between kinetic and potential forms throughout one complete oscillation, recognize that total mechanical energy is conserved in ideal SHM, and connect amplitude to the maximum energy stored in the system.",
+              "essential_question": "At the moment a pendulum or spring system is perfectly still — at its highest or most stretched point — where did all the motion go? Is the energy 'lost,' or is it hiding somewhere?",
+              "scenario": "A bungee jumper reaches the very bottom of their fall and hangs motionless for a split second — they have zero velocity, yet they're about to rocket back upward with tremendous speed. At that frozen moment, all the energy that was kinetic just seconds ago has transformed into elastic potential energy stored in the stretched cord. This same energy swap happens millions of times per second inside the quartz crystal that keeps your phone's clock accurate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "U4",
+      "name": "Waves, Sound & Electricity",
+      "courses": [
+        {
+          "id": "physics-u4-1-wave-properties-behavior",
+          "course": 1,
+          "code": "U4.1",
+          "title": "Wave Properties & Behavior",
+          "lessons": [
+            {
+              "id": "physics-u4-1-wave-properties-behavior-lesson-1",
+              "lesson": 1,
+              "title": "What Actually Moves When a Wave Passes Through?",
+              "objective": "Students will understand that waves transfer energy through a medium without transferring matter, distinguishing between the motion of the wave and the motion of the medium — a concept that underlies everything from sound in headphones to earthquakes.",
+              "essential_question": "If a wave is moving, but the water isn't actually traveling across the lake, what exactly IS moving?",
+              "scenario": "You're sitting at the edge of a pool when someone cannonballs in 10 meters away. A wave ripples outward and bobs the rubber duck floating near you — but the duck doesn't travel across the pool toward you. It just moves up and down in place. The energy from that cannonball somehow crossed the water and reached your duck without the water itself going anywhere."
+            },
+            {
+              "id": "physics-u4-1-wave-properties-behavior-lesson-2",
+              "lesson": 2,
+              "title": "Amplitude, Wavelength, and Frequency: How Do We Describe a Wave?",
+              "objective": "Students will learn to identify and measure the key properties of waves — amplitude, wavelength, frequency, and period — and understand how each one describes something physically distinct, setting up the language needed to analyze sound, light, and all wave phenomena.",
+              "essential_question": "When you turn up the volume on a speaker, are you changing the same thing as when you change the pitch — or are those two completely different wave properties?",
+              "scenario": "You're at a concert standing near the speakers. The bass guitar hits a low, thunderous note and you feel it in your chest — then the lead guitar cuts in with a high, sharp riff that barely moves the air the same way. Both are sound waves coming from the same speaker system, but they feel completely different. The difference isn't just in your head — it's written into the shape of the wave itself."
+            },
+            {
+              "id": "physics-u4-1-wave-properties-behavior-lesson-3",
+              "lesson": 3,
+              "title": "The Wave Speed Equation: Why Does Sound Travel Faster in Steel Than in Air?",
+              "objective": "Students will apply the wave speed equation (v = fλ) to understand how frequency and wavelength are related for a given medium, and explore how the properties of a medium — not the wave source — determine how fast a wave travels.",
+              "essential_question": "If you crank up the frequency of a wave, does it travel faster — or does something else change instead?",
+              "scenario": "In old Western movies, someone always puts their ear to the railroad track to hear a distant train long before it arrives through the air. This isn't Hollywood magic — sound waves traveling through solid steel arrive dramatically earlier than the same waves traveling through air. The train didn't send out two different signals; the medium made all the difference."
+            },
+            {
+              "id": "physics-u4-1-wave-properties-behavior-lesson-4",
+              "lesson": 4,
+              "title": "When Waves Collide: What Happens When Two Waves Meet?",
+              "objective": "Students will understand the principle of superposition — that waves passing through each other add together momentarily before continuing unchanged — explaining real phenomena like noise-canceling headphones, dead spots in concert halls, and standing waves on guitar strings.",
+              "essential_question": "If two waves can completely cancel each other out, where did the energy go?",
+              "scenario": "You've seen the 'noise-canceling' label on expensive headphones, but what does that actually mean physically? The headphones don't block sound with foam — they listen to incoming noise and produce a second sound wave engineered to be the mirror image of the first. When these two waves meet inside the ear cup, they can wipe each other out almost completely, leaving near silence. Two real sound waves, combined, producing nothing — that's superposition in action."
+            }
+          ]
+        },
+        {
+          "id": "physics-u4-2-sound-waves",
+          "course": 2,
+          "code": "U4.2",
+          "title": "Sound Waves",
+          "lessons": [
+            {
+              "id": "physics-u4-2-sound-waves-lesson-1",
+              "lesson": 1,
+              "title": "Why Can You Hear Your Neighbor's Music Through a Concrete Wall?",
+              "objective": "Students will understand that sound is a mechanical, longitudinal wave that requires a medium to travel — and that the properties of that medium determine how well sound transmits. This matters because it explains everything from noise-canceling headphones to why space is completely silent.",
+              "essential_question": "If sound is just air molecules bumping into each other, why can it travel through steel, water, and concrete — sometimes better than through air?",
+              "scenario": "It's 11pm and your neighbor is blasting bass-heavy music. You press your ear against the wall and the low thumping is crystal clear, even though the wall is solid concrete. Meanwhile, when you step outside, the sound is much quieter. The wall seems to be carrying the sound rather than blocking it — but how?"
+            },
+            {
+              "id": "physics-u4-2-sound-waves-lesson-2",
+              "lesson": 2,
+              "title": "Why Does a Siren Sound Different When It's Speeding Toward You vs. Away From You?",
+              "objective": "Students will understand the Doppler Effect — how relative motion between a sound source and an observer changes the perceived frequency and pitch. This matters because the same principle is used in radar speed guns, weather forecasting, and even measuring the expansion of the universe.",
+              "essential_question": "If an ambulance siren produces only one frequency, why do you hear two completely different pitches depending on which direction it's moving?",
+              "scenario": "You're standing on a street corner when an ambulance screams past at full speed. As it approaches, the siren sounds high-pitched and urgent — then the moment it passes you, the pitch drops noticeably lower, almost like a falling note. The driver hasn't touched the siren controls. Nothing about the ambulance changed, but what you heard definitely did."
+            },
+            {
+              "id": "physics-u4-2-sound-waves-lesson-3",
+              "lesson": 3,
+              "title": "Why Do Some Concert Halls Sound Amazing While Others Sound Like a Gym?",
+              "objective": "Students will understand how sound intensity, the decibel scale, and the reflection and absorption of sound waves shape what we actually hear in a space. This matters because acoustic engineering determines the quality of music venues, recording studios, classrooms, and even how well you can understand speech in a hospital.",
+              "essential_question": "Two rooms are the same size — one feels warm and rich with sound, the other sounds harsh and echoey. What physical properties of a room can transform a beautiful note into noise?",
+              "scenario": "Your school gym sounds terrible for announcements — voices echo off the hard floors and concrete walls until words blend into mush. But the school auditorium, built just a few years later, has padded walls, angled ceilings, and carpeting, and every word from the stage lands crisp and clear in the back row. Both rooms use the same speakers and microphones. The difference is entirely in how the rooms interact with sound waves."
+            },
+            {
+              "id": "physics-u4-2-sound-waves-lesson-4",
+              "lesson": 4,
+              "title": "How Can Two Sound Waves Cancel Each Other Out — and How Do Headphones Use This Against Noise?",
+              "objective": "Students will understand how sound waves superpose — constructively creating louder sound and destructively creating silence — and how this principle is engineered into noise-canceling technology. This matters because wave interference is one of the most powerful and counterintuitive ideas in all of physics, showing that adding a wave can produce nothing.",
+              "essential_question": "How is it possible that playing a sound through headphones can make you hear less — and what does that tell us about what sound actually is?",
+              "scenario": "You put on a pair of noise-canceling headphones at a loud airport gate and the roar of the crowd nearly vanishes. The headphones aren't just blocking sound like earmuffs — there's a tiny microphone on the outside sampling the incoming noise and a speaker inside producing a new sound wave in real time. Two real sounds are entering your ear, and together they produce near silence. That seems like it should be impossible — but it works every single time."
+            }
+          ]
+        },
+        {
+          "id": "physics-u4-3-light-the-electromagnetic-spectrum",
+          "course": 3,
+          "code": "U4.3",
+          "title": "Light & the Electromagnetic Spectrum",
+          "lessons": [
+            {
+              "id": "physics-u4-3-light-the-electromagnetic-spectrum-lesson-1",
+              "lesson": 1,
+              "title": "What Exactly IS Light? (Hint: It's Weirder Than You Think)",
+              "objective": "Students will understand that visible light is a transverse electromagnetic wave that requires no medium to travel, distinguishing it from sound and water waves — because grasping this unlocks how we receive sunlight, WiFi signals, and X-rays through the vacuum of space.",
+              "essential_question": "If sound needs air to travel and water waves need water, why does light from the sun reach us through the emptiness of space?",
+              "scenario": "You're watching a live video of an astronaut on the International Space Station, 250 miles above Earth. There's no air up there — complete vacuum — yet her voice (converted to a radio signal) and her image travel instantly to your screen. Sound would die the moment it left her helmet, but something else is making the entire connection possible. That 'something else' is electromagnetic radiation, and it plays by completely different rules than anything you've studied in waves so far."
+            },
+            {
+              "id": "physics-u4-3-light-the-electromagnetic-spectrum-lesson-2",
+              "lesson": 2,
+              "title": "Why Does a Prism Make a Rainbow? Unpacking the Electromagnetic Spectrum",
+              "objective": "Students will understand that visible light is only a tiny slice of the broader electromagnetic spectrum, and that frequency determines a wave's energy and behavior — because this explains everything from why UV rays cause sunburn to why your microwave heats food but visible light does not.",
+              "essential_question": "If radio waves, microwaves, visible light, and X-rays are all the same type of wave, why do they interact with matter so completely differently?",
+              "scenario": "Hold a glass prism up to sunlight and a rainbow fans across the wall — but that sunlight also contains invisible waves: infrared warmth you can feel on your skin, ultraviolet rays that give you a sunburn even on a cloudy day, and radio waves passing through your body right now carrying someone's Spotify stream. A hospital's X-ray machine and your TV remote both use electromagnetic waves, yet one passes through bone and the other just changes the channel. The only difference between all of these is frequency."
+            },
+            {
+              "id": "physics-u4-3-light-the-electromagnetic-spectrum-lesson-3",
+              "lesson": 3,
+              "title": "Why Do Sunglasses Work? Reflection, Refraction & How Light Bends",
+              "objective": "Students will understand how light reflects off surfaces and refracts when it changes speed at a boundary between media — because these principles explain lenses, eyeglasses, fiber optic cables, and why a straw appears broken in a glass of water.",
+              "essential_question": "If light always travels in straight lines, how can a curved lens focus it to a single point — and why does a pool always look shallower than it actually is?",
+              "scenario": "You're at a pool and you spot what looks like a coin on the bottom, only about three feet down — but when you dive for it, your hand reaches much deeper than expected. Meanwhile, the lifeguard's polarized sunglasses let her see through the water's glare to spot a swimmer in trouble, while your regular sunglasses just show a blinding reflection. Both of these effects trace back to the same fundamental truth: light changes speed when it moves from one material to another, and that speed change bends its path in precise, predictable ways."
+            },
+            {
+              "id": "physics-u4-3-light-the-electromagnetic-spectrum-lesson-4",
+              "lesson": 4,
+              "title": "How Does Your Phone Camera See Color? Light, Wavelength & Energy",
+              "objective": "Students will use the wave speed equation and the relationship between frequency, wavelength, and energy to solve problems involving electromagnetic waves — because quantifying light's properties is the foundation for designing cameras, solar panels, medical imaging, and wireless communication.",
+              "essential_question": "If all electromagnetic waves travel at the same speed, how can we use frequency and wavelength to predict which waves will charge a solar panel, which will tan your skin, and which will pass harmlessly through a wall?",
+              "scenario": "Your phone's camera sensor detects red light at roughly 700 nm wavelength and violet light at 400 nm — and the chip is engineered so each pixel responds to specific wavelength ranges to reconstruct a full-color image. A solar panel on your roof is similarly picky: it absorbs certain wavelengths of sunlight and converts them to electricity, while longer infrared waves just warm the panel without generating current. Engineers who designed both devices had to calculate exactly how much energy each wavelength carries — and it all comes down to a few elegant relationships between speed, frequency, and wavelength."
+            }
+          ]
+        },
+        {
+          "id": "physics-u4-4-electric-charge-coulombs-law",
+          "course": 4,
+          "code": "U4.4",
+          "title": "Electric Charge & Coulomb's Law",
+          "lessons": [
+            {
+              "id": "physics-u4-4-electric-charge-coulombs-law-lesson-1",
+              "lesson": 1,
+              "title": "Why Does a Balloon Stick to the Wall After You Rub It on Your Hair?",
+              "objective": "Students will understand that electric charge is a fundamental property of matter — positive, negative, and neutral — and that charging occurs by transferring electrons, not creating them. This matters because every electrical device students own, from phones to wireless earbuds, depends on the controlled behavior of electric charge.",
+              "essential_question": "If you can't see electrons moving, how do we know charge is actually being transferred and not just magically appearing?",
+              "scenario": "You rub a balloon against your hair and your hair stands up, reaching toward the balloon like it's alive. Then you press the balloon to the wall and let go — it just hangs there, defying gravity, held by nothing you can see. Most people call this 'static' and move on, but physicists see something profound: billions of electrons have been physically relocated, and the force they create is strong enough to beat gravity."
+            },
+            {
+              "id": "physics-u4-4-electric-charge-coulombs-law-lesson-2",
+              "lesson": 2,
+              "title": "Opposites Attract — But How Strong Is the Pull?",
+              "objective": "Students will understand Coulomb's Law — that the electric force between two charged objects depends on the amount of charge and the distance between them — and use proportional reasoning to predict how that force changes. This matters because Coulomb's Law is the foundation for understanding everything from how atoms hold together to why your phone's touchscreen knows exactly where your finger is.",
+              "essential_question": "If you double the distance between two charged particles, the gravitational force between two masses drops to one-quarter — does the electric force behave the same way, and why should distance matter at all?",
+              "scenario": "A touchscreen on your phone detects your fingertip without you ever physically pressing a button — it senses the tiny electric charge your body carries and calculates exactly where it is, even distinguishing between multiple fingers at once. The engineers who designed that screen had to know precisely how electric force changes with distance down to fractions of a millimeter. That precision comes entirely from one equation: Coulomb's Law."
+            },
+            {
+              "id": "physics-u4-4-electric-charge-coulombs-law-lesson-3",
+              "lesson": 3,
+              "title": "Why Don't Charges Just Spread Out Evenly Everywhere?",
+              "objective": "Students will understand the difference between conductors and insulators — how charge moves freely through metals but stays put in materials like rubber or plastic — and explain why this determines how we safely build and use electrical devices. This matters because every charging cable, circuit board, and safety feature in modern electronics is engineered around this fundamental distinction.",
+              "essential_question": "Your phone's charging cable has metal wires wrapped in rubber — if charge needs to flow to charge your phone, why doesn't it just flow through the rubber casing and shock you?",
+              "scenario": "Every time you plug your phone in to charge, you're touching a cable that carries enough electrical energy to power a small motor — yet you feel nothing through the rubbery outer sleeve. Inside that same cable, copper wires are racing charge from the outlet to your battery at nearly the speed of light. Two materials, side by side, behaving in completely opposite ways: one lets charge flow like water through a pipe, the other traps it completely."
+            },
+            {
+              "id": "physics-u4-4-electric-charge-coulombs-law-lesson-4",
+              "lesson": 4,
+              "title": "Could Lightning Ever Strike the Same Place Twice — and Why Does It Hit There First?",
+              "objective": "Students will synthesize their understanding of charge, Coulomb's Law, conductors, and electric force to explain real-world phenomena like lightning rods, static discharge, and electrostatic shielding. This matters because the same physics that explains lightning is used to protect skyscrapers, design car safety systems, and even spray-paint cars evenly in factories.",
+              "essential_question": "A lightning rod is just a metal spike on top of a building — how does something so simple redirect billions of joules of electrical energy away from a structure, and why does the shape of the rod actually matter?",
+              "scenario": "During a thunderstorm, a massive charge separation builds between storm clouds and the ground below, creating an electric force so enormous that air itself — normally an insulator — suddenly conducts, and a bolt of lightning bridges the gap in milliseconds. Skyscrapers and church steeples should be terrifying death traps, yet people work safely inside them every day during storms. The secret is a pointed metal rod on the roof that quietly collects and redirects charge before the sky ever gets a chance to explode."
+            }
+          ]
+        },
+        {
+          "id": "physics-u4-5-dc-circuits",
+          "course": 5,
+          "code": "U4.5",
+          "title": "DC Circuits",
+          "lessons": [
+            {
+              "id": "physics-u4-5-dc-circuits-lesson-1",
+              "lesson": 1,
+              "title": "Why Does Your Phone Charge Faster with Some Cables Than Others?",
+              "objective": "Students will understand voltage and current as the two key 'ingredients' of electric circuits — voltage as the pressure pushing charges and current as the flow of those charges — because these concepts are the foundation for understanding every electronic device they own.",
+              "essential_question": "If electricity is invisible, how do we even know something is 'flowing' — and does anything actually move through the wire?",
+              "scenario": "You plug your phone in before bed with a cheap gas-station cable and wake up to find it barely charged. Your friend uses a name-brand cable and their phone is at 100%. Both cables were plugged into the same wall outlet — same voltage, same time. Something about the cable itself changed how charge flowed through the circuit, and understanding that difference could save your phone's battery life."
+            },
+            {
+              "id": "physics-u4-5-dc-circuits-lesson-2",
+              "lesson": 2,
+              "title": "What Is Resistance, and Why Do Wires Get Hot?",
+              "objective": "Students will understand electrical resistance as the opposition to current flow and use Ohm's Law (V = IR) to predict how voltage, current, and resistance relate — because this relationship explains everything from why cheap chargers overheat to how engineers design safe electronics.",
+              "essential_question": "If resistance slows down current, why would you ever want MORE resistance in a circuit — isn't more flow always better?",
+              "scenario": "You've probably noticed that after charging your phone for a while, the cable near the plug feels warm — sometimes uncomfortably so. That heat isn't a defect; it's energy being converted by electrical resistance inside the wire itself. Thin, low-quality wires have higher resistance, forcing the same current through a tighter 'pipe' and releasing more heat. In extreme cases, that heat is enough to melt insulation and start fires — Ohm's Law isn't just abstract math, it's a safety issue."
+            },
+            {
+              "id": "physics-u4-5-dc-circuits-lesson-3",
+              "lesson": 3,
+              "title": "Series Circuits: Why Does One Dead Bulb Kill the Whole String?",
+              "objective": "Students will understand how components connected in series share the same current but split voltage, and why a single break anywhere in the loop shuts down the entire circuit — because this explains the frustrating behavior of older holiday lights and helps students trace faults in simple circuits.",
+              "essential_question": "If all the bulbs in a series string are identical, does each one get the full voltage from the battery — or something less? Where does the voltage 'go'?",
+              "scenario": "It's the night before the holidays and you pull out a string of lights from the attic, plug them in, and — nothing. One tiny bulb somewhere in hundreds has burned out, and the entire strand goes dark. This isn't bad design by accident; it's a direct consequence of how series circuits work. Every bulb is part of one unbroken loop, and if any single link in that chain breaks, charge has nowhere to go and current stops everywhere."
+            },
+            {
+              "id": "physics-u4-5-dc-circuits-lesson-4",
+              "lesson": 4,
+              "title": "Parallel Circuits: Why Don't Your Lights Dim When You Plug In a Hairdryer?",
+              "objective": "Students will understand how components in parallel maintain the same voltage while splitting current along multiple branches, and predict how adding or removing branches changes total resistance and current — because parallel circuits are how every home, phone, and power strip is actually wired.",
+              "essential_question": "When you plug a second device into a power strip, where does the extra current come from — and is there a limit to how many devices you can add before something goes wrong?",
+              "scenario": "In your kitchen, the lights stay bright even when the microwave, toaster, and coffee maker are all running at once. Each appliance seems to get its full share of power without stealing from the others. This would be impossible in a series circuit, but your home is wired in parallel — every outlet receives the same voltage from the source, and each device draws only the current it needs through its own independent branch. Understanding this is also why overloading a circuit by plugging in too many devices can trip a breaker or, worse, start a fire."
+            }
+          ]
+        },
+        {
+          "id": "physics-u4-6-circuit-analysis-applications",
+          "course": 6,
+          "code": "U4.6",
+          "title": "Circuit Analysis & Applications",
+          "lessons": [
+            {
+              "id": "physics-u4-6-circuit-analysis-applications-lesson-1",
+              "lesson": 1,
+              "title": "Why Does One Burned-Out Bulb Kill the Whole String of Old Christmas Lights?",
+              "objective": "Students will understand how series circuits distribute voltage and current, and why a single break stops all current flow — skills that explain real-world wiring failures and help troubleshoot everyday electrical problems.",
+              "essential_question": "If electricity is like water flowing through pipes, what happens to the whole system when one pipe is completely blocked — and why would anyone design a circuit that way?",
+              "scenario": "It's December and your family pulls out the old strand of Christmas lights. You plug them in and — nothing. One tiny bulb somewhere in the chain of 50 has burned out, and now the entire strand is dark. Your newer LED lights, however, stay on even when one bulb is removed. These two strands are wired completely differently, and understanding why reveals one of the most important trade-offs in circuit design."
+            },
+            {
+              "id": "physics-u4-6-circuit-analysis-applications-lesson-2",
+              "lesson": 2,
+              "title": "Why Can You Run Your Lamp, TV, and Phone Charger at the Same Time Without Them All Going Dim?",
+              "objective": "Students will analyze parallel circuits to understand why voltage stays constant across each branch while current divides — a principle that underlies every electrical system in homes, cars, and devices students use daily.",
+              "essential_question": "If your phone charger, lamp, and microwave are all connected to the same house wiring, why doesn't turning on the microwave make your lamp dimmer — and what would have to change for it to actually matter?",
+              "scenario": "You're charging your phone, your desk lamp is on, and your laptop is running — all plugged into outlets in the same room. Each device gets the full 120 volts it needs and seems completely unaffected by the others. This feels almost like magic: how can multiple devices share the same source without stealing voltage from each other? The answer lives in how your home's wiring is architected, and it's the same reason your phone doesn't get 'weaker' when your roommate plugs in their hair dryer."
+            },
+            {
+              "id": "physics-u4-6-circuit-analysis-applications-lesson-3",
+              "lesson": 3,
+              "title": "What's Really Happening Inside Your Phone When It Gets Hot While Charging?",
+              "objective": "Students will apply Ohm's Law and the power equation (P = IV = I²R = V²/R) to calculate energy dissipation in real circuits, understanding why resistance generates heat and how engineers manage power in consumer electronics.",
+              "essential_question": "Your phone charger cable gets warm, your phone gets warm, and even the outlet feels slightly warm — where is all that energy going, and is any of it actually charging your battery?",
+              "scenario": "You've been gaming on your phone while it's plugged in, and you notice the charging cable is noticeably warm near the brick and again near the phone. Meanwhile, your phone is also hot to the touch, and the battery percentage is barely climbing. Energy is clearly being lost somewhere between the wall outlet and the battery. This isn't a defect — it's physics, and every engineer who designs a charging system has to fight this same battle against resistance."
+            },
+            {
+              "id": "physics-u4-6-circuit-analysis-applications-lesson-4",
+              "lesson": 4,
+              "title": "How Do Electrical Engineers Keep Your House from Burning Down?",
+              "objective": "Students will synthesize series and parallel circuit analysis, Ohm's Law, and power calculations to understand how circuit breakers, fuses, and safe wiring practices protect real electrical systems — connecting the entire unit's concepts to practical, life-safety applications.",
+              "essential_question": "Your house circuit breaker is rated for 15 amps — what would you need to know to figure out exactly how many devices you can safely plug into one outlet strip before you cause a fire?",
+              "scenario": "A student at a college dorm plugs a mini-fridge, a microwave, a gaming PC, and two monitors all into a single power strip on one outlet. Twenty minutes later, the breaker trips and everything shuts off — and they got lucky. Every year, overloaded circuits cause thousands of house fires, yet the physics behind why is something any student with a grasp of Ohm's Law and power equations can fully understand. In this lesson, you'll become the engineer who decides what's safe and what's a fire hazard."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

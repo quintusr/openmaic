@@ -17,7 +17,7 @@ import { parseModelString } from '@/lib/ai/providers';
 import { resolveApiKey } from '@/lib/server/provider-config';
 import { resolveModel } from '@/lib/server/resolve-model';
 import { persistClassroom } from '@/lib/server/classroom-storage';
-import type { UserRequirements } from '@/lib/types/generation';
+import type { UserRequirements, SceneOutline } from '@/lib/types/generation';
 import type { Scene, Stage } from '@/lib/types/stage';
 
 const log = createLogger('Classroom');
@@ -48,6 +48,7 @@ export interface GenerateClassroomResult {
   url: string;
   stage: Stage;
   scenes: Scene[];
+  outlines: SceneOutline[];
   scenesCount: number;
   createdAt: string;
 }
@@ -146,6 +147,10 @@ export async function generateClassroom(
     pdfText,
     undefined,
     aiCall,
+    undefined,
+    {
+      imageGenerationEnabled: true,
+    },
   );
 
   if (!outlinesResult.success || !outlinesResult.data) {
@@ -258,6 +263,7 @@ export async function generateClassroom(
     url: persisted.url,
     stage,
     scenes,
+    outlines,
     scenesCount: scenes.length,
     createdAt: persisted.createdAt,
   };

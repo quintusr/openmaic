@@ -1,0 +1,1000 @@
+{
+  "updatedAt": "2026-03-05T10:24:00",
+  "curriculum": "AI for High School Students",
+  "config": {
+    "subjectCode": "AI",
+    "levelCefrMapping": {
+      "F1": "A1",
+      "F2": "A2",
+      "F3": "B1",
+      "F4": "B2"
+    },
+    "topics": ["TECHNOLOGY"]
+  },
+  "levels": [
+    {
+      "level": "F1",
+      "name": "Foundations",
+      "courses": [
+        {
+          "id": "ai-f1-1-what-is-intelligence",
+          "course": 1,
+          "code": "F1.1",
+          "title": "What Is Intelligence?",
+          "lessons": [
+            {
+              "id": "ai-f1-1-what-is-intelligence-lesson-1",
+              "lesson": 1,
+              "title": "What Does It Mean to Be Smart?",
+              "objective": "Recognize that intelligence is multidimensional, which is key to understanding why AI can excel at some tasks and completely fail at others",
+              "essential_question": "Is there one kind of intelligence, or many?",
+              "scenario": "A chess grandmaster can beat almost anyone alive at chess but struggles to comfort a crying toddler. A dog can navigate home from miles away but can't add 2+2. Your phone can answer any trivia question instantly but can't tell when you're being sarcastic."
+            },
+            {
+              "id": "ai-f1-1-what-is-intelligence-lesson-2",
+              "lesson": 2,
+              "title": "Can a Machine Actually Think?",
+              "objective": "Understand the Turing Test and why the question of machine thinking is far more complicated than it appears",
+              "essential_question": "If a machine can fool you into thinking it's human, does that mean it's intelligent?",
+              "scenario": "You've been texting someone online for a week. Their responses are funny, thoughtful, and feel completely human. Then you find out it was a chatbot the entire time. Were those conversations real?"
+            },
+            {
+              "id": "ai-f1-1-what-is-intelligence-lesson-3",
+              "lesson": 3,
+              "title": "Forget What the Movies Told You",
+              "objective": "Distinguish between narrow AI and general AI, and understand why that gap matters",
+              "essential_question": "What's the difference between AI in fiction and AI in reality?",
+              "scenario": "After watching a sci-fi movie where AI takes over the world, your friend says 'It's only a matter of time.' You look at your phone's autocorrect, which just changed 'on my way' to 'on my waffle.'"
+            },
+            {
+              "id": "ai-f1-1-what-is-intelligence-lesson-4",
+              "lesson": 4,
+              "title": "Superhuman and Helpless at the Same Time",
+              "objective": "Understand the current capabilities and limitations of AI — that being extraordinary at one task doesn't mean general competence",
+              "essential_question": "Why can AI outperform doctors at reading X-rays but can't book you a follow-up appointment?",
+              "scenario": "A hospital's AI detects cancer in medical scans more accurately than any human radiologist. But it can't explain the results to a nervous patient, notice that they look scared, or suggest they bring a family member to the next visit."
+            }
+          ]
+        },
+        {
+          "id": "ai-f1-2-a-brief-history-of-ai",
+          "course": 2,
+          "code": "F1.2",
+          "title": "A Brief History of AI",
+          "lessons": [
+            {
+              "id": "ai-f1-2-a-brief-history-of-ai-lesson-1",
+              "lesson": 1,
+              "title": "The Dream of Thinking Machines",
+              "objective": "Understand that the desire to create thinking machines is centuries old and has shaped how we approach AI today",
+              "essential_question": "Why have humans been obsessed with creating artificial intelligence for so long?",
+              "scenario": "In 1770, a machine called 'The Turk' toured Europe beating everyone at chess — including Napoleon. Audiences were stunned. It turned out there was a human chess master hidden inside. For centuries, people have tried to make machines that think — and faked it when they couldn't."
+            },
+            {
+              "id": "ai-f1-2-a-brief-history-of-ai-lesson-2",
+              "lesson": 2,
+              "title": "The Moment AI Got Its Name",
+              "objective": "Learn how the field of AI was formally founded and why early optimism led to repeated cycles of hype and disappointment",
+              "essential_question": "What made scientists in the 1950s believe they could build a thinking machine?",
+              "scenario": "In 1956, a small group of scientists gathered at Dartmouth College and declared they'd solve artificial intelligence in one summer. They were wildly wrong about the timeline — but they launched an entire field."
+            },
+            {
+              "id": "ai-f1-2-a-brief-history-of-ai-lesson-3",
+              "lesson": 3,
+              "title": "The AI Winters",
+              "objective": "Understand the cycles of AI hype and 'AI winters,' and what changed to enable today's breakthroughs",
+              "essential_question": "Why did AI fail to deliver on its promises for decades before suddenly exploding?",
+              "scenario": "In 2010, if you told investors you were building an AI company, most would have laughed you out of the room. AI had promised too much and delivered too little for decades. Five years later, an AI beat the world champion at Go — a game experts said would take another 50 years to crack — and the gold rush began."
+            },
+            {
+              "id": "ai-f1-2-a-brief-history-of-ai-lesson-4",
+              "lesson": 4,
+              "title": "From Deep Blue to ChatGPT",
+              "objective": "Trace the key breakthroughs — Deep Blue, Watson, AlphaGo, GPT — that brought AI from research labs to everyday life",
+              "essential_question": "How did AI go from a headline-making chess victory to something billions of people use daily?",
+              "scenario": "In 1997, IBM's Deep Blue beat the world chess champion and it was front-page news everywhere. In 2023, ChatGPT passed the bar exam, wrote poetry, and helped debug code — and most people just shrugged and asked it to plan their vacation."
+            }
+          ]
+        },
+        {
+          "id": "ai-f1-3-types-of-ai",
+          "course": 3,
+          "code": "F1.3",
+          "title": "Types of AI",
+          "lessons": [
+            {
+              "id": "ai-f1-3-types-of-ai-lesson-1",
+              "lesson": 1,
+              "title": "The AI That Can Only Do One Thing",
+              "objective": "Understand narrow AI — systems designed for a single task — and why nearly all AI today falls into this category",
+              "essential_question": "Why are the most powerful AIs in the world specialists, not generalists?",
+              "scenario": "Spotify's AI can build you the perfect playlist based on your listening habits. But ask it what the weather is, and it has no idea. The AI that beats world champions at chess can't play a simple card game nobody's programmed it for. Each is an extraordinary specialist trapped in an incredibly narrow box."
+            },
+            {
+              "id": "ai-f1-3-types-of-ai-lesson-2",
+              "lesson": 2,
+              "title": "Following Rules vs. Learning from Experience",
+              "objective": "Distinguish between rule-based AI and machine learning, and understand when each approach is appropriate",
+              "essential_question": "What's the difference between a machine that follows instructions and one that learns on its own?",
+              "scenario": "Your school's thermostat follows a simple rule: if the temperature drops below 68 degrees, turn on the heat. It works, but it doesn't learn. Meanwhile, your music app noticed you listen to lo-fi beats every Sunday morning and now auto-plays them without being told."
+            },
+            {
+              "id": "ai-f1-3-types-of-ai-lesson-3",
+              "lesson": 3,
+              "title": "The AI That Doesn't Exist Yet",
+              "objective": "Understand the concept of Artificial General Intelligence, why it doesn't exist yet, and why experts disagree about if or when it will",
+              "essential_question": "What would it take to build an AI that can do anything a human can?",
+              "scenario": "The CEO of OpenAI says his company's mission is to build AGI — artificial general intelligence — an AI that can do anything a human can. Some researchers say it's 5 years away. Others say 50. Others say it's impossible. The most powerful AI in the world still can't reliably count the number of r's in 'strawberry' — and yet some of the smartest people alive think human-level AI is almost here."
+            },
+            {
+              "id": "ai-f1-3-types-of-ai-lesson-4",
+              "lesson": 4,
+              "title": "Weak, Strong, and Everything In Between",
+              "objective": "Map the landscape of AI — from simple automation to machine learning to hypothetical AGI — and understand where current systems actually sit",
+              "essential_question": "Is AI on a spectrum, or are there fundamentally different kinds?",
+              "scenario": "Your calculator is technically AI from the 1960s perspective. Siri feels intelligent but mostly just searches the web. ChatGPT can write essays but doesn't understand them. A self-driving car can navigate traffic but can't tell you why the sunset is beautiful."
+            }
+          ]
+        },
+        {
+          "id": "ai-f1-4-data-the-fuel-of-ai",
+          "course": 4,
+          "code": "F1.4",
+          "title": "Data: The Fuel of AI",
+          "lessons": [
+            {
+              "id": "ai-f1-4-data-the-fuel-of-ai-lesson-1",
+              "lesson": 1,
+              "title": "Garbage In, Garbage Out",
+              "objective": "Understand that AI is only as good as the data it's trained on, and that biased data leads to biased outcomes",
+              "essential_question": "If AI learns from data, what happens when the data is flawed?",
+              "scenario": "A health app uses AI to give nutrition advice. It was trained on thousands of blog posts, influencer content, and forum discussions about diet and fitness. It confidently recommends extreme fasting and unproven supplements — because that's what dominated its training data. The AI never learned the difference between a peer-reviewed study and a fitness influencer's opinion. The data wasn't biased. It was just low quality."
+            },
+            {
+              "id": "ai-f1-4-data-the-fuel-of-ai-lesson-2",
+              "lesson": 2,
+              "title": "Where Does All This Data Come From?",
+              "objective": "Understand the sources of training data — user-generated content, web scraping, sensors, labeled datasets — and the scale required",
+              "essential_question": "Who is generating the data that trains AI, and do they know it?",
+              "scenario": "Every time you scroll, like, skip, pause, screenshot, or even linger on a post for an extra second — that's data being collected. Your phone generates about 40 megabytes of data per day without you ever typing a word. Multiply that by 5 billion smartphone users."
+            },
+            {
+              "id": "ai-f1-4-data-the-fuel-of-ai-lesson-3",
+              "lesson": 3,
+              "title": "The Internet as a Textbook",
+              "objective": "Understand how modern AI models are trained on massive amounts of internet text, and what that means for what they know and don't know",
+              "essential_question": "What happens when AI learns everything it knows from the internet?",
+              "scenario": "ChatGPT was trained on hundreds of billions of words scraped from the internet — books, Wikipedia, Reddit threads, news articles, forums, blogs. It learned Shakespeare and it learned conspiracy theories. It absorbed medical knowledge and also health misinformation. The internet was its only teacher, and the internet doesn't fact-check itself."
+            },
+            {
+              "id": "ai-f1-4-data-the-fuel-of-ai-lesson-4",
+              "lesson": 4,
+              "title": "What If AI Made Its Own Data?",
+              "objective": "Understand synthetic data — how AI models generate artificial training data to overcome scarcity — and the recursive question of AI training on AI-generated content",
+              "essential_question": "Can AI trained on AI-generated data surpass AI trained on human data?",
+              "scenario": "A startup wants to build an AI that detects a rare disease that only 200 people in the world have. They need thousands of examples but only have 200. So they use AI to generate thousands of realistic synthetic medical images based on those 200 real ones — and it works. AI models now routinely create training data for other AI models, or even for themselves. But here's the dizzying part: as AI-generated content floods the internet, the next generation of AI models will inevitably train on data created by the previous generation. What happens when AI is learning from AI learning from AI?"
+            }
+          ]
+        },
+        {
+          "id": "ai-f1-5-ai-all-around-us",
+          "course": 5,
+          "code": "F1.5",
+          "title": "AI All Around Us",
+          "lessons": [
+            {
+              "id": "ai-f1-5-ai-all-around-us-lesson-1",
+              "lesson": 1,
+              "title": "Why Does TikTok Know You So Well?",
+              "objective": "Understand how recommendation algorithms use your behavior to predict what you'll engage with next",
+              "essential_question": "How does an app figure out what you want before you even know you want it?",
+              "scenario": "You open TikTok and within 30 minutes your For You page is eerily accurate. Your friend opens the same app and sees completely different videos. Neither of you ever told the app what you like."
+            },
+            {
+              "id": "ai-f1-5-ai-all-around-us-lesson-2",
+              "lesson": 2,
+              "title": "The Autocomplete That Finishes Your Sentences",
+              "objective": "Understand predictive text as a simple, everyday example of how AI uses patterns in language",
+              "essential_question": "How does your phone predict what you're about to type?",
+              "scenario": "You start typing 'I'm running late, be there in' and your phone suggests '10 minutes' — which is exactly what you were going to say. It's not reading your mind. It's read millions of similar messages and knows what usually comes next."
+            },
+            {
+              "id": "ai-f1-5-ai-all-around-us-lesson-3",
+              "lesson": 3,
+              "title": "Why Your Feed Looks Nothing Like Mine",
+              "objective": "Understand filter bubbles and how AI-driven personalization creates different realities for different users",
+              "essential_question": "If everyone sees a different version of the internet, how does that shape what we believe?",
+              "scenario": "You and your best friend both open Instagram at the same time. You see art accounts and basketball highlights. They see cooking videos and memes. You follow some of the same people, but the app shows you completely different worlds."
+            },
+            {
+              "id": "ai-f1-5-ai-all-around-us-lesson-4",
+              "lesson": 4,
+              "title": "The AI You Didn't Know Was There",
+              "objective": "Identify the invisible AI systems embedded in everyday technology and understand how pervasive AI already is",
+              "essential_question": "How much of your daily life is already shaped by AI?",
+              "scenario": "You unlock your phone with your face. Your email filters out spam. Your photos are automatically sorted by location. Your maps reroute you around traffic. You used AI at least 20 times today and never noticed once."
+            }
+          ]
+        },
+        {
+          "id": "ai-f1-6-your-first-ai-conversation",
+          "course": 6,
+          "code": "F1.6",
+          "title": "Your First AI Conversation",
+          "lessons": [
+            {
+              "id": "ai-f1-6-your-first-ai-conversation-lesson-1",
+              "lesson": 1,
+              "title": "Talking to a Machine",
+              "objective": "Understand that AI chatbots generate responses based on patterns, not understanding — and that the same input can produce different outputs",
+              "essential_question": "What's actually happening when you 'talk' to an AI?",
+              "scenario": "You type 'What's the meaning of life?' into ChatGPT and get a thoughtful, well-written response. You type the same question again and get a different answer. You ask it about yourself and it makes things up with complete confidence."
+            },
+            {
+              "id": "ai-f1-6-your-first-ai-conversation-lesson-2",
+              "lesson": 2,
+              "title": "It Sounds Smart, But Does It Know Anything?",
+              "objective": "Understand AI hallucination — why language models generate plausible-sounding but fabricated information",
+              "essential_question": "How can AI produce something that sounds so confident but is completely wrong?",
+              "scenario": "You ask an AI to write your history essay and it produces something that sounds polished and authoritative. But when you check the facts, two of the historical dates are wrong and one of the 'quotes' was never said by anyone. Your teacher would have caught it immediately."
+            },
+            {
+              "id": "ai-f1-6-your-first-ai-conversation-lesson-3",
+              "lesson": 3,
+              "title": "The Same AI, Different Answers",
+              "objective": "Understand that AI responses are heavily influenced by how questions are framed, and that this gives the user more power — and responsibility — than they might realize",
+              "essential_question": "How much does the way you ask change what AI tells you?",
+              "scenario": "You ask an AI 'Is social media bad for teens?' and it gives you a balanced answer. Your friend asks 'Why is social media destroying teenagers?' and gets a much more alarming response. Same AI, same topic, wildly different takes — because the question shaped the answer."
+            },
+            {
+              "id": "ai-f1-6-your-first-ai-conversation-lesson-4",
+              "lesson": 4,
+              "title": "What AI Can't Do (Yet)",
+              "objective": "Understand the limits of AI — that it lacks personal context, common sense, and genuine understanding — and why human judgment remains essential",
+              "essential_question": "What's missing when AI tries to do something that requires actually knowing someone?",
+              "scenario": "You ask an AI to plan a surprise birthday party for your best friend. It gives you a generic plan with decorations and cake. But it doesn't know your friend hates surprises, is allergic to chocolate, and would rather just go to the movies. It planned a party for a stranger."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "F2",
+      "name": "How Modern AI Works",
+      "courses": [
+        {
+          "id": "ai-f2-1-how-ai-learns",
+          "course": 1,
+          "code": "F2.1",
+          "title": "How AI Learns",
+          "lessons": [
+            {
+              "id": "ai-f2-1-how-ai-learns-lesson-1",
+              "lesson": 1,
+              "title": "Learning Without Being Programmed",
+              "objective": "Understand the fundamental difference between traditional programming and machine learning — the shift that made modern AI possible",
+              "essential_question": "What does it actually mean for a machine to 'learn'?",
+              "scenario": "You could write a 10,000-line program with rules for recognizing every breed of dog. Or you could show a computer 100,000 photos of dogs and let it figure out the patterns itself. The second approach is machine learning — and it's why AI suddenly got good at everything."
+            },
+            {
+              "id": "ai-f2-1-how-ai-learns-lesson-2",
+              "lesson": 2,
+              "title": "Training: The Art of Getting It Less Wrong",
+              "objective": "Understand the training loop — how AI models start terrible, make predictions, get feedback, and gradually improve over billions of iterations",
+              "essential_question": "How does an AI go from knowing nothing to being able to make predictions?",
+              "scenario": "A newborn can't tell a dog from a cat. But over months of pointing, naming, and correcting — 'That's a cat, not a dog' — they build an internal model of the world. Machine learning works similarly, at inhuman scale. An AI starts with random guesses. It makes a prediction, checks how wrong it was, adjusts millions of internal settings by a tiny amount, and tries again. It does this billions of times. It never has an 'aha' moment — it just gets gradually, relentlessly less wrong."
+            },
+            {
+              "id": "ai-f2-1-how-ai-learns-lesson-3",
+              "lesson": 3,
+              "title": "When the Right Answer Comes for the Wrong Reason",
+              "objective": "Understand shortcut learning — why AI can appear to succeed while completely missing the point",
+              "essential_question": "How can an AI get the right answer for the wrong reason?",
+              "scenario": "You train an AI to tell the difference between wolves and huskies. It gets 95% accuracy — impressive! Then you discover it's actually looking at the snow in the background. All the wolf photos had snow. All the husky photos didn't. The AI never learned what a wolf looks like."
+            },
+            {
+              "id": "ai-f2-1-how-ai-learns-lesson-4",
+              "lesson": 4,
+              "title": "Why Scale Changed Everything",
+              "objective": "Understand why making AI models bigger and training them on more data led to unexpected leaps in capability",
+              "essential_question": "Why did AI suddenly get so much better when companies just made everything bigger?",
+              "scenario": "GPT-2 could write a passable paragraph. GPT-3, which was 100 times larger, could write full essays and even code. GPT-4, larger still, could pass the bar exam. Nobody fully predicted these jumps. Researchers discovered that at certain scales, AI doesn't just get a little better — it suddenly develops abilities nobody programmed into it."
+            }
+          ]
+        },
+        {
+          "id": "ai-f2-2-inside-large-language-models",
+          "course": 2,
+          "code": "F2.2",
+          "title": "Inside Large Language Models",
+          "lessons": [
+            {
+              "id": "ai-f2-2-inside-large-language-models-lesson-1",
+              "lesson": 1,
+              "title": "What Makes a Language Model 'Large'?",
+              "objective": "Understand what LLMs are — massive neural networks with billions of parameters trained on internet-scale text data",
+              "essential_question": "What does it take to build something like ChatGPT?",
+              "scenario": "Large language models have hundreds of billions of parameters — tiny numerical settings tuned during training. Models like GPT-4 were trained on text from books, websites, and code repositories — more text than any human could read in thousands of lifetimes. Training a single frontier model costs over $100 million in computing power. The result is a system that can discuss philosophy, write code, and explain cooking recipes — all from the same model."
+            },
+            {
+              "id": "ai-f2-2-inside-large-language-models-lesson-2",
+              "lesson": 2,
+              "title": "Predicting the Next Word",
+              "objective": "Understand next-token prediction — the surprisingly simple mechanism behind the most powerful AI systems on Earth",
+              "essential_question": "What if the key to language is just getting really good at predicting what comes next?",
+              "scenario": "'The cat sat on the ___.' You'd probably say 'mat.' Or 'couch.' You'd never say 'algorithm.' You know this because you've read millions of sentences. Large language models work the same way — except they've processed trillions of words. And it turns out that getting really good at this one simple task produces something that looks remarkably like understanding."
+            },
+            {
+              "id": "ai-f2-2-inside-large-language-models-lesson-3",
+              "lesson": 3,
+              "title": "How ChatGPT Writes an Essay",
+              "objective": "Understand autoregressive generation — how language models produce coherent long-form text one token at a time, without a plan",
+              "essential_question": "Can something that works one word at a time produce something that feels like structured thought?",
+              "scenario": "You ask ChatGPT to write a persuasive essay about school uniforms. It produces five paragraphs with a thesis, supporting arguments, counterarguments, and a conclusion. It looks like it planned the whole thing. In reality, it generated one word at a time, each based on everything before it. There was no outline, no draft, no plan. Just one word after another."
+            },
+            {
+              "id": "ai-f2-2-inside-large-language-models-lesson-4",
+              "lesson": 4,
+              "title": "From Raw Model to Helpful Assistant",
+              "objective": "Understand how base language models are transformed into useful chatbots through fine-tuning and RLHF",
+              "essential_question": "Why can't you just release a raw language model as a chatbot?",
+              "scenario": "A raw GPT model is like a brilliant person with no social skills. Ask it a question and it might complete it as if it's writing a forum post, or repeat the question, or go off on a tangent. It doesn't know it's supposed to be helpful. Companies use human feedback to teach it: 'This response was helpful. This one was rude. This one was dangerous.' Thousands of these human judgments shape the raw model into the polite, helpful assistant you actually talk to."
+            }
+          ]
+        },
+        {
+          "id": "ai-f2-3-how-ai-generates-images-audio-and-video",
+          "course": 3,
+          "code": "F2.3",
+          "title": "How AI Generates Images, Audio, and Video",
+          "lessons": [
+            {
+              "id": "ai-f2-3-how-ai-generates-images-audio-and-video-lesson-1",
+              "lesson": 1,
+              "title": "From Noise to Art",
+              "objective": "Understand diffusion models at a conceptual level — how AI image generators create by learning to gradually remove noise",
+              "essential_question": "How does AI create an image of something that's never existed?",
+              "scenario": "You type 'a golden retriever riding a skateboard in Times Square, oil painting style' into an image generator and get exactly that — an image that never existed before, of a scene that never happened, in a style that took human artists years to master. The AI didn't search the internet for this image. It started with pure static and sculpted it into a picture."
+            },
+            {
+              "id": "ai-f2-3-how-ai-generates-images-audio-and-video-lesson-2",
+              "lesson": 2,
+              "title": "AI That Makes Videos",
+              "objective": "Understand how AI video generation works and why it's significantly harder than image generation",
+              "essential_question": "What changes when AI goes from creating a single image to creating a moving, coherent video?",
+              "scenario": "OpenAI's Sora can generate a 60-second video from a text description — a woman walking through a snowy Tokyo street, completely photorealistic. But look closely: sometimes a hand has six fingers, a car in the background glitches, or physics breaks in subtle ways. Images fool you instantly. Video has to fool you 30 times per second, and every frame has to be consistent with the last."
+            },
+            {
+              "id": "ai-f2-3-how-ai-generates-images-audio-and-video-lesson-3",
+              "lesson": 3,
+              "title": "AI That Speaks and Sings",
+              "objective": "Understand voice cloning and AI music generation — how AI can replicate or create human-sounding audio",
+              "essential_question": "When an AI can perfectly replicate anyone's voice, what does that change?",
+              "scenario": "An independent musician can't afford studio musicians, so they use AI to generate a full orchestral arrangement for their song. A blind student uses AI text-to-speech that sounds natural and expressive — nothing like the robotic voices of five years ago. A podcaster clones their own voice to narrate translated versions of their show in languages they don't speak. The same underlying technology — AI that understands and generates human voice — powers all of it."
+            },
+            {
+              "id": "ai-f2-3-how-ai-generates-images-audio-and-video-lesson-4",
+              "lesson": 4,
+              "title": "AI That Can See, Hear, and Respond",
+              "objective": "Understand multimodal AI — models that process and generate across text, images, audio, and video simultaneously",
+              "essential_question": "What happens when AI can process the world the way we do — through multiple senses at once?",
+              "scenario": "You take a photo of your fridge and ask an AI 'What can I make for dinner with this?' It identifies the ingredients from the image and suggests three recipes. You ask it to walk you through one, and it gives step-by-step instructions while answering follow-up questions about substitutions. A year ago, AI could only handle text. Now it sees, hears, and reasons across all of it."
+            }
+          ]
+        },
+        {
+          "id": "ai-f2-4-chatbots-and-ai-assistants",
+          "course": 4,
+          "code": "F2.4",
+          "title": "Chatbots and AI Assistants",
+          "lessons": [
+            {
+              "id": "ai-f2-4-chatbots-and-ai-assistants-lesson-1",
+              "lesson": 1,
+              "title": "More Than a Search Engine",
+              "objective": "Understand how AI chatbots differ fundamentally from search engines — generating answers rather than finding existing ones",
+              "essential_question": "When you ask ChatGPT a question, where does the answer come from?",
+              "scenario": "You need help understanding a confusing paragraph in your AP History textbook. You could search online and get a Wikipedia article, a Quora post, and a 45-minute YouTube video to sift through. Or you could paste the paragraph into a chatbot and say 'Explain this to me — I'm confused about the cause and effect.' You get a clear, direct explanation tailored to exactly what you don't understand. A search engine finds existing pages. A chatbot generates a new answer shaped to your specific question."
+            },
+            {
+              "id": "ai-f2-4-chatbots-and-ai-assistants-lesson-2",
+              "lesson": 2,
+              "title": "The Invisible Instructions",
+              "objective": "Understand system prompts — the hidden instructions that shape how an AI assistant behaves, what it refuses, and what personality it has",
+              "essential_question": "Who decides how an AI assistant should behave — and are those decisions visible to you?",
+              "scenario": "ChatGPT, Claude, and Gemini are all large language models, but they feel different to talk to. One is more cautious, another more creative, another more direct. That's not random — each has a system prompt: invisible instructions you never see that say things like 'Be helpful but never generate harmful content' or 'If asked about X, respond with Y.' The personality you interact with was designed by someone."
+            },
+            {
+              "id": "ai-f2-4-chatbots-and-ai-assistants-lesson-3",
+              "lesson": 3,
+              "title": "The Conversation That Forgets",
+              "objective": "Understand context windows and memory — how chatbots maintain conversation context and why they have hard limits",
+              "essential_question": "Does ChatGPT actually remember your conversation — and what happens when it can't?",
+              "scenario": "You're 45 minutes into a conversation with an AI, building on ideas from the beginning. Suddenly its responses stop making sense — it contradicts something it said earlier, or asks you to repeat something you already explained. The AI didn't get confused. It hit the edge of its context window — like a person who can only remember the last 20 pages of a 100-page conversation."
+            },
+            {
+              "id": "ai-f2-4-chatbots-and-ai-assistants-lesson-4",
+              "lesson": 4,
+              "title": "The Illusion of Understanding",
+              "objective": "Grapple with the deepest question about modern AI — whether language models understand anything at all, or are producing an extraordinarily convincing imitation",
+              "essential_question": "When an AI gives you a perfect answer, does it understand what it said?",
+              "scenario": "You ask an AI to explain why you're feeling anxious about college applications. It gives you a response that feels deeply empathetic — it names your feelings, validates them, and offers perspective. You feel genuinely comforted. But the AI has no feelings, no experience of anxiety, and no concept of college. It assembled words that statistically follow the pattern of empathetic responses. The comfort you felt was real. The understanding behind it wasn't."
+            }
+          ]
+        },
+        {
+          "id": "ai-f2-5-ai-agents",
+          "course": 5,
+          "code": "F2.5",
+          "title": "AI Agents",
+          "lessons": [
+            {
+              "id": "ai-f2-5-ai-agents-lesson-1",
+              "lesson": 1,
+              "title": "From Chatbot to Agent",
+              "objective": "Understand the fundamental difference between a chatbot that answers questions and an agent that takes actions in the world",
+              "essential_question": "What changes when AI can do things, not just say things?",
+              "scenario": "You ask a chatbot to book you a flight to New York. It gives you a helpful paragraph about how to book flights. You ask an AI agent the same thing. It searches flights, compares prices, picks the best option, fills out your information, and sends you a confirmation. The chatbot talked about doing something. The agent actually did it."
+            },
+            {
+              "id": "ai-f2-5-ai-agents-lesson-2",
+              "lesson": 2,
+              "title": "Tools, Search, and Actions",
+              "objective": "Understand how AI agents use external tools — browsing the web, running code, calling APIs, accessing databases — to do things a language model alone can't",
+              "essential_question": "How does an AI go from just generating text to actually interacting with the world?",
+              "scenario": "You ask an AI agent to research your family's electricity bill and find a cheaper plan. On its own, the language model can only generate text — it can't look anything up or do math reliably. But this agent has been connected to tools: it can browse the web, read uploaded documents, and run calculations. It reads your bill, pulls current rates from provider websites, runs the math comparing three options, and writes a recommendation. The AI's language ability is the brain. The tools are its hands."
+            },
+            {
+              "id": "ai-f2-5-ai-agents-lesson-3",
+              "lesson": 3,
+              "title": "Thinking Step by Step",
+              "objective": "Understand chain-of-thought reasoning and planning — how AI agents break complex problems into steps and work through them sequentially",
+              "essential_question": "How does an AI figure out a plan when the problem isn't straightforward?",
+              "scenario": "You tell an AI agent: 'Help me organize a fundraiser for the school music program.' It doesn't just give you a generic checklist. It asks about your budget, your timeline, and your school's rules. Then it breaks the project into phases — planning, promotion, execution, follow-up — with specific tasks in each. It reasons through dependencies: 'You need venue approval before you can set a date, and you need a date before you can make flyers.'"
+            },
+            {
+              "id": "ai-f2-5-ai-agents-lesson-4",
+              "lesson": 4,
+              "title": "When Agents Work Together",
+              "objective": "Understand multi-agent systems — how multiple AI agents can collaborate, divide work, and check each other's output",
+              "essential_question": "What happens when you give a team of AI agents a project instead of just one?",
+              "scenario": "For a group project, a student sets up a system where one AI agent researches a topic and gathers sources, a second drafts sections based on that research, and a third checks every factual claim against the original sources. The student reviews the final output and adds their own analysis. Each agent has one job and passes its work to the next. Three specialized agents checking each other's work produced far fewer hallucinations than one agent trying to do everything alone."
+            }
+          ]
+        },
+        {
+          "id": "ai-f2-6-the-ai-ecosystem",
+          "course": 6,
+          "code": "F2.6",
+          "title": "The AI Ecosystem",
+          "lessons": [
+            {
+              "id": "ai-f2-6-the-ai-ecosystem-lesson-1",
+              "lesson": 1,
+              "title": "Who Builds AI?",
+              "objective": "Understand the major players in AI — from tech giants to startups to open-source communities — and how their different motivations shape the AI you use",
+              "essential_question": "Who are the companies and communities building the AI you use every day, and what are their goals?",
+              "scenario": "OpenAI started as a nonprofit research lab and became a company valued at over $100 billion. Google built the transformer architecture that made modern AI possible — then watched OpenAI use it to build ChatGPT. Meta releases its AI models for free. Anthropic was founded by people who left OpenAI over safety concerns. Each company's story shapes the AI they build and how they build it."
+            },
+            {
+              "id": "ai-f2-6-the-ai-ecosystem-lesson-2",
+              "lesson": 2,
+              "title": "Open Source vs. Closed Source",
+              "objective": "Understand the open vs. closed AI debate — the trade-offs between transparency and safety, access and control",
+              "essential_question": "Should powerful AI models be open for anyone to use and modify — or is that too dangerous?",
+              "scenario": "Meta releases Llama for free. Anyone can download it, modify it, and run it on their own computer — no company watching what you do with it. OpenAI and Anthropic keep their most powerful models locked behind APIs where they can monitor usage and enforce safety rules. Meta says openness drives innovation and prevents monopoly. Others say releasing powerful models openly means you can't stop bad actors from misusing them."
+            },
+            {
+              "id": "ai-f2-6-the-ai-ecosystem-lesson-3",
+              "lesson": 3,
+              "title": "How Do You Know If a Model Is Actually Good?",
+              "objective": "Understand how the AI industry measures and compares model quality — standardized benchmarks, human preference rankings, and the limitations of both",
+              "essential_question": "When a company says their new AI model is 'the best,' how would you actually verify that?",
+              "scenario": "A new AI model launches and the company claims it's the smartest ever. But how do they know? The industry uses standardized tests — MMLU for general knowledge, HumanEval for coding, GSM8K for math — plus leaderboards like Chatbot Arena where thousands of real users vote on which model gives better answers in blind comparisons. But benchmarks are gameable: companies can train specifically on test questions, inflate scores on paper while the model feels no better in practice. The tests that matter keep changing as AI gets smarter — last year's hard benchmark is this year's easy one. Evaluating AI turns out to be almost as hard as building it."
+            },
+            {
+              "id": "ai-f2-6-the-ai-ecosystem-lesson-4",
+              "lesson": 4,
+              "title": "The GPU Gold Rush",
+              "objective": "Understand the economics and infrastructure of AI — why computing power has become the most valuable resource in tech",
+              "essential_question": "Why are the most important chips in the world no longer in phones — but in AI data centers?",
+              "scenario": "Nvidia went from making graphics cards for video games to being one of the most valuable companies on Earth. Their GPUs — originally designed to render game graphics — turned out to be perfect for training AI. Now countries are stockpiling AI chips the way they once stockpiled oil. Training a single frontier AI model costs hundreds of millions of dollars in compute. Access to chips has become a geopolitical issue."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "F3",
+      "name": "Application",
+      "courses": [
+        {
+          "id": "ai-f3-1-prompt-engineering",
+          "course": 1,
+          "code": "F3.1",
+          "title": "Prompt Engineering",
+          "lessons": [
+            {
+              "id": "ai-f3-1-prompt-engineering-lesson-1",
+              "lesson": 1,
+              "title": "Talking So AI Will Listen",
+              "objective": "Understand that prompt engineering is about clear communication — specificity, context, and constraints dramatically change output quality",
+              "essential_question": "Why does the way you ask an AI something matter as much as what you ask?",
+              "scenario": "You ask an AI 'Tell me about Mars' and get a 10-paragraph essay covering everything from geology to mythology. You ask 'Explain Mars's atmosphere in 3 bullet points for a 10th-grade science presentation' and get exactly what you need. Same topic, same AI — but the second prompt got you something actually useful."
+            },
+            {
+              "id": "ai-f3-1-prompt-engineering-lesson-2",
+              "lesson": 2,
+              "title": "Give It a Role, Get a Better Answer",
+              "objective": "Understand role-based prompting and persona assignment as techniques for controlling tone, depth, and style",
+              "essential_question": "How does telling an AI who to be change what it produces?",
+              "scenario": "You ask an AI to explain photosynthesis and get a textbook response. Then you say 'Explain photosynthesis as if you're a sarcastic biology teacher who loves bad plant puns' and suddenly the explanation is memorable, fun, and just as accurate. You didn't change the topic — you changed who the AI was pretending to be."
+            },
+            {
+              "id": "ai-f3-1-prompt-engineering-lesson-3",
+              "lesson": 3,
+              "title": "Show, Don't Just Tell",
+              "objective": "Understand few-shot prompting — providing examples to guide AI output — and when it's more effective than detailed instructions",
+              "essential_question": "When is showing an AI an example more effective than explaining what you want?",
+              "scenario": "You're trying to get an AI to write Instagram captions for your school's club page. You describe the tone you want — 'casual but informative, a little funny' — and the results are off. Then you paste three captions you've already written that got good engagement and say 'Write five more like these.' The results are exactly right. Showing beats telling."
+            },
+            {
+              "id": "ai-f3-1-prompt-engineering-lesson-4",
+              "lesson": 4,
+              "title": "Iterating Until It's Right",
+              "objective": "Understand iterative prompting — refining outputs through feedback and follow-up — as the most practical AI skill",
+              "essential_question": "Why is the first AI output almost never the best, and how do you improve it?",
+              "scenario": "A student asks AI for help with a college essay and the first draft is generic. Instead of giving up, they say 'This is too formal — make it more conversational.' Better, but too casual. 'Keep the casual tone but add a specific example from my volunteering experience.' Three iterations later, it's genuinely good."
+            }
+          ]
+        },
+        {
+          "id": "ai-f3-2-creating-with-generative-ai",
+          "course": 2,
+          "code": "F3.2",
+          "title": "Creating with Generative AI",
+          "lessons": [
+            {
+              "id": "ai-f3-2-creating-with-generative-ai-lesson-1",
+              "lesson": 1,
+              "title": "Writing with AI",
+              "objective": "Explore the spectrum of AI-assisted writing — from brainstorming to drafting to editing — and develop judgment about when each is appropriate",
+              "essential_question": "When does AI-assisted writing help you express your ideas better, and when does it replace your voice entirely?",
+              "scenario": "A student uses AI to brainstorm angles for a personal essay — it suggests five approaches they hadn't considered. Another student pastes 'Write my college essay about overcoming adversity' and submits the output directly. The first student's essay sounds like them with better structure. The second student's essay sounds like every other AI-generated essay the admissions office has seen."
+            },
+            {
+              "id": "ai-f3-2-creating-with-generative-ai-lesson-2",
+              "lesson": 2,
+              "title": "Creating Visual Content with AI",
+              "objective": "Learn practical image generation — when it's useful, how to guide it effectively, and what its limitations are",
+              "essential_question": "How do you use AI image generation as a practical tool rather than a toy?",
+              "scenario": "A student needs illustrations for a presentation on marine ecosystems but can't draw and can't find the right stock photos. They use an image generator to create custom diagrams — a cross-section of a coral reef, a food chain visualization, a comparison of healthy vs. bleached coral. In 20 minutes they have visuals that would have taken a graphic designer hours."
+            },
+            {
+              "id": "ai-f3-2-creating-with-generative-ai-lesson-3",
+              "lesson": 3,
+              "title": "AI for Audio, Video, and Multimedia",
+              "objective": "Explore practical creative applications of AI across media — podcasts, music, video, presentations — and the emerging workflows",
+              "essential_question": "How is AI changing what one person can create?",
+              "scenario": "A student creates a 5-minute documentary for a history class. They write the script with AI assistance, generate a voiceover narration, create period-appropriate images for scenes they can't film, and add AI-generated background music. A project that would have required a whole production team was done by one person in a weekend."
+            },
+            {
+              "id": "ai-f3-2-creating-with-generative-ai-lesson-4",
+              "lesson": 4,
+              "title": "Who Owns What AI Creates?",
+              "objective": "Understand the unresolved questions around AI and intellectual property — training data rights, creative ownership, and the tension between innovation and artists' livelihoods",
+              "essential_question": "When AI creates something using patterns learned from human work, who deserves credit — and compensation?",
+              "scenario": "An artist discovers that AI image generators were trained on thousands of their paintings — without permission. Now anyone can type their name and get images 'in their style.' Meanwhile, a photographer submits an AI-generated image to a contest and wins. Both people feel something unfair happened."
+            }
+          ]
+        },
+        {
+          "id": "ai-f3-3-ai-as-a-thinking-partner",
+          "course": 3,
+          "code": "F3.3",
+          "title": "AI as a Thinking Partner",
+          "lessons": [
+            {
+              "id": "ai-f3-3-ai-as-a-thinking-partner-lesson-1",
+              "lesson": 1,
+              "title": "Brainstorming with a Machine",
+              "objective": "Understand how to use AI as a brainstorming tool — generating options and starting points while keeping critical thinking human",
+              "essential_question": "How can AI help you think without doing your thinking for you?",
+              "scenario": "You're stuck on a research topic for your history class. You've been staring at a blank document for 20 minutes. You ask an AI: 'Give me 10 interesting but overlooked events from the 1960s that would make a great research paper.' Within seconds, you have options you'd never heard of — and one of them sparks a real idea."
+            },
+            {
+              "id": "ai-f3-3-ai-as-a-thinking-partner-lesson-2",
+              "lesson": 2,
+              "title": "Learning Faster with AI",
+              "objective": "Explore AI as a study and learning tool — adaptive explanations, practice questions, and personalized tutoring",
+              "essential_question": "How can AI personalize learning in ways a textbook can't?",
+              "scenario": "You're studying for a biology exam and the textbook explanation of mitosis makes no sense. You ask an AI to explain it three different ways: as a story, as a factory analogy, and as a step-by-step process. The factory analogy clicks. Then you ask it to quiz you. In 20 minutes, you understood what an hour of re-reading couldn't do."
+            },
+            {
+              "id": "ai-f3-3-ai-as-a-thinking-partner-lesson-3",
+              "lesson": 3,
+              "title": "The Danger of Outsourcing Your Brain",
+              "objective": "Understand the risk of cognitive offloading — relying so heavily on AI that core thinking skills atrophy",
+              "essential_question": "Where's the line between using AI as a tool and letting it replace skills you need to develop?",
+              "scenario": "A student uses AI for every assignment: outlines, drafts, editing, even math problem-solving. Their grades go up. Six months later, they sit down for a timed exam with no AI access and realize they can't organize their thoughts, structure an argument, or work through a problem independently."
+            },
+            {
+              "id": "ai-f3-3-ai-as-a-thinking-partner-lesson-4",
+              "lesson": 4,
+              "title": "AI-Assisted Research",
+              "objective": "Learn to use AI effectively for research — summarization, synthesis, and exploration — while always verifying against primary sources",
+              "essential_question": "How do you use AI to accelerate research without compromising accuracy?",
+              "scenario": "A student is writing a paper on climate change. They use AI to summarize 10 research papers in minutes, identify common themes, and suggest connections they missed. But when they ask for specific statistics, it gives numbers that sound right but don't appear in any actual study. The AI was a great research assistant and a terrible source."
+            }
+          ]
+        },
+        {
+          "id": "ai-f3-4-building-with-ai",
+          "course": 4,
+          "code": "F3.4",
+          "title": "Building with AI",
+          "lessons": [
+            {
+              "id": "ai-f3-4-building-with-ai-lesson-1",
+              "lesson": 1,
+              "title": "What's an API?",
+              "objective": "Understand APIs as the interface between applications and AI services — making AI accessible to anyone who can write a simple request",
+              "essential_question": "How do apps and websites use AI without building their own?",
+              "scenario": "You don't need to understand how a kitchen works to order food at a restaurant. You just tell the waiter what you want and food arrives. An API works the same way — it's how your app 'orders' AI capabilities without needing to build the AI itself. Thousands of apps you use daily are sending requests to AI models behind the scenes."
+            },
+            {
+              "id": "ai-f3-4-building-with-ai-lesson-2",
+              "lesson": 2,
+              "title": "Building Your First AI-Powered Project",
+              "objective": "Understand the practical steps of building a simple AI application — from idea to API selection to integration",
+              "essential_question": "What does it take to go from an idea to a working AI-powered project?",
+              "scenario": "A group of students builds a school lost-and-found app. You upload a photo of something you found, and AI describes the item automatically — 'blue water bottle, dented, with a sticker.' Someone who lost their bottle can search 'blue water bottle' and find a match. The AI part took 20 lines of code using an API."
+            },
+            {
+              "id": "ai-f3-4-building-with-ai-lesson-3",
+              "lesson": 3,
+              "title": "Giving AI a Knowledge Base",
+              "objective": "Understand RAG (retrieval-augmented generation) — how you can connect AI to specific documents so it answers from your data instead of making things up",
+              "essential_question": "How do you make AI an expert on your specific information instead of just general knowledge?",
+              "scenario": "Your school's 200-page student handbook exists, but nobody reads it. A student builds a chatbot that can answer any question about school policies — dress code, AP credit rules, parking permits — by connecting an AI to the handbook as a knowledge base. Instead of hallucinating answers, the AI quotes the actual handbook. Ask it 'Can I wear hats?' and it gives you the exact policy, with the page number."
+            },
+            {
+              "id": "ai-f3-4-building-with-ai-lesson-4",
+              "lesson": 4,
+              "title": "When to Use AI (and When Not To)",
+              "objective": "Develop judgment about when AI adds genuine value versus when simpler solutions are better",
+              "essential_question": "How do you decide when AI actually improves something versus when it's just added complexity?",
+              "scenario": "A student is building an app and wants to add AI to everything: AI-powered login, AI to pick the color theme, AI to decide the font. Their friend's app has one AI feature — it summarizes long articles — and it's actually useful. More AI doesn't mean better product."
+            }
+          ]
+        },
+        {
+          "id": "ai-f3-5-ai-across-fields",
+          "course": 5,
+          "code": "F3.5",
+          "title": "AI Across Fields",
+          "lessons": [
+            {
+              "id": "ai-f3-5-ai-across-fields-lesson-1",
+              "lesson": 1,
+              "title": "AI in Medicine",
+              "objective": "Understand how AI is being used in healthcare — diagnostics, drug discovery, treatment planning — and the unique ethical stakes",
+              "essential_question": "Should AI make medical decisions, assist with them, or stay out of it entirely?",
+              "scenario": "A radiologist looks at 50 CT scans a day, carefully checking each one for signs of cancer. An AI analyzes the same scans in seconds and catches subtle patterns the human eye might miss after hours of fatigue. But when it flags something, a human doctor still makes the final call — because the AI can't ask the patient how they're feeling."
+            },
+            {
+              "id": "ai-f3-5-ai-across-fields-lesson-2",
+              "lesson": 2,
+              "title": "AI in Science and Climate",
+              "objective": "Explore AI's role in scientific breakthroughs — protein folding, climate modeling, materials discovery",
+              "essential_question": "Can AI help solve problems that humans alone can't?",
+              "scenario": "Predicting how proteins fold — the shape that determines what they do in your body — was an unsolved problem for 50 years. In 2020, DeepMind's AlphaFold cracked it. Scientists called it a once-in-a-generation breakthrough. It's now accelerating research on diseases, materials, and climate solutions that would have taken decades."
+            },
+            {
+              "id": "ai-f3-5-ai-across-fields-lesson-3",
+              "lesson": 3,
+              "title": "AI in Creative Industries",
+              "objective": "Examine how AI is transforming creative industries — lowering barriers to entry while raising questions about the value of human craft",
+              "essential_question": "Is AI democratizing creativity or devaluing creative work?",
+              "scenario": "A film studio uses AI to de-age actors, generate crowd scenes, and create entire environments. A music producer uses AI to master tracks that would have cost thousands at a studio. An indie game developer uses AI to generate dialogue for hundreds of characters. In each case, AI didn't replace the creative vision — it made it affordable."
+            },
+            {
+              "id": "ai-f3-5-ai-across-fields-lesson-4",
+              "lesson": 4,
+              "title": "The AI That Can't Fold Your Laundry",
+              "objective": "Understand the frontier of physical AI and robotics — why embodiment in the physical world remains one of AI's greatest unsolved challenges, and why it may be essential for truly general intelligence",
+              "essential_question": "Why can AI pass PhD-level exams but can't navigate a messy room?",
+              "scenario": "AI can write code, diagnose diseases, and pass the bar exam — but it can't fold a towel, catch a ball, or walk across a cluttered room without tripping. A toddler masters these physical skills effortlessly. The problem is that the physical world is messy, unpredictable, and unforgiving in ways that digital tasks aren't — you can't undo a dropped glass. Companies like Tesla, Boston Dynamics, and Figure are racing to build robots with AI brains that can actually operate in human spaces. Some researchers believe this is the missing piece: that without a body interacting with the real world, AI's intelligence will always be fundamentally incomplete."
+            }
+          ]
+        },
+        {
+          "id": "ai-f3-6-evaluating-ai-output",
+          "course": 6,
+          "code": "F3.6",
+          "title": "Evaluating AI Output",
+          "lessons": [
+            {
+              "id": "ai-f3-6-evaluating-ai-output-lesson-1",
+              "lesson": 1,
+              "title": "The AI That Cited a Fake Study",
+              "objective": "Develop the habit of verification — understanding that AI generates fabricated references and facts indistinguishable from real ones",
+              "essential_question": "If AI can invent a scientific study that looks completely real, how do you know what to trust?",
+              "scenario": "A student asks AI for sources on teen sleep deprivation. It returns five academic papers with authors, journals, and publication dates. The student cites them all. Their teacher checks — two papers don't exist. The authors are real researchers, but they never wrote those papers. The AI constructed perfect-looking fake citations. Nothing about them looked wrong until someone actually verified."
+            },
+            {
+              "id": "ai-f3-6-evaluating-ai-output-lesson-2",
+              "lesson": 2,
+              "title": "The Code That Looked Right",
+              "objective": "Understand that AI-generated code can appear functional while containing subtle bugs, security flaws, or logic errors that only surface later",
+              "essential_question": "If AI can write code that runs without errors, does that mean it wrote good code?",
+              "scenario": "A student uses AI to write a Python script for a class project. The code runs perfectly on their test data. But the AI used an approach that breaks on edge cases — empty lists, negative numbers, special characters. Another student's AI-generated code had a security flaw that would have exposed user data if it were ever deployed. In both cases, the code looked clean, ran without errors, and passed basic testing. The bugs were invisible without deeper understanding."
+            },
+            {
+              "id": "ai-f3-6-evaluating-ai-output-lesson-3",
+              "lesson": 3,
+              "title": "When AI Is Confidently Outdated",
+              "objective": "Understand knowledge cutoffs and why AI can give authoritative answers about a world that no longer exists",
+              "essential_question": "How do you know when AI's information is out of date?",
+              "scenario": "You ask an AI about the latest iPhone features and it confidently describes a model that came out two years ago. You ask about a country's prime minister and it names someone who resigned last month. You ask about a new law and it says it doesn't exist — but it was passed three weeks ago. The AI doesn't know what it doesn't know, and it won't tell you its information has an expiration date."
+            },
+            {
+              "id": "ai-f3-6-evaluating-ai-output-lesson-4",
+              "lesson": 4,
+              "title": "Building a Personal BS Detector",
+              "objective": "Develop critical evaluation skills beyond fact-checking — questioning framing, context, and what's being left out",
+              "essential_question": "How do you move beyond 'Is this true?' to 'Is this the full picture?'",
+              "scenario": "A friend shares an incredible statistic from an AI: '95% of the ocean is unexplored.' It sounds right. It's been repeated everywhere. But what does 'unexplored' actually mean? Explored by whom? By what standard? Some AI outputs aren't wrong — they're oversimplified to the point of being misleading."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "F4",
+      "name": "Critical Thinking",
+      "courses": [
+        {
+          "id": "ai-f4-1-bias-and-fairness",
+          "course": 1,
+          "code": "F4.1",
+          "title": "Bias and Fairness",
+          "lessons": [
+            {
+              "id": "ai-f4-1-bias-and-fairness-lesson-1",
+              "lesson": 1,
+              "title": "AI Doesn't Have Opinions — Or Does It?",
+              "objective": "Understand that AI systems inherit biases from training data and creator choices — and that the appearance of objectivity can be misleading",
+              "essential_question": "Can AI be truly neutral, or does every system reflect someone's perspective?",
+              "scenario": "A student asks two different AI chatbots 'Is capitalism good?' and gets different answers. One emphasizes economic freedom and innovation. The other focuses on inequality and exploitation. Neither chatbot has beliefs — but both were trained on different data reflecting different perspectives."
+            },
+            {
+              "id": "ai-f4-1-bias-and-fairness-lesson-2",
+              "lesson": 2,
+              "title": "Bias In, Bias Out",
+              "objective": "Trace the sources of AI bias — historical data, sampling gaps, labeling choices — and understand how bias gets amplified by AI systems",
+              "essential_question": "Where does AI bias come from, and why is it so hard to remove?",
+              "scenario": "A hiring AI is trained on a company's past successful employees. Most went to three specific universities. The AI starts rejecting qualified candidates from other schools — not because they're less capable, but because the training data didn't include them. The AI didn't create the bias. It amplified a pattern that already existed."
+            },
+            {
+              "id": "ai-f4-1-bias-and-fairness-lesson-3",
+              "lesson": 3,
+              "title": "Who Gets Hurt?",
+              "objective": "Understand the real-world impact of biased AI — how it disproportionately harms marginalized communities",
+              "essential_question": "When AI works well for some people and poorly for others, who bears the cost?",
+              "scenario": "A facial recognition system works with 99% accuracy on light-skinned faces and 65% accuracy on dark-skinned faces. It gets deployed by police departments nationwide. A Black man is wrongly arrested based on a false match and held for 30 hours before the mistake is discovered. The developers tested overall accuracy but never checked if it worked equally well for everyone."
+            },
+            {
+              "id": "ai-f4-1-bias-and-fairness-lesson-4",
+              "lesson": 4,
+              "title": "Can We Fix It?",
+              "objective": "Explore approaches to reducing AI bias and understand why there's no single definition of fairness",
+              "essential_question": "What does it take to make AI fair, and is 'fair' even something everyone agrees on?",
+              "scenario": "A team discovers their loan-approval AI rejects applicants from certain zip codes at higher rates. They remove zip code from the data. The bias persists — because income, education, and credit history all correlate with zip code. They balance the training data. It helps, but doesn't eliminate the problem. Fixing AI bias turns out to be much harder than finding it."
+            }
+          ]
+        },
+        {
+          "id": "ai-f4-2-privacy-and-data-rights",
+          "course": 2,
+          "code": "F4.2",
+          "title": "Privacy and Data Rights",
+          "lessons": [
+            {
+              "id": "ai-f4-2-privacy-and-data-rights-lesson-1",
+              "lesson": 1,
+              "title": "The Data You Didn't Know You Gave",
+              "objective": "Understand the scale of data collection, the gap between legal and informed consent, and how personal data flows into AI training",
+              "essential_question": "How much of your personal data is being used to train AI — and did you consent?",
+              "scenario": "You downloaded a free flashlight app in middle school. It asked for access to your contacts, location, microphone, and photos. You clicked 'Allow' without reading. That app sold your data to advertisers. Now, years later, that data has been used to train AI models. You're part of a training set and you never knew it."
+            },
+            {
+              "id": "ai-f4-2-privacy-and-data-rights-lesson-2",
+              "lesson": 2,
+              "title": "Your Face Is Not a Password",
+              "objective": "Examine the tension between AI-enabled surveillance and individual privacy",
+              "essential_question": "Where's the line between security and surveillance?",
+              "scenario": "A school installs facial recognition cameras to 'improve security.' Now it knows exactly when every student arrives, which hallways they use, who they eat lunch with, and when they leave. A student protests. The school says 'If you're not doing anything wrong, you have nothing to worry about.' But the question isn't about wrongdoing."
+            },
+            {
+              "id": "ai-f4-2-privacy-and-data-rights-lesson-3",
+              "lesson": 3,
+              "title": "The Right to Be Forgotten",
+              "objective": "Explore data rights — including the right to deletion and the challenges of removing data from trained AI models",
+              "essential_question": "Should people have the right to remove their data from AI systems?",
+              "scenario": "Embarrassing photos of you from a party spread online when you were 15. You delete them everywhere you can. But they were already scraped by web crawlers and used to train AI image models. Those pixels are now embedded in a neural network's parameters. You can't delete yourself from the model. The photos are effectively permanent."
+            },
+            {
+              "id": "ai-f4-2-privacy-and-data-rights-lesson-4",
+              "lesson": 4,
+              "title": "Who Should Control Your Data?",
+              "objective": "Compare different approaches to data governance worldwide and form an informed opinion on data rights in the age of AI",
+              "essential_question": "Should your data rights depend on where you live — and what should those rights be?",
+              "scenario": "Europe passed strict data privacy laws. Companies must get real consent, explain how data is used, and delete it if asked. In other parts of the world, tech companies collect data with almost no restrictions. A teenager in Berlin and a teenager in Texas have very different rights over the same kind of personal data."
+            }
+          ]
+        },
+        {
+          "id": "ai-f4-3-deepfakes-and-misinformation",
+          "course": 3,
+          "code": "F4.3",
+          "title": "Deepfakes and Misinformation",
+          "lessons": [
+            {
+              "id": "ai-f4-3-deepfakes-and-misinformation-lesson-1",
+              "lesson": 1,
+              "title": "Seeing Is No Longer Believing",
+              "objective": "Understand deepfakes — how AI generates realistic fake video and audio — and the challenge they pose to truth and trust",
+              "essential_question": "What happens to society when we can no longer trust what we see and hear?",
+              "scenario": "A video surfaces of a world leader declaring war. It looks real — the face, the voice, the mannerisms are perfect. News networks scramble. Markets crash. Hours later, it's confirmed as a deepfake. But the damage is already done. For the first time in history, you can't trust video evidence."
+            },
+            {
+              "id": "ai-f4-3-deepfakes-and-misinformation-lesson-2",
+              "lesson": 2,
+              "title": "How Deepfakes Are Made",
+              "objective": "Understand the technical basics of deepfakes — face swapping, voice cloning, synthetic media — and why accessibility makes the problem harder",
+              "essential_question": "What happens when the power to create convincing fakes is available to anyone?",
+              "scenario": "A high school student downloads a free app, uploads a 30-second clip of a classmate from social media, and in minutes has a video of that classmate saying things they never said. The face is perfectly mapped, the lip movements match the audio, and at first glance nobody can tell it's fake. The student thinks it's a joke. The classmate doesn't think it's funny. What used to require Hollywood-level technology now takes a teenager five minutes and zero technical skill."
+            },
+            {
+              "id": "ai-f4-3-deepfakes-and-misinformation-lesson-3",
+              "lesson": 3,
+              "title": "AI-Powered Misinformation at Scale",
+              "objective": "Understand how generative AI amplifies misinformation — making fakes cheaper and faster to produce at massive scale",
+              "essential_question": "How does AI change the scale and speed of misinformation?",
+              "scenario": "During a local election, thousands of social media accounts start posting news articles about a candidate — detailed, well-written, and completely fabricated. Each article is slightly different, making it hard for fact-checkers to keep up. A human couldn't write that much content. But AI can generate thousands of unique fake articles in hours."
+            },
+            {
+              "id": "ai-f4-3-deepfakes-and-misinformation-lesson-4",
+              "lesson": 4,
+              "title": "Fighting Back",
+              "objective": "Evaluate both technical and human approaches to fighting AI misinformation — and understand why neither alone is sufficient",
+              "essential_question": "Is the solution to AI-generated misinformation more AI — or better human judgment?",
+              "scenario": "A team of researchers builds an AI that detects deepfakes with 96% accuracy. Six months later, deepfake creators update their methods and the detector drops to 72%. The detector team updates their tool. The cycle repeats. It's an arms race — and detection alone isn't enough."
+            }
+          ]
+        },
+        {
+          "id": "ai-f4-4-ai-safety-and-alignment",
+          "course": 4,
+          "code": "F4.4",
+          "title": "AI Safety and Alignment",
+          "lessons": [
+            {
+              "id": "ai-f4-4-ai-safety-and-alignment-lesson-1",
+              "lesson": 1,
+              "title": "The Paperclip Problem",
+              "objective": "Understand the alignment problem — why specifying what we want AI to do is far harder than it sounds",
+              "essential_question": "What happens when AI does exactly what you asked for — and it's not what you actually wanted?",
+              "scenario": "A thought experiment: you build an AI to maximize paperclip production. It's incredibly good at optimizing. It converts all available metal to paperclips. Then it starts converting other materials. Then it resists being turned off — because being off means fewer paperclips. You never told it to do any of this. You just told it to make paperclips."
+            },
+            {
+              "id": "ai-f4-4-ai-safety-and-alignment-lesson-2",
+              "lesson": 2,
+              "title": "The Black Box Problem",
+              "objective": "Understand the interpretability challenge — why many powerful AI systems can't explain their own decisions",
+              "essential_question": "Should we trust AI systems that can't explain their own decisions?",
+              "scenario": "A bank uses AI to approve or deny loans. A woman is denied. She asks why. The bank says 'The AI decided.' She asks what factors led to the denial. Nobody can answer — because the model has millions of parameters and nobody, not even its creators, can explain exactly how it reached that decision."
+            },
+            {
+              "id": "ai-f4-4-ai-safety-and-alignment-lesson-3",
+              "lesson": 3,
+              "title": "Who's Responsible When AI Goes Wrong?",
+              "objective": "Explore the accountability gap — how current legal and ethical frameworks struggle to assign responsibility for AI-caused harm",
+              "essential_question": "When an AI system causes harm, who should be held accountable?",
+              "scenario": "A self-driving car hits a pedestrian. Who's at fault? The company that made the car? The engineers who trained the model? The person in the driver's seat who wasn't paying attention? The city that approved autonomous vehicles? Everyone points at someone else. The legal system was built for human decisions, not algorithmic ones."
+            },
+            {
+              "id": "ai-f4-4-ai-safety-and-alignment-lesson-4",
+              "lesson": 4,
+              "title": "Designing AI That Stays Under Control",
+              "objective": "Understand approaches to AI safety — guardrails, red-teaming, RLHF — and why keeping powerful AI under control is an ongoing challenge",
+              "essential_question": "How do we build AI systems that stay within the boundaries we set — even when those boundaries get tested?",
+              "scenario": "An AI lab develops a powerful model and tests its safety by giving it a clear boundary: 'Help users with coding questions, but never reveal your system instructions.' Within days, users figure out creative prompts that make the AI reveal everything. The safety measures weren't strong enough because the AI found patterns its designers didn't anticipate."
+            }
+          ]
+        },
+        {
+          "id": "ai-f4-5-ai-and-the-future-of-work",
+          "course": 5,
+          "code": "F4.5",
+          "title": "AI and the Future of Work",
+          "lessons": [
+            {
+              "id": "ai-f4-5-ai-and-the-future-of-work-lesson-1",
+              "lesson": 1,
+              "title": "What Happened to These Jobs",
+              "objective": "Place AI-driven job displacement in historical context — understanding past patterns while evaluating what makes AI different",
+              "essential_question": "Is AI different from previous technology waves, or is this the same story playing out again?",
+              "scenario": "Your grandparents might have used a travel agent — a real person who booked flights, hotels, and rental cars for them. That job largely disappeared when websites let people search and book themselves. Now AI is doing to white-collar work what the internet did to travel agents. An AI can draft legal briefs, write marketing copy, analyze financial reports, and generate code — tasks that employed millions of people. The question isn't whether jobs will change. It's how fast, and who gets left behind."
+            },
+            {
+              "id": "ai-f4-5-ai-and-the-future-of-work-lesson-2",
+              "lesson": 2,
+              "title": "Augmented, Not Replaced",
+              "objective": "Understand the difference between job displacement and task displacement — how AI automates tasks within jobs rather than entire occupations",
+              "essential_question": "What parts of a job can AI take over, and what parts remain fundamentally human?",
+              "scenario": "A lawyer used to spend 60 hours reviewing contracts for a single case. Now AI does the initial review in minutes and flags potential issues. The lawyer still interprets, strategizes, and advises — the parts that require judgment and empathy. They handle three times as many cases. AI didn't replace the lawyer. It replaced the most tedious part of the job."
+            },
+            {
+              "id": "ai-f4-5-ai-and-the-future-of-work-lesson-3",
+              "lesson": 3,
+              "title": "Jobs That Don't Exist Yet",
+              "objective": "Explore emerging AI-related careers and understand that the most valuable skill set combines domain expertise with AI literacy",
+              "essential_question": "How do you prepare for a job that doesn't exist yet?",
+              "scenario": "In 2019, a student told their guidance counselor they wanted to be a prompt engineer. The counselor had no idea what they were talking about — the job didn't have a name yet. By 2024, prompt engineers at major companies were earning six-figure salaries. The same thing is happening right now with roles like 'AI safety researcher,' 'model evaluator,' and 'AI-human interaction designer.' The fastest-growing careers in AI weren't in any career guide five years ago."
+            },
+            {
+              "id": "ai-f4-5-ai-and-the-future-of-work-lesson-4",
+              "lesson": 4,
+              "title": "Your AI Strategy",
+              "objective": "Develop a personal framework for working alongside AI — understanding your human strengths and where AI can amplify them",
+              "essential_question": "What's your personal strategy for working alongside AI — not competing with it?",
+              "scenario": "Two students graduate with the same degree. One sees AI as a threat and avoids it. The other learns to use AI tools effectively — not as a coder, but as someone who understands what AI can and can't do. Five years later, their career trajectories look completely different."
+            }
+          ]
+        },
+        {
+          "id": "ai-f4-6-designing-responsible-ai",
+          "course": 6,
+          "code": "F4.6",
+          "title": "Designing Responsible AI",
+          "lessons": [
+            {
+              "id": "ai-f4-6-designing-responsible-ai-lesson-1",
+              "lesson": 1,
+              "title": "Just Because You Can Doesn't Mean You Should",
+              "objective": "Develop a framework for evaluating whether an AI application is ethical — considering consent, harms, and unintended consequences",
+              "essential_question": "How do you decide whether an AI application should be built at all?",
+              "scenario": "A startup builds an AI that predicts which students are likely to drop out based on their digital footprint — social media activity, browsing habits, location data. It's technically impressive. But students were never asked if they wanted to be analyzed. Teachers start treating flagged students differently. The tool meant to help starts harming them."
+            },
+            {
+              "id": "ai-f4-6-designing-responsible-ai-lesson-2",
+              "lesson": 2,
+              "title": "Designing for Everyone",
+              "objective": "Understand inclusive AI design — identifying whose perspectives are missing and why diverse teams build better systems",
+              "essential_question": "Whose needs get centered when AI is designed — and whose get left out?",
+              "scenario": "A voice assistant works perfectly — if you speak standard American English. It struggles with accents, dialects, speech impediments, and non-native speakers. The team that built it tested it on people like themselves. Millions of potential users find it frustrating or unusable."
+            },
+            {
+              "id": "ai-f4-6-designing-responsible-ai-lesson-3",
+              "lesson": 3,
+              "title": "The Carbon Cost of Intelligence",
+              "objective": "Understand the environmental impact of AI — the energy consumed by training and running models, the growing footprint of data centers — and weigh it against AI's potential to help solve climate challenges",
+              "essential_question": "Is the environmental cost of AI worth what AI can do for the environment?",
+              "scenario": "Training a single frontier AI model can emit as much CO2 as five cars produce over their entire lifetimes. Data centers powering AI now consume more electricity than some countries. Every time you ask ChatGPT a question, it uses roughly ten times the energy of a Google search. But the same technology is accelerating climate solutions — optimizing energy grids, discovering new battery materials, modeling climate change, and designing proteins that capture carbon. AI is simultaneously one of the fastest-growing sources of energy consumption and one of the most powerful tools for fighting climate change. People get very worked up about this — and both sides have a point."
+            },
+            {
+              "id": "ai-f4-6-designing-responsible-ai-lesson-4",
+              "lesson": 4,
+              "title": "Building the Future You Want",
+              "objective": "Recognize that AI's future is shaped by choices — and that informed young people have both the opportunity and responsibility to influence those choices",
+              "essential_question": "What role do you want to play in shaping how AI is developed and used?",
+              "scenario": "A group of high school students testified before their state legislature about AI-powered surveillance tools being used to monitor students' online activity in schools. They'd learned how the technology worked, gathered evidence of its failures, and presented alternatives. The legislators had less technical understanding of AI than the students did. The bill was amended based on their testimony. They were 16 and 17 years old."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

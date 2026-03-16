@@ -107,7 +107,7 @@ export function AgentBar() {
               </div>
             )}
           </div>
-          <Shuffle className="size-4 text-violet-400 dark:text-violet-500" />
+          <Shuffle className="size-4 text-brand-400 dark:text-brand-500" />
         </>
       ) : (
         <>
@@ -269,11 +269,11 @@ export function AgentBar() {
                   {/* Shuffle icon with ambient animation */}
                   <div className="relative flex items-center justify-center">
                     {/* Ping ripple */}
-                    <div className="absolute size-12 rounded-full bg-violet-400/10 dark:bg-violet-400/15 animate-ping [animation-duration:3s]" />
+                    <div className="absolute size-12 rounded-full bg-brand-400/10 dark:bg-brand-400/15 animate-ping [animation-duration:3s]" />
                     {/* Soft glow ring */}
-                    <div className="absolute size-14 rounded-full bg-violet-400/5 dark:bg-violet-400/10 animate-pulse [animation-duration:2.5s]" />
+                    <div className="absolute size-14 rounded-full bg-brand-400/5 dark:bg-brand-400/10 animate-pulse [animation-duration:2.5s]" />
                     {/* Icon */}
-                    <Shuffle className="relative size-7 text-violet-400 dark:text-violet-500" />
+                    <Shuffle className="relative size-7 text-brand-400 dark:text-brand-500" />
                   </div>
                   <p className="text-xs text-muted-foreground text-center">
                     {t('settings.agentModeAutoDesc')}

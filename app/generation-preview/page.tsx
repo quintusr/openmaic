@@ -721,6 +721,14 @@ function GenerationPreviewContent() {
         }),
       );
 
+      // Save requirement for S3 upload classification in classroom page
+      if (currentSession.requirements?.requirement) {
+        sessionStorage.setItem(
+          'browseUploadRequirement',
+          currentSession.requirements.requirement,
+        );
+      }
+
       sessionStorage.removeItem('generationSession');
       await store.saveToStorage();
       router.push(`/classroom/${stage.id}`);
@@ -792,7 +800,7 @@ function GenerationPreviewContent() {
           style={{ animationDuration: '4s' }}
         />
         <div
-          className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"
+          className="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl animate-pulse"
           style={{ animationDuration: '6s' }}
         />
       </div>
@@ -988,7 +996,7 @@ function GenerationPreviewContent() {
                 {generatedAgents.length > 0 && !showAgentReveal && (
                   <button
                     onClick={() => setShowAgentReveal(true)}
-                    className="ml-2 flex items-center gap-1.5 rounded-full border border-purple-300/30 bg-purple-500/10 px-3 py-1 text-xs font-medium normal-case tracking-normal text-purple-400 transition-colors hover:bg-purple-500/20 hover:text-purple-300"
+                    className="ml-2 flex items-center gap-1.5 rounded-full border border-brand-300/30 bg-brand-500/10 px-3 py-1 text-xs font-medium normal-case tracking-normal text-brand-400 transition-colors hover:bg-brand-500/20 hover:text-brand-300"
                   >
                     <Bot className="size-3" />
                     {t('generation.viewAgents')}

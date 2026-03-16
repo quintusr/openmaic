@@ -116,19 +116,19 @@ export function BaseVideoElement({ elementInfo }: BaseVideoElementProps) {
             </div>
           </div>
         ) : showSkeleton ? (
-          <div className="w-full h-full bg-gradient-to-br from-indigo-50 via-violet-50/60 to-blue-50 dark:from-indigo-950/40 dark:via-violet-950/30 dark:to-blue-950/20 flex items-center justify-center rounded">
+          <div className="w-full h-full bg-gradient-to-br from-brand-50 via-brand-50/60 to-blue-50 dark:from-brand-950/40 dark:via-brand-950/30 dark:to-blue-950/20 flex items-center justify-center rounded">
             <style>{`
               @keyframes vid-pulse-ring { 0%, 100% { opacity: 0.15; transform: scale(0.85); } 50% { opacity: 0.35; transform: scale(1.1); } }
             `}</style>
             <div className="relative w-14 h-14">
               <div
-                className="absolute inset-0 rounded-full border-2 border-indigo-300/40 dark:border-indigo-500/30"
+                className="absolute inset-0 rounded-full border-2 border-brand-300/40 dark:border-brand-500/30"
                 style={{
                   animation: 'vid-pulse-ring 2.4s ease-in-out infinite',
                 }}
               />
               <Film
-                className="absolute inset-0 m-auto w-5 h-5 text-indigo-400/80 dark:text-indigo-500/70"
+                className="absolute inset-0 m-auto w-5 h-5 text-brand-400/80 dark:text-brand-500/70"
                 strokeWidth={1.5}
               />
             </div>

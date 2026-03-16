@@ -10,7 +10,12 @@
     "start": "next start",
     "lint": "eslint",
     "check": "prettier . --check",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "generate:spec": "tsx --require tsconfig-paths/register scripts/generate-from-spec.ts",
+    "generate:ai": "tsx --require tsconfig-paths/register scripts/generate-from-spec.ts course-specs/conceptual/ai.json",
+    "generate:biology": "tsx --require tsconfig-paths/register scripts/generate-from-spec.ts course-specs/conceptual/biology.json",
+    "generate:physics": "tsx --require tsconfig-paths/register scripts/generate-from-spec.ts course-specs/conceptual/physics.json",
+    "generate:all": "pnpm generate:ai --resume && pnpm generate:biology --resume && pnpm generate:physics --resume"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^3.0.23",
@@ -89,6 +94,7 @@
     "undici": "^7.22.0",
     "unpdf": "^1.4.0",
     "use-stick-to-bottom": "^1.1.1",
+    "@aws-sdk/client-s3": "^3.989.0",
     "zod": "^4.3.5",
     "zustand": "^5.0.10"
   },
@@ -110,6 +116,8 @@
     "rollup-plugin-typescript2": "^0.36.0",
     "tailwindcss": "^4",
     "tslib": "^2.8.0",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.0",
     "typescript": "^5",
     "vue-to-react": "^1.0.0"
   },
