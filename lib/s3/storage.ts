@@ -8,7 +8,6 @@ import path from 'path';
 import type { S3Client } from '@aws-sdk/client-s3';
 import {
   createS3Client,
-  checkS3Available,
   s3Key,
   uploadJson,
   downloadJson,
@@ -52,22 +51,15 @@ async function writeLocalJson(filePath: string, data: unknown): Promise<void> {
 
 export class BrowseStorage {
   private s3: S3Client | null = null;
-  private s3Checked = false;
 
   /**
-   * Lazily initialize the S3 client on first use.
-   * Uses the AWS default credential chain (SSO, env vars, IAM roles).
+   * Get the S3 client. Always creates one — individual operations
+   * handle errors gracefully if credentials are invalid.
    */
-  private async ensureS3(): Promise<S3Client | null> {
-    if (this.s3Checked) return this.s3;
-    this.s3Checked = true;
-
-    const available = await checkS3Available();
-    if (available) {
+  private ensureS3(): S3Client {
+    if (!this.s3) {
       this.s3 = createS3Client(process.env.AWS_REGION || 'eu-west-1');
-      console.log('[BrowseStorage] S3 connected (hello-content-factory/openmaic/)');
-    } else {
-      console.log('[BrowseStorage] S3 not available, using local storage only');
+      console.log('[BrowseStorage] S3 client created');
     }
     return this.s3;
   }
@@ -79,20 +71,19 @@ export class BrowseStorage {
   // -- Subjects manifest --------------------------------------------------
 
   async getSubjectsManifest(): Promise<SubjectsManifest | null> {
-    const s3 = await this.ensureS3();
-    if (s3) {
-      const data = await downloadJson<SubjectsManifest>(
-        s3,
-        s3Key('subjects.json'),
-      );
+    try {
+      const s3 = this.ensureS3();
+      const data = await downloadJson<SubjectsManifest>(s3, s3Key('subjects.json'));
       if (data) return data;
+    } catch (err) {
+      console.warn('[BrowseStorage] S3 getSubjectsManifest failed:', err instanceof Error ? err.message : err);
     }
     return readLocalJson<SubjectsManifest>(localPath('subjects.json'));
   }
 
   async saveSubjectsManifest(manifest: SubjectsManifest): Promise<void> {
     await writeLocalJson(localPath('subjects.json'), manifest);
-    const s3 = await this.ensureS3();
+    const s3 = this.ensureS3();
     if (s3) {
       await uploadJson(s3, s3Key('subjects.json'), manifest);
     }
@@ -103,7 +94,7 @@ export class BrowseStorage {
   async getSubjectIndex(
     subjectCode: string,
   ): Promise<SubjectIndex | null> {
-    const s3 = await this.ensureS3();
+    const s3 = this.ensureS3();
     if (s3) {
       const data = await downloadJson<SubjectIndex>(
         s3,
@@ -119,7 +110,7 @@ export class BrowseStorage {
   async saveSubjectIndex(index: SubjectIndex): Promise<void> {
     const code = index.subjectCode;
     await writeLocalJson(localPath(code, 'index.json'), index);
-    const s3 = await this.ensureS3();
+    const s3 = this.ensureS3();
     if (s3) {
       await uploadJson(s3, s3Key(code, 'index.json'), index);
     }
@@ -132,7 +123,7 @@ export class BrowseStorage {
     courseId: string,
     lessonId: string,
   ): Promise<PersistedClassroomData | null> {
-    const s3 = await this.ensureS3();
+    const s3 = this.ensureS3();
     if (s3) {
       const data = await downloadJson<PersistedClassroomData>(
         s3,
@@ -155,7 +146,7 @@ export class BrowseStorage {
       localPath(subjectCode, courseId, `${lessonId}.json`),
       data,
     );
-    const s3 = await this.ensureS3();
+    const s3 = this.ensureS3();
     if (s3) {
       await uploadJson(
         s3,
@@ -180,7 +171,7 @@ export class BrowseStorage {
     await ensureLocalDir(dir);
     await fs.writeFile(path.join(dir, audioId), Buffer.from(bytes));
 
-    const s3 = await this.ensureS3();
+    const s3 = this.ensureS3();
     if (s3) {
       await uploadBlob(
         s3,
@@ -206,7 +197,7 @@ export class BrowseStorage {
       // fall through to S3
     }
 
-    const s3 = await this.ensureS3();
+    const s3 = this.ensureS3();
     if (s3) {
       return downloadBlob(
         s3,
@@ -230,7 +221,7 @@ export class BrowseStorage {
     await ensureLocalDir(dir);
     await fs.writeFile(path.join(dir, mediaId), Buffer.from(bytes));
 
-    const s3 = await this.ensureS3();
+    const s3 = this.ensureS3();
     if (s3) {
       await uploadBlob(
         s3,
@@ -256,7 +247,7 @@ export class BrowseStorage {
       // fall through to S3
     }
 
-    const s3 = await this.ensureS3();
+    const s3 = this.ensureS3();
     if (s3) {
       return downloadBlob(
         s3,
@@ -269,7 +260,7 @@ export class BrowseStorage {
   // -- List available subjects from S3 ------------------------------------
 
   async listSubjectCodes(): Promise<string[]> {
-    const s3 = await this.ensureS3();
+    const s3 = this.ensureS3();
     if (s3) {
       const keys = await listKeys(s3, s3Key(''));
       const codes = new Set<string>();

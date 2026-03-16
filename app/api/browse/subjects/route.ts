@@ -6,10 +6,18 @@ import { getBrowseStorage } from '@/lib/s3/storage';
 export async function GET() {
   try {
     const storage = getBrowseStorage();
+
+    const hasAws = !!(process.env.AWS_ACCESS_KEY_ID && process.env.AWS_SECRET_ACCESS_KEY);
+    const s3Connected = storage.hasS3;
+
     const manifest = await storage.getSubjectsManifest();
 
     if (manifest) {
-      return apiSuccess({ subjects: manifest.subjects, updatedAt: manifest.updatedAt });
+      return apiSuccess({
+        subjects: manifest.subjects,
+        updatedAt: manifest.updatedAt,
+        _debug: { hasAws, s3Connected: storage.hasS3 },
+      });
     }
 
     // If no manifest, try to discover subjects from S3/local
@@ -39,7 +47,11 @@ export async function GET() {
       }
     }
 
-    return apiSuccess({ subjects, updatedAt: new Date().toISOString() });
+    return apiSuccess({
+      subjects,
+      updatedAt: new Date().toISOString(),
+      _debug: { hasAws, s3Connected: storage.hasS3, subjectCodes: codes },
+    });
   } catch (error) {
     return apiError(
       API_ERROR_CODES.INTERNAL_ERROR,
