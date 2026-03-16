@@ -81,7 +81,8 @@ async function generateTTSForLesson(
 ): Promise<number> {
   const ttsProviderId = 'openai-tts';
   const ttsVoice = 'alloy';
-  const apiKey = resolveTTSApiKey(ttsProviderId);
+  // Try TTS-specific key first, fall back to general OPENAI_API_KEY
+  const apiKey = resolveTTSApiKey(ttsProviderId) || process.env.OPENAI_API_KEY || '';
   if (!apiKey) {
     console.log(`  ${label} TTS skipped: no API key for ${ttsProviderId}`);
     return 0;
@@ -144,12 +145,30 @@ async function generateImagesForLesson(
   }
 
   if (!providerId) {
-    console.log(`  ${label} Images skipped: no image provider configured`);
-    return 0;
+    // Also try GOOGLE_API_KEY for nano-banana (uses Gemini under the hood)
+    const googleKey = process.env.GOOGLE_API_KEY || '';
+    if (googleKey) {
+      providerId = 'nano-banana';
+      apiKey = googleKey;
+    } else {
+      console.log(`  ${label} Images skipped: no image provider configured`);
+      return 0;
+    }
   }
 
   const baseUrl = resolveImageBaseUrl(providerId);
   let count = 0;
+
+  // Count total media requests for logging
+  const totalRequests = outlines.reduce(
+    (sum, o) => sum + (o.mediaGenerations || []).filter((m) => m.type === 'image').length,
+    0,
+  );
+  if (totalRequests === 0) {
+    console.log(`  ${label} Images: no image requests in outlines`);
+    return 0;
+  }
+  console.log(`  ${label} Images: generating ${totalRequests} images via ${providerId}...`);
 
   for (const outline of outlines) {
     for (const mg of outline.mediaGenerations || []) {
