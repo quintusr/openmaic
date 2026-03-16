@@ -20,6 +20,20 @@ export interface S3Result {
 export function createS3Client(
   region: string = 'eu-west-1',
 ): S3Client {
+  // Vercel may strip AWS_ prefixed env vars — support custom prefix fallback
+  const accessKeyId =
+    process.env.AWS_ACCESS_KEY_ID || process.env.CF_AWS_ACCESS_KEY_ID || '';
+  const secretAccessKey =
+    process.env.AWS_SECRET_ACCESS_KEY || process.env.CF_AWS_SECRET_ACCESS_KEY || '';
+
+  if (accessKeyId && secretAccessKey) {
+    return new S3Client({
+      region,
+      credentials: { accessKeyId, secretAccessKey },
+    });
+  }
+
+  // Fall back to default credential chain (SSO, IAM role, etc.)
   return new S3Client({ region });
 }
 
