@@ -8,7 +8,6 @@ export async function GET() {
     const storage = getBrowseStorage();
 
     const hasAws = !!(process.env.AWS_ACCESS_KEY_ID && process.env.AWS_SECRET_ACCESS_KEY);
-    const s3Connected = storage.hasS3;
 
     const manifest = await storage.getSubjectsManifest();
 
@@ -16,7 +15,7 @@ export async function GET() {
       return apiSuccess({
         subjects: manifest.subjects,
         updatedAt: manifest.updatedAt,
-        _debug: { hasAws, s3Connected: storage.hasS3 },
+        _debug: { hasAws },
       });
     }
 
@@ -50,7 +49,7 @@ export async function GET() {
     return apiSuccess({
       subjects,
       updatedAt: new Date().toISOString(),
-      _debug: { hasAws, s3Connected: storage.hasS3, subjectCodes: codes },
+      _debug: { hasAws, subjectCodes: codes },
     });
   } catch (error) {
     return apiError(

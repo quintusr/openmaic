@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 // Load .env.local before any other imports
 // This runs via --require before ES module imports are resolved
 const fs = require('fs');

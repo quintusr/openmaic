@@ -24,19 +24,14 @@ export async function GET(
 
     const lesson = await storage.getLesson(subjectCode, courseId, lessonId);
     if (!lesson) {
-      return apiError(
-        API_ERROR_CODES.INVALID_REQUEST,
-        404,
-        `Lesson "${lessonId}" not found`,
-      );
+      return apiError(API_ERROR_CODES.INVALID_REQUEST, 404, `Lesson "${lessonId}" not found`);
     }
 
     // Try to persist locally (works on local dev, silently skipped on Vercel)
     try {
-      const baseUrl =
-        request.headers.get('x-forwarded-host')
-          ? `${request.headers.get('x-forwarded-proto') || 'http'}://${request.headers.get('x-forwarded-host')}`
-          : request.nextUrl.origin;
+      const baseUrl = request.headers.get('x-forwarded-host')
+        ? `${request.headers.get('x-forwarded-proto') || 'http'}://${request.headers.get('x-forwarded-host')}`
+        : request.nextUrl.origin;
 
       await persistClassroom(
         { id: lesson.id, stage: lesson.stage, scenes: lesson.scenes },

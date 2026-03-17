@@ -15,10 +15,7 @@ import {
   downloadBlob,
   listKeys,
 } from './client';
-import type {
-  SubjectsManifest,
-  SubjectIndex,
-} from '@/lib/course-spec/types';
+import type { SubjectsManifest, SubjectIndex } from '@/lib/course-spec/types';
 import type { PersistedClassroomData } from '@/lib/server/classroom-storage';
 
 const LOCAL_DIR = path.join(process.cwd(), 'data', 'browse');
@@ -76,7 +73,10 @@ export class BrowseStorage {
       const data = await downloadJson<SubjectsManifest>(s3, s3Key('subjects.json'));
       if (data) return data;
     } catch (err) {
-      console.warn('[BrowseStorage] S3 getSubjectsManifest failed:', err instanceof Error ? err.message : err);
+      console.warn(
+        '[BrowseStorage] S3 getSubjectsManifest failed:',
+        err instanceof Error ? err.message : err,
+      );
     }
     return readLocalJson<SubjectsManifest>(localPath('subjects.json'));
   }
@@ -91,20 +91,13 @@ export class BrowseStorage {
 
   // -- Subject index ------------------------------------------------------
 
-  async getSubjectIndex(
-    subjectCode: string,
-  ): Promise<SubjectIndex | null> {
+  async getSubjectIndex(subjectCode: string): Promise<SubjectIndex | null> {
     const s3 = this.ensureS3();
     if (s3) {
-      const data = await downloadJson<SubjectIndex>(
-        s3,
-        s3Key(subjectCode, 'index.json'),
-      );
+      const data = await downloadJson<SubjectIndex>(s3, s3Key(subjectCode, 'index.json'));
       if (data) return data;
     }
-    return readLocalJson<SubjectIndex>(
-      localPath(subjectCode, 'index.json'),
-    );
+    return readLocalJson<SubjectIndex>(localPath(subjectCode, 'index.json'));
   }
 
   async saveSubjectIndex(index: SubjectIndex): Promise<void> {
@@ -142,17 +135,10 @@ export class BrowseStorage {
     lessonId: string,
     data: PersistedClassroomData,
   ): Promise<void> {
-    await writeLocalJson(
-      localPath(subjectCode, courseId, `${lessonId}.json`),
-      data,
-    );
+    await writeLocalJson(localPath(subjectCode, courseId, `${lessonId}.json`), data);
     const s3 = this.ensureS3();
     if (s3) {
-      await uploadJson(
-        s3,
-        s3Key(subjectCode, courseId, `${lessonId}.json`),
-        data,
-      );
+      await uploadJson(s3, s3Key(subjectCode, courseId, `${lessonId}.json`), data);
     }
   }
 
@@ -199,10 +185,7 @@ export class BrowseStorage {
 
     const s3 = this.ensureS3();
     if (s3) {
-      return downloadBlob(
-        s3,
-        s3Key(subjectCode, courseId, lessonId, 'audio', audioId),
-      );
+      return downloadBlob(s3, s3Key(subjectCode, courseId, lessonId, 'audio', audioId));
     }
     return null;
   }
@@ -249,10 +232,7 @@ export class BrowseStorage {
 
     const s3 = this.ensureS3();
     if (s3) {
-      return downloadBlob(
-        s3,
-        s3Key(subjectCode, courseId, lessonId, 'media', mediaId),
-      );
+      return downloadBlob(s3, s3Key(subjectCode, courseId, lessonId, 'media', mediaId));
     }
     return null;
   }

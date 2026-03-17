@@ -14,11 +14,7 @@ export async function GET(
     const index = await storage.getSubjectIndex(subjectCode);
 
     if (!index) {
-      return apiError(
-        API_ERROR_CODES.INVALID_REQUEST,
-        404,
-        `Subject "${subjectCode}" not found`,
-      );
+      return apiError(API_ERROR_CODES.INVALID_REQUEST, 404, `Subject "${subjectCode}" not found`);
     }
 
     return apiSuccess({ index });

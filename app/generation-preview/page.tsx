@@ -723,10 +723,7 @@ function GenerationPreviewContent() {
 
       // Save requirement for S3 upload classification in classroom page
       if (currentSession.requirements?.requirement) {
-        sessionStorage.setItem(
-          'browseUploadRequirement',
-          currentSession.requirements.requirement,
-        );
+        sessionStorage.setItem('browseUploadRequirement', currentSession.requirements.requirement);
       }
 
       sessionStorage.removeItem('generationSession');

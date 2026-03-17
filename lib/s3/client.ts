@@ -17,12 +17,9 @@ export interface S3Result {
   error?: string;
 }
 
-export function createS3Client(
-  region: string = 'eu-west-1',
-): S3Client {
+export function createS3Client(region: string = 'eu-west-1'): S3Client {
   // Vercel may strip AWS_ prefixed env vars — support custom prefix fallback
-  const accessKeyId =
-    process.env.AWS_ACCESS_KEY_ID || process.env.CF_AWS_ACCESS_KEY_ID || '';
+  const accessKeyId = process.env.AWS_ACCESS_KEY_ID || process.env.CF_AWS_ACCESS_KEY_ID || '';
   const secretAccessKey =
     process.env.AWS_SECRET_ACCESS_KEY || process.env.CF_AWS_SECRET_ACCESS_KEY || '';
 
@@ -67,11 +64,7 @@ export function s3Key(...segments: string[]): string {
   return [PREFIX, ...segments].join('/');
 }
 
-export async function uploadJson(
-  client: S3Client,
-  key: string,
-  data: unknown,
-): Promise<S3Result> {
+export async function uploadJson(client: S3Client, key: string, data: unknown): Promise<S3Result> {
   try {
     await client.send(
       new PutObjectCommand({
@@ -88,20 +81,14 @@ export async function uploadJson(
   }
 }
 
-export async function downloadJson<T = unknown>(
-  client: S3Client,
-  key: string,
-): Promise<T | null> {
+export async function downloadJson<T = unknown>(client: S3Client, key: string): Promise<T | null> {
   try {
-    const response = await client.send(
-      new GetObjectCommand({ Bucket: BUCKET, Key: key }),
-    );
+    const response = await client.send(new GetObjectCommand({ Bucket: BUCKET, Key: key }));
     if (!response.Body) return null;
     const body = await response.Body.transformToString('utf-8');
     return JSON.parse(body) as T;
   } catch (error: unknown) {
-    const code =
-      error instanceof Error && 'name' in error ? error.name : '';
+    const code = error instanceof Error && 'name' in error ? error.name : '';
     if (code === 'NoSuchKey' || code === 'AccessDenied') return null;
     throw error;
   }
@@ -134,9 +121,7 @@ export async function downloadBlob(
   key: string,
 ): Promise<{ bytes: Uint8Array; contentType: string } | null> {
   try {
-    const response = await client.send(
-      new GetObjectCommand({ Bucket: BUCKET, Key: key }),
-    );
+    const response = await client.send(new GetObjectCommand({ Bucket: BUCKET, Key: key }));
     if (!response.Body) return null;
     const bytes = await response.Body.transformToByteArray();
     return {
@@ -144,17 +129,13 @@ export async function downloadBlob(
       contentType: response.ContentType || 'application/octet-stream',
     };
   } catch (error: unknown) {
-    const code =
-      error instanceof Error && 'name' in error ? error.name : '';
+    const code = error instanceof Error && 'name' in error ? error.name : '';
     if (code === 'NoSuchKey' || code === 'AccessDenied') return null;
     throw error;
   }
 }
 
-export async function listKeys(
-  client: S3Client,
-  prefix: string,
-): Promise<string[]> {
+export async function listKeys(client: S3Client, prefix: string): Promise<string[]> {
   const keys: string[] = [];
   let continuationToken: string | undefined;
 
@@ -169,9 +150,7 @@ export async function listKeys(
     for (const obj of response.Contents ?? []) {
       if (obj.Key) keys.push(obj.Key);
     }
-    continuationToken = response.IsTruncated
-      ? response.NextContinuationToken
-      : undefined;
+    continuationToken = response.IsTruncated ? response.NextContinuationToken : undefined;
   } while (continuationToken);
 
   return keys;

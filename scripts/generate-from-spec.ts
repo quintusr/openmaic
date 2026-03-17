@@ -21,7 +21,12 @@ import type { CourseSpec, FlatLesson, SubjectIndex } from '@/lib/course-spec/typ
 import type { PersistedClassroomData } from '@/lib/server/classroom-storage';
 import { BrowseStorage } from '@/lib/s3/storage';
 import { generateTTS } from '@/lib/audio/tts-providers';
-import { resolveTTSApiKey, resolveTTSBaseUrl, resolveImageApiKey, resolveImageBaseUrl } from '@/lib/server/provider-config';
+import {
+  resolveTTSApiKey,
+  resolveTTSBaseUrl,
+  resolveImageApiKey,
+  resolveImageBaseUrl,
+} from '@/lib/server/provider-config';
 import { generateImage } from '@/lib/media/image-providers';
 import type { SceneOutline } from '@/lib/types/generation';
 
@@ -96,8 +101,12 @@ async function generateTTSForLesson(
           sa.text,
         );
         await storage.saveAudio(
-          subjectCode, courseId, lessonId,
-          sa.audioId, new Uint8Array(audio), `audio/${format}`,
+          subjectCode,
+          courseId,
+          lessonId,
+          sa.audioId,
+          new Uint8Array(audio),
+          `audio/${format}`,
         );
       }),
     );
@@ -121,7 +130,7 @@ async function generateImagesForLesson(
 ): Promise<number> {
   // Determine image provider from env
   const providerIds = ['nano-banana', 'seedream', 'qwen-image'] as const;
-  let providerId: typeof providerIds[number] | null = null;
+  let providerId: (typeof providerIds)[number] | null = null;
   let apiKey = '';
 
   for (const pid of providerIds) {
@@ -194,14 +203,7 @@ async function generateImagesForLesson(
           continue;
         }
         const mediaId = `${classroomId}:${mg.elementId}`;
-        await storage.saveMedia(
-          subjectCode,
-          courseId,
-          lessonId,
-          mediaId,
-          bytes,
-          'image/png',
-        );
+        await storage.saveMedia(subjectCode, courseId, lessonId, mediaId, bytes, 'image/png');
         count++;
       } catch (err) {
         const msg = err instanceof Error ? err.message : String(err);
@@ -293,7 +295,7 @@ async function main() {
   let completed = 0;
   let failed = 0;
 
-  let index = buildSubjectIndex(spec, existingIndex ?? undefined);
+  const index = buildSubjectIndex(spec, existingIndex ?? undefined);
   const queue = [...lessons];
 
   async function processLesson(lesson: FlatLesson): Promise<void> {
@@ -309,9 +311,7 @@ async function main() {
           baseUrl: 'http://localhost:3000',
           onProgress: async (progress) => {
             if (progress.step === 'generating_scenes') {
-              process.stdout.write(
-                `\r  ${label} ${progress.message} (${progress.progress}%)`,
-              );
+              process.stdout.write(`\r  ${label} ${progress.message} (${progress.progress}%)`);
             }
           },
         },
@@ -350,7 +350,9 @@ async function main() {
       if (!skipTTS) {
         console.log(`  ${label} [3/4] Generating TTS audio...`);
         const ttsCount = await generateTTSForLesson(
-          result.scenes as Array<{ actions?: Array<{ type: string; id: string; text?: string; audioId?: string }> }>,
+          result.scenes as Array<{
+            actions?: Array<{ type: string; id: string; text?: string; audioId?: string }>;
+          }>,
           storage,
           lesson.subjectCode,
           lesson.courseId,
@@ -404,10 +406,7 @@ async function main() {
       if (active.length >= concurrency) {
         await Promise.race(active);
         for (let i = active.length - 1; i >= 0; i--) {
-          const settled = await Promise.race([
-            active[i].then(() => true),
-            Promise.resolve(false),
-          ]);
+          const settled = await Promise.race([active[i].then(() => true), Promise.resolve(false)]);
           if (settled) active.splice(i, 1);
         }
       }

@@ -12,7 +12,6 @@ import { callLLM } from '@/lib/ai/llm';
 import { getBrowseStorage } from '@/lib/s3/storage';
 import { buildSubjectsManifest } from '@/lib/course-spec/parser';
 import type { PersistedClassroomData } from '@/lib/server/classroom-storage';
-import type { SubjectIndex } from '@/lib/course-spec/types';
 import { createLogger } from '@/lib/logger';
 
 const log = createLogger('ClassifyAndUpload');
@@ -90,7 +89,10 @@ Return ONLY valid JSON, no markdown.`,
       classification = JSON.parse(text);
     } catch {
       // Fallback classification
-      const slug = requirement.slice(0, 50).replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase();
+      const slug = requirement
+        .slice(0, 50)
+        .replace(/[^a-zA-Z0-9]+/g, '-')
+        .toLowerCase();
       classification = {
         subjectCode: 'GENERAL',
         subjectName: 'General',

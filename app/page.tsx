@@ -13,9 +13,6 @@ import {
   Pencil,
   Trash2,
   Settings,
-  Sun,
-  Moon,
-  Monitor,
   BotOff,
   ChevronUp,
 } from 'lucide-react';
@@ -27,7 +24,6 @@ import { cn } from '@/lib/utils';
 import { SettingsDialog } from '@/components/settings';
 import { GenerationToolbar } from '@/components/generation/generation-toolbar';
 import { AgentBar } from '@/components/agent/agent-bar';
-import { useTheme } from '@/lib/hooks/use-theme';
 import { nanoid } from 'nanoid';
 import { storePdfBlob } from '@/lib/utils/image-storage';
 import type { UserRequirements } from '@/lib/types/generation';
@@ -68,8 +64,7 @@ const initialFormState: FormState = {
 };
 
 function HomePage() {
-  const { t, locale, setLocale } = useI18n();
-  const { theme, setTheme } = useTheme();
+  const { t } = useI18n();
   const router = useRouter();
   const [form, setForm] = useState<FormState>(initialFormState);
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -125,7 +120,7 @@ function HomePage() {
     }
   }
 
-  const needsSetup = storeHydrated && !currentModelId;
+  const _needsSetup = storeHydrated && !currentModelId;
   const [languageOpen, setLanguageOpen] = useState(false);
   const [themeOpen, setThemeOpen] = useState(false);
   const [error, setError] = useState<string | null>(null);

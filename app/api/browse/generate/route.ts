@@ -48,9 +48,7 @@ export async function POST(request: NextRequest) {
             requirement +
             '\n\n---\n\n### Web Research Context (use to ensure accuracy)\n\n' +
             context;
-          log.info(
-            `Web search added ${searchResult.sources.length} sources`,
-          );
+          log.info(`Web search added ${searchResult.sources.length} sources`);
         }
       } catch (err) {
         log.warn('Web search failed, continuing without:', err);
@@ -70,7 +68,11 @@ export async function POST(request: NextRequest) {
     // Set audioId on all speech actions so the playback engine can find TTS audio
     for (const scene of result.scenes) {
       for (const action of scene.actions || []) {
-        if (action.type === 'speech' && 'text' in action && !('audioId' in action && action.audioId)) {
+        if (
+          action.type === 'speech' &&
+          'text' in action &&
+          !('audioId' in action && action.audioId)
+        ) {
           (action as unknown as Record<string, unknown>).audioId = `tts_${action.id}`;
         }
       }
@@ -86,7 +88,12 @@ export async function POST(request: NextRequest) {
     };
 
     const storage = getBrowseStorage();
-    await storage.saveLesson(subjectCode, courseId, lessonId, classroomData as PersistedClassroomData);
+    await storage.saveLesson(
+      subjectCode,
+      courseId,
+      lessonId,
+      classroomData as PersistedClassroomData,
+    );
 
     // Update the subject index
     const index = await storage.getSubjectIndex(subjectCode);

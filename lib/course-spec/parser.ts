@@ -47,10 +47,7 @@ export function flattenLessons(spec: CourseSpec): FlatLesson[] {
  * Build a SubjectIndex from a course spec.
  * Optionally merge with existing generation status.
  */
-export function buildSubjectIndex(
-  spec: CourseSpec,
-  existing?: SubjectIndex,
-): SubjectIndex {
+export function buildSubjectIndex(spec: CourseSpec, existing?: SubjectIndex): SubjectIndex {
   const existingLessons = new Map<string, SubjectIndexLesson>();
   if (existing) {
     for (const level of existing.levels) {
@@ -94,9 +91,7 @@ export function buildSubjectIndex(
 /**
  * Build a SubjectsManifest from multiple SubjectIndex objects.
  */
-export function buildSubjectsManifest(
-  indices: SubjectIndex[],
-): SubjectsManifest {
+export function buildSubjectsManifest(indices: SubjectIndex[]): SubjectsManifest {
   const subjects: SubjectEntry[] = indices.map((idx) => {
     let courseCount = 0;
     let lessonCount = 0;

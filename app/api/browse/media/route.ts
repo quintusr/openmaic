@@ -16,11 +16,7 @@ export async function POST(request: NextRequest) {
     const file = formData.get('file') as File;
 
     if (!subjectCode || !courseId || !lessonId || !mediaId || !file) {
-      return apiError(
-        API_ERROR_CODES.MISSING_REQUIRED_FIELD,
-        400,
-        'Missing required fields',
-      );
+      return apiError(API_ERROR_CODES.MISSING_REQUIRED_FIELD, 400, 'Missing required fields');
     }
 
     const bytes = new Uint8Array(await file.arrayBuffer());
@@ -54,20 +50,11 @@ export async function GET(request: NextRequest) {
     const mediaId = searchParams.get('mediaId');
 
     if (!subjectCode || !courseId || !lessonId || !mediaId) {
-      return apiError(
-        API_ERROR_CODES.MISSING_REQUIRED_FIELD,
-        400,
-        'Missing required params',
-      );
+      return apiError(API_ERROR_CODES.MISSING_REQUIRED_FIELD, 400, 'Missing required params');
     }
 
     const storage = getBrowseStorage();
-    const result = await storage.getMedia(
-      subjectCode,
-      courseId,
-      lessonId,
-      mediaId,
-    );
+    const result = await storage.getMedia(subjectCode, courseId, lessonId, mediaId);
 
     if (!result) {
       return apiError(API_ERROR_CODES.INVALID_REQUEST, 404, 'Media not found');

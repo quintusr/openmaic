@@ -8,17 +8,14 @@ import {
   ChevronRight,
   CircleCheck,
   CircleDashed,
-  FolderOpen,
   GraduationCap,
   Layers,
   Loader2,
-  Play,
   RefreshCw,
   Sparkles,
 } from 'lucide-react';
 import { useI18n } from '@/lib/hooks/use-i18n';
 import { useSettingsStore } from '@/lib/store/settings';
-import { useStageStore } from '@/lib/store';
 import { db } from '@/lib/utils/database';
 import { saveStageData } from '@/lib/utils/stage-storage';
 import { generateMediaForOutlines } from '@/lib/media/media-orchestrator';
@@ -68,12 +65,6 @@ interface SubjectIndex {
   levels: SubjectIndexLevel[];
 }
 
-const COURSE_SPECS = [
-  { name: 'AI for High School Students', path: 'course-specs/conceptual/ai.json' },
-  { name: 'Biology for High School Students', path: 'course-specs/conceptual/biology.json' },
-  { name: 'Physics for High School Students', path: 'course-specs/conceptual/physics.json' },
-];
-
 /** Known course spec subject codes — anything else is user-generated */
 const COURSE_SPEC_CODES = new Set(['AI', 'BIOLOGY', 'PHYSICS']);
 
@@ -93,7 +84,6 @@ export default function BrowsePage() {
   const [loadingIndex, setLoadingIndex] = useState(false);
   const [loadingLesson, setLoadingLesson] = useState<string | null>(null);
   const [generatingLessons, setGeneratingLessons] = useState<Set<string>>(new Set());
-  const [seeding, setSeeding] = useState(false);
   const [queueOpen, setQueueOpen] = useState(false);
 
   // Generation queue tracking
@@ -107,28 +97,20 @@ export default function BrowsePage() {
   const [queueEntries, setQueueEntries] = useState<QueueEntry[]>([]);
   const [completedCount, setCompletedCount] = useState(0);
 
-  const updateQueuePhase = useCallback(
-    (lessonId: string, phase: LessonPhase) => {
-      setQueueEntries((prev) =>
-        prev.map((e) => (e.lessonId === lessonId ? { ...e, phase } : e)),
-      );
-      if (phase === 'done' || phase === 'failed') {
-        setCompletedCount((c) => c + 1);
-      }
-    },
-    [],
-  );
+  const updateQueuePhase = useCallback((lessonId: string, phase: LessonPhase) => {
+    setQueueEntries((prev) => prev.map((e) => (e.lessonId === lessonId ? { ...e, phase } : e)));
+    if (phase === 'done' || phase === 'failed') {
+      setCompletedCount((c) => c + 1);
+    }
+  }, []);
 
-  const addToQueue = useCallback(
-    (lessonId: string, title: string, courseTitle: string) => {
-      setQueueEntries((prev) => {
-        // Don't add duplicates
-        if (prev.some((e) => e.lessonId === lessonId)) return prev;
-        return [...prev, { lessonId, title, courseTitle, phase: 'queued' as LessonPhase }];
-      });
-    },
-    [],
-  );
+  const addToQueue = useCallback((lessonId: string, title: string, courseTitle: string) => {
+    setQueueEntries((prev) => {
+      // Don't add duplicates
+      if (prev.some((e) => e.lessonId === lessonId)) return prev;
+      return [...prev, { lessonId, title, courseTitle, phase: 'queued' as LessonPhase }];
+    });
+  }, []);
 
   const clearQueue = useCallback(() => {
     setQueueEntries([]);
@@ -143,7 +125,9 @@ export default function BrowsePage() {
       } else {
         localStorage.removeItem('browse:generating');
       }
-    } catch { /* ignore */ }
+    } catch {
+      /* ignore */
+    }
   }, []);
 
   // On mount, warn about interrupted generations
@@ -159,7 +143,9 @@ export default function BrowsePage() {
           localStorage.removeItem('browse:generating');
         }
       }
-    } catch { /* ignore */ }
+    } catch {
+      /* ignore */
+    }
   }, []);
 
   // Global generation semaphore — max 2 lessons generating at any time
@@ -269,9 +255,7 @@ export default function BrowsePage() {
 
       try {
         // 1. Fetch lesson data from S3 (includes stage, scenes, outlines)
-        const res = await fetch(
-          `/api/browse/lessons/${subjectCode}/${courseId}/${lesson.id}`,
-        );
+        const res = await fetch(`/api/browse/lessons/${subjectCode}/${courseId}/${lesson.id}`);
         const json = await res.json();
         if (!json.success || !json.classroomId) {
           toast.error('Failed to load lesson');
@@ -307,8 +291,7 @@ export default function BrowsePage() {
           // 3. Restore audio from S3 into IndexedDB (if not already there)
           for (const scene of scenes) {
             const speechActions = (scene.actions || []).filter(
-              (a: { type: string; audioId?: string }) =>
-                a.type === 'speech' && a.audioId,
+              (a: { type: string; audioId?: string }) => a.type === 'speech' && a.audioId,
             );
             for (const action of speechActions) {
               const audioId = action.audioId as string;
@@ -468,13 +451,10 @@ export default function BrowsePage() {
           let ttsCount = 0;
 
           const settings = useSettingsStore.getState();
-          const shouldTTS =
-            settings.ttsEnabled &&
-            settings.ttsProviderId !== 'browser-native-tts';
+          const shouldTTS = settings.ttsEnabled && settings.ttsProviderId !== 'browser-native-tts';
 
           if (shouldTTS && speechActions.length > 0) {
-            const ttsConfig =
-              settings.ttsProvidersConfig?.[settings.ttsProviderId];
+            const ttsConfig = settings.ttsProvidersConfig?.[settings.ttsProviderId];
 
             for (const sa of speechActions) {
               try {
@@ -497,8 +477,7 @@ export default function BrowsePage() {
 
                 const binary = atob(ttsData.base64);
                 const bytes = new Uint8Array(binary.length);
-                for (let i = 0; i < binary.length; i++)
-                  bytes[i] = binary.charCodeAt(i);
+                for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
                 const blob = new Blob([bytes], {
                   type: `audio/${ttsData.format}`,
                 });
@@ -536,10 +515,7 @@ export default function BrowsePage() {
           updateQueuePhase(lesson.id, 'uploading');
           if (outlines.length > 0) {
             try {
-              const mediaFiles = await db.mediaFiles
-                .where('stageId')
-                .equals(classroomId)
-                .toArray();
+              const mediaFiles = await db.mediaFiles.where('stageId').equals(classroomId).toArray();
               for (const mf of mediaFiles) {
                 if (!mf.blob) continue;
                 const ext = mf.mimeType?.split('/')[1] || 'png';
@@ -585,68 +561,25 @@ export default function BrowsePage() {
 
   // Queue all lessons in a course — global semaphore limits to MAX_CONCURRENT
   const handleGenerateCourse = useCallback(
-    async (
-      subjectCode: string,
-      course: SubjectIndexCourse,
-      regenerateAll: boolean,
-    ) => {
-      const lessons = regenerateAll
-        ? course.lessons
-        : course.lessons.filter((l) => !l.generated);
+    async (subjectCode: string, course: SubjectIndexCourse, regenerateAll: boolean) => {
+      const lessons = regenerateAll ? course.lessons : course.lessons.filter((l) => !l.generated);
 
       if (lessons.length === 0) {
         toast.success(`All lessons in "${course.title}" are already generated`);
         return;
       }
 
-      toast.success(
-        `Queued ${lessons.length} lesson(s) from "${course.title}"`,
-      );
+      toast.success(`Queued ${lessons.length} lesson(s) from "${course.title}"`);
 
       // Fire all — the global semaphore in handleGenerateLesson limits concurrency
       await Promise.all(
-        lessons.map((lesson) =>
-          handleGenerateLesson(subjectCode, course.id, course.title, lesson),
-        ),
+        lessons.map((lesson) => handleGenerateLesson(subjectCode, course.id, course.title, lesson)),
       );
 
       toast.success(`Finished generating "${course.title}"`);
     },
     [handleGenerateLesson],
   );
-
-  const handleSeedAll = useCallback(async () => {
-    setSeeding(true);
-    let seeded = 0;
-
-    for (const spec of COURSE_SPECS) {
-      try {
-        const res = await fetch('/api/browse/seed', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ specPath: spec.path }),
-        });
-        const json = await res.json();
-        if (json.success) {
-          seeded++;
-        }
-      } catch {
-        // continue with others
-      }
-    }
-
-    if (seeded > 0) {
-      toast.success(`Loaded ${seeded} course spec(s)`);
-      const loaded = await refreshSubjects();
-      if (loaded.length > 0 && !selectedSubject) {
-        setSelectedSubject(loaded[0].code);
-      }
-    } else {
-      toast.error('Failed to load course specs. Check that spec files exist.');
-    }
-
-    setSeeding(false);
-  }, [refreshSubjects, selectedSubject]);
 
   return (
     <div className="min-h-[100dvh] w-full bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900 relative overflow-hidden">
@@ -685,7 +618,6 @@ export default function BrowsePage() {
               >
                 <RefreshCw className="size-3.5" />
               </Button>
-
             </div>
           </div>
 
@@ -694,12 +626,8 @@ export default function BrowsePage() {
               <BookOpen className="size-5 text-brand-600 dark:text-brand-400" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-foreground">
-                {t('browse.title')}
-              </h1>
-              <p className="text-sm text-muted-foreground/60">
-                {t('browse.subtitle')}
-              </p>
+              <h1 className="text-2xl font-bold text-foreground">{t('browse.title')}</h1>
+              <p className="text-sm text-muted-foreground/60">{t('browse.subtitle')}</p>
             </div>
           </div>
         </motion.div>
@@ -714,9 +642,7 @@ export default function BrowsePage() {
           {loadingSubjects ? (
             <div className="flex items-center justify-center py-12">
               <Loader2 className="size-5 animate-spin text-muted-foreground" />
-              <span className="ml-2 text-sm text-muted-foreground">
-                {t('browse.loading')}
-              </span>
+              <span className="ml-2 text-sm text-muted-foreground">{t('browse.loading')}</span>
             </div>
           ) : subjects.length === 0 ? (
             <div className="text-center py-16">
@@ -724,9 +650,7 @@ export default function BrowsePage() {
               <h2 className="text-lg font-semibold text-muted-foreground">
                 {t('browse.noSubjects')}
               </h2>
-              <p className="text-sm text-muted-foreground/60 mt-1">
-                {t('browse.noSubjectsDesc')}
-              </p>
+              <p className="text-sm text-muted-foreground/60 mt-1">{t('browse.noSubjectsDesc')}</p>
             </div>
           ) : (
             <>
@@ -936,9 +860,7 @@ export default function BrowsePage() {
                             )}
                           </div>
                           <div className="flex-1 min-w-0">
-                            <p className="text-xs text-white/90 truncate">
-                              {entry.title}
-                            </p>
+                            <p className="text-xs text-white/90 truncate">{entry.title}</p>
                             <p className="text-[10px] text-slate-500 truncate">
                               {entry.courseTitle}
                             </p>
@@ -1007,10 +929,7 @@ function LevelSection({
   generatingLessons: Set<string>;
   t: (key: string) => string;
 }) {
-  const totalLessons = level.courses.reduce(
-    (sum, c) => sum + c.lessons.length,
-    0,
-  );
+  const totalLessons = level.courses.reduce((sum, c) => sum + c.lessons.length, 0);
   const generatedLessons = level.courses.reduce(
     (sum, c) => sum + c.lessons.filter((l) => l.generated).length,
     0,
@@ -1026,9 +945,7 @@ function LevelSection({
               <Layers className="size-4 text-blue-600 dark:text-blue-400" />
             </div>
             <div>
-              <h2 className="text-sm font-semibold text-foreground/90">
-                {level.name}
-              </h2>
+              <h2 className="text-sm font-semibold text-foreground/90">{level.name}</h2>
               <span className="text-xs text-muted-foreground/60">
                 {t('browse.level')} {level.level}
               </span>
@@ -1107,28 +1024,18 @@ function CourseSection({
   const generated = course.lessons.filter((l) => l.generated).length;
   const total = course.lessons.length;
   const hasUngenerated = generated < total;
-  const isCourseGenerating = course.lessons.some((l) =>
-    generatingLessons.has(l.id),
-  );
+  const isCourseGenerating = course.lessons.some((l) => generatingLessons.has(l.id));
 
   return (
     <div>
       <div className="flex items-center gap-1 px-5 py-3.5 hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition-colors">
-        <button
-          onClick={onToggle}
-          className="flex items-center gap-3 flex-1 min-w-0 text-left"
-        >
-          <motion.div
-            animate={{ rotate: expanded ? 90 : 0 }}
-            transition={{ duration: 0.2 }}
-          >
+        <button onClick={onToggle} className="flex items-center gap-3 flex-1 min-w-0 text-left">
+          <motion.div animate={{ rotate: expanded ? 90 : 0 }} transition={{ duration: 0.2 }}>
             <ChevronRight className="size-4 text-muted-foreground/50" />
           </motion.div>
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2">
-              <span className="text-xs font-mono text-muted-foreground/50">
-                {course.code}
-              </span>
+              <span className="text-xs font-mono text-muted-foreground/50">{course.code}</span>
               <span className="text-sm font-medium text-foreground/90 truncate">
                 {course.title}
               </span>
@@ -1343,11 +1250,7 @@ function LessonCard({
               onView(subjectCode, courseId, lesson);
             }}
           >
-            {loading ? (
-              <Loader2 className="size-3 animate-spin" />
-            ) : (
-              t('browse.viewLesson')
-            )}
+            {loading ? <Loader2 className="size-3 animate-spin" /> : t('browse.viewLesson')}
           </Button>
         )}
         {!lesson.generated && !generating && (
@@ -1407,9 +1310,7 @@ function SubjectPill({
       )}
     >
       <div className="flex items-center gap-2">
-        <span className="text-sm font-semibold text-foreground/90">
-          {subject.name}
-        </span>
+        <span className="text-sm font-semibold text-foreground/90">{subject.name}</span>
         {isUserGenerated && (
           <span className="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 text-[9px] font-medium text-muted-foreground/50 uppercase tracking-wider">
             user
@@ -1417,9 +1318,13 @@ function SubjectPill({
         )}
       </div>
       <div className="flex items-center gap-3 mt-1.5 text-xs text-muted-foreground/60">
-        <span>{subject.courseCount} {t('browse.courses')}</span>
+        <span>
+          {subject.courseCount} {t('browse.courses')}
+        </span>
         <span className="w-[1px] h-3 bg-border/50" />
-        <span>{subject.lessonCount} {t('browse.lessons')}</span>
+        <span>
+          {subject.lessonCount} {t('browse.lessons')}
+        </span>
         <span className="w-[1px] h-3 bg-border/50" />
         <span className="text-emerald-600 dark:text-emerald-400">
           {subject.generatedCount} {t('browse.generated').toLowerCase()}
